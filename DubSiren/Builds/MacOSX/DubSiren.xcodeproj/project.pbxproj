@@ -101,6 +101,10 @@
 			isa = PBXBuildFile;
 			fileRef = EC48B8A51A38A6FC91F945A1;
 		};
+		3605521CD67F3ECBF3DB9478 = {
+			isa = PBXBuildFile;
+			fileRef = 5DF0F685B0E9772ABBD3E517;
+		};
 		458D955FEE3F4DE1BB6555EB = {
 			isa = PBXBuildFile;
 			fileRef = 25E523D002E9EAD9214F467F;
@@ -120,6 +124,13 @@
 		D2FA3D7BAFE03521B7BEEA7B = {
 			isa = PBXBuildFile;
 			fileRef = 32BFAE23A66CD2D2E6945AD0;
+		};
+		01EC43314A48ACE8561A8996 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = waveTable.h;
+			path = ../../Source/waveTable.h;
+			sourceTree = "SOURCE_ROOT";
 		};
 		0554D1655F4B1F00EF4C727B = {
 			isa = PBXFileReference;
@@ -198,6 +209,13 @@
 			path = System/Library/Frameworks/QuartzCore.framework;
 			sourceTree = SDKROOT;
 		};
+		2D5F64A3A521037D728F22CE = {
+			isa = PBXFileReference;
+			lastKnownFileType = file;
+			name = "juce_dsp";
+			path = "/Users/billy/Downloads/JUCE/modules/juce_dsp";
+			sourceTree = "<absolute>";
+		};
 		2F73D29E47D065BBEE991645 = {
 			isa = PBXFileReference;
 			lastKnownFileType = file;
@@ -224,6 +242,13 @@
 			lastKnownFileType = sourcecode.cpp.cpp;
 			name = MainComponent.cpp;
 			path = ../../Source/MainComponent.cpp;
+			sourceTree = "SOURCE_ROOT";
+		};
+		380E351123B87BA831D3586F = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = softClip.h;
+			path = ../../Source/softClip.h;
 			sourceTree = "SOURCE_ROOT";
 		};
 		3BEF72447A7715AE35BAB2A7 = {
@@ -261,11 +286,32 @@
 			path = System/Library/Frameworks/DiscRecording.framework;
 			sourceTree = SDKROOT;
 		};
+		43B69766EBC426F49E5D9540 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = delay.h;
+			path = ../../Source/delay.h;
+			sourceTree = "SOURCE_ROOT";
+		};
 		4CCACF307013D55BD5DC971F = {
 			isa = PBXFileReference;
 			lastKnownFileType = sourcecode.cpp.objcpp;
 			name = "include_juce_audio_basics.mm";
 			path = "../../JuceLibraryCode/include_juce_audio_basics.mm";
+			sourceTree = "SOURCE_ROOT";
+		};
+		4DF57AB48D19D1B7E7ABFF94 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = master.h;
+			path = ../../Source/master.h;
+			sourceTree = "SOURCE_ROOT";
+		};
+		5DF0F685B0E9772ABBD3E517 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.objcpp;
+			name = "include_juce_dsp.mm";
+			path = "../../JuceLibraryCode/include_juce_dsp.mm";
 			sourceTree = "SOURCE_ROOT";
 		};
 		5E35B29ECB498AF2E6CD4954 = {
@@ -317,11 +363,25 @@
 			path = "/Users/billy/Downloads/JUCE/modules/juce_cryptography";
 			sourceTree = "<absolute>";
 		};
+		72E9BC2948DAB8DB7A724E79 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = osc.h;
+			path = ../../Source/osc.h;
+			sourceTree = "SOURCE_ROOT";
+		};
 		7FD5E4DD805AC2032F65B9B4 = {
 			isa = PBXFileReference;
 			lastKnownFileType = sourcecode.cpp.objcpp;
 			name = "include_juce_gui_extra.mm";
 			path = "../../JuceLibraryCode/include_juce_gui_extra.mm";
+			sourceTree = "SOURCE_ROOT";
+		};
+		8118940ECC999DD7C7FC234C = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = reverb.h;
+			path = ../../Source/reverb.h;
 			sourceTree = "SOURCE_ROOT";
 		};
 		8D04A131FBF0674B3933F085 = {
@@ -474,6 +534,12 @@
 		5361909E2B21427745CC1CFB = {
 			isa = PBXGroup;
 			children = (
+				8118940ECC999DD7C7FC234C,
+				4DF57AB48D19D1B7E7ABFF94,
+				380E351123B87BA831D3586F,
+				43B69766EBC426F49E5D9540,
+				01EC43314A48ACE8561A8996,
+				72E9BC2948DAB8DB7A724E79,
 				95F503A9F6715C5EF9F8B7C4,
 				3803A7CDBD406A3BFAB4452B,
 				1609D705B168E1E915BA9DF3,
@@ -503,6 +569,7 @@
 				CC29D1DEBD40B1A8CCC19BCE,
 				7228D6A2082DCB5C2804D11C,
 				3CECD3E07D2063EA4B957CC6,
+				2D5F64A3A521037D728F22CE,
 				DDABD15D1730FC13FC0D1FD6,
 				D36C8260A776C92A3B37797B,
 				10AD35B3B50B0ECD384A7535,
@@ -524,6 +591,7 @@
 				0554D1655F4B1F00EF4C727B,
 				9DAEF31AB12921D72BEF5D2E,
 				EC48B8A51A38A6FC91F945A1,
+				5DF0F685B0E9772ABBD3E517,
 				25E523D002E9EAD9214F467F,
 				3CD32C07FDF560FB877438D7,
 				289AE4295A10C6AFB44FE4AC,
@@ -807,6 +875,7 @@
 				C328B74B09AA2557A208AA48,
 				B918C080A2199E128E1C5643,
 				C251E0E0416A573D6C5D0631,
+				3605521CD67F3ECBF3DB9478,
 				458D955FEE3F4DE1BB6555EB,
 				DB6023E8D43CC2B9D4283EA2,
 				7A10B912B384C4F5D9864705,

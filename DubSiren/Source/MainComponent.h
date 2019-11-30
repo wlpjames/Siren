@@ -14,6 +14,7 @@
 #include "lfoComp.h"
 #include "delayComp.h"
 #include "master.h"
+#include "reverb.h"
 
 //==============================================================================
 /*
@@ -45,6 +46,7 @@ private:
 	Slider vol;
 	Label volLab;
 	master Master;
+    reverb rev;
 
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainComponent)

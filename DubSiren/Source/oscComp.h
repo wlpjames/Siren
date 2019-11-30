@@ -11,12 +11,15 @@
 #pragma once
 
 #include "../JuceLibraryCode/JuceHeader.h"
+#include "waveTable.h"
+
 using namespace std;
 //==============================================================================
 /*
 */
 class oscComp    : public Component,
-	public Slider::Listener
+	public Slider::Listener,
+    public waveTable
 {
 public:
 
@@ -27,11 +30,13 @@ public:
 	Slider wavtype;
 	Label wavLab;
 
-    oscComp()
+    oscComp() : waveTable(440, 0.3, 44100, 100)
     {
-        // In your constructor, you should add any child components, and
-        // initialise any special settings that your component needs.
-
+        //set up and build tables in waveTables
+        
+        createTables(); //this might be called before samplerate!!!
+        setGlideRate(1);
+        
 		addAndMakeVisible(freq);
 		freq.setSliderStyle(Slider::RotaryHorizontalVerticalDrag);
 		freq.setTextBoxStyle(Slider::NoTextBox, 0, 0, 0);
@@ -46,7 +51,7 @@ public:
 		addAndMakeVisible(wavtype);
 		wavtype.setSliderStyle(Slider::RotaryHorizontalVerticalDrag);
 		wavtype.setTextBoxStyle(Slider::NoTextBox, 0, 0, 0);
-		wavtype.setRange(0, 4);
+		wavtype.setRange(0, 3, 1);
 		wavtype.addListener(this);
 
 		addAndMakeVisible(wavLab);
@@ -93,10 +98,10 @@ public:
 	void sliderValueChanged(Slider* slider) override
 	{
 		if (slider == &freq) {
-			cout << freq.getValue();
+            setFreq(slider->getValue());
 		}
 		else if (slider == &wavtype) {
-			cout << wavtype.getValue();
+            setType( int( wavtype.getValue() ));
 		}
 	}
 

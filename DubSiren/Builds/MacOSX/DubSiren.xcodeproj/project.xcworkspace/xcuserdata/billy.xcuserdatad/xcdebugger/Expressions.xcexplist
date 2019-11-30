@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "lfoComp::sliderValueChanged(juce::Slider*):lfoComp.h">
+      </ContextState>
+      <ContextState
+         contextName = "waveTable::selectBand():waveTable.h">
+      </ContextState>
+      <ContextState
+         contextName = "waveGen::nextFrame(float*, int):osc.h">
+      </ContextState>
+      <ContextState
+         contextName = "waveTable::buildTable(int, float*, float*):waveTable.h">
+         <PersistentStrings>
+            <PersistentString
+               value = "(float(*)[10])harmonicV">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "waveTable::createTables():waveTable.h">
+         <PersistentStrings>
+            <PersistentString
+               value = "(float(*)[samplerate])harmonicV">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "waveTable::setType(int):waveTable.h">
+      </ContextState>
+      <ContextState
+         contextName = "waveGen::getSquare(float*, int):osc.h">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

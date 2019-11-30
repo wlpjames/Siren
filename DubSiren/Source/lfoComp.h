@@ -11,11 +11,12 @@
 #pragma once
 
 #include "../JuceLibraryCode/JuceHeader.h"
+#include "osc.h"
 
 //==============================================================================
 /*
 */
-class lfoComp    : public Component, public Slider::Listener
+class lfoComp    : public Component, public Slider::Listener, public waveGen
 {
 public:
 
@@ -25,19 +26,21 @@ public:
 
 	Slider depth;
 	Label depthLab;
+    float depthLim = 200;
 
 	Slider wavtype;
 	Label wavLab;
 
-    lfoComp()
+    lfoComp() : waveGen(3, 1.0, 44100)
     {
         // In your constructor, you should add any child components, and
         // initialise any special settings that your component needs.
 
+        //speed
 		addAndMakeVisible(speed);
 		speed.setSliderStyle(Slider::RotaryHorizontalVerticalDrag);
 		speed.setTextBoxStyle(Slider::NoTextBox, 0, 0, 0);
-		speed.setRange(50, 5000.0);
+		speed.setRange(1, 10.0);
 		speed.setTextValueSuffix(" Hz");
 		speed.addListener(this);
 
@@ -59,7 +62,7 @@ public:
 		addAndMakeVisible(wavtype);
 		wavtype.setSliderStyle(Slider::RotaryHorizontalVerticalDrag);
 		wavtype.setTextBoxStyle(Slider::NoTextBox, 0, 0, 0);
-		wavtype.setRange(0, 4);
+		wavtype.setRange(0, 5, 1);
 		wavtype.addListener(this);
 
 		addAndMakeVisible(wavLab);
@@ -111,13 +114,13 @@ public:
 	void sliderValueChanged(Slider* slider) override
 	{
 		if (slider == &speed) {
-			cout << speed.getValue();
+            setFreq(slider->getValue());
 		}
 		else if (slider == &depth) {
-			cout << depth.getValue();
+            setVol(slider->getValue() * depthLim);
 		}
 		else if (slider == &wavtype) {
-			cout << wavtype.getValue();
+			setType(int(wavtype.getValue()));
 		}
 	}
 

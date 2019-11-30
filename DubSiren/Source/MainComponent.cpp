@@ -5,8 +5,7 @@
 
   ==============================================================================
 */
-
-#include "MainComponent.h"
+ #include "MainComponent.h"
 #include "oscComp.h"
 #include "lfoComp.h"
 #include "delayComp.h"
@@ -29,7 +28,7 @@ MainComponent::MainComponent()
     else
     {
         // Specify the number of input and output channels that we want to open
-        setAudioChannels (2, 2);
+        setAudioChannels (1, 1);
     }
 
 	//volume
@@ -54,13 +53,8 @@ MainComponent::~MainComponent()
 //==============================================================================
 void MainComponent::prepareToPlay (int samplesPerBlockExpected, double sampleRate)
 {
-    // This function will be called when the audio device is started, or when
-    // its settings (i.e. sample rate, block size, etc) are changed.
-
-    // You can use this function to initialise any resources you might need,
-    // but be careful - it will be called on the audio thread, not the GUI thread.
-
-    // For more details, see the help for AudioProcessor::prepareToPlay()
+    osc.setSampleRate(sampleRate);
+    rev.setSamplerate(sampleRate);
 }
 
 void MainComponent::getNextAudioBlock (const AudioSourceChannelInfo& bufferToFill)
@@ -71,7 +65,30 @@ void MainComponent::getNextAudioBlock (const AudioSourceChannelInfo& bufferToFil
 
     // Right now we are not producing any data, in which case we need to clear the buffer
     // (to prevent the output of random noise)
-    bufferToFill.clearActiveBufferRegion();
+    float** bufferArr = bufferToFill.buffer->getArrayOfWritePointers();
+    int bufferLen = bufferToFill.numSamples;
+    
+    //do the lfo thing
+    float temp[bufferLen];
+    lfo.nextFrame(&temp[0], bufferLen);
+    osc.setFreqOffset(temp[0]);
+    
+    if (Master.is_playing) {
+        //get osc signal
+        osc.nextFrame(bufferArr[0], bufferLen);
+    }
+    
+    //run through a delay
+    //delay.process(bufferArr[0], bufferLen);
+    
+    //will run through reverb
+    rev.process(bufferArr[0], bufferLen);
+    
+    //then will run through Analogish IR
+    
+    for (int i = 1; i < bufferToFill.buffer->getNumChannels(); i++) {
+        memcpy(bufferArr[i], bufferArr[0], sizeof(float) * bufferLen);
+    }
 }
 
 void MainComponent::releaseResources()

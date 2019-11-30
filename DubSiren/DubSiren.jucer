@@ -3,6 +3,12 @@
 <JUCERPROJECT id="qWBalf" name="DubSiren" projectType="guiapp" jucerVersion="5.4.5">
   <MAINGROUP id="SsE8Lb" name="DubSiren">
     <GROUP id="{7BB44CBD-9136-6A61-6DBC-7420BF4E448D}" name="Source">
+      <FILE id="gM5mUO" name="reverb.h" compile="0" resource="0" file="Source/reverb.h"/>
+      <FILE id="xBLulc" name="master.h" compile="0" resource="0" file="Source/master.h"/>
+      <FILE id="yyie1z" name="softClip.h" compile="0" resource="0" file="Source/softClip.h"/>
+      <FILE id="C4W1uS" name="delay.h" compile="0" resource="0" file="Source/delay.h"/>
+      <FILE id="THbact" name="waveTable.h" compile="0" resource="0" file="Source/waveTable.h"/>
+      <FILE id="ZS6vMz" name="osc.h" compile="0" resource="0" file="Source/osc.h"/>
       <FILE id="xp8bu6" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
       <FILE id="RCKBLZ" name="MainComponent.cpp" compile="1" resource="0"
             file="Source/MainComponent.cpp"/>
@@ -32,6 +38,7 @@
         <MODULEPATH id="juce_gui_basics" path="../../../../Downloads/JUCE/modules"/>
         <MODULEPATH id="juce_gui_extra" path="../../../../Downloads/JUCE/modules"/>
         <MODULEPATH id="juce_opengl" path="../../../../Downloads/JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../../../Downloads/JUCE/modules"/>
       </MODULEPATHS>
     </XCODE_MAC>
   </EXPORTFORMATS>
@@ -44,6 +51,7 @@
     <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
     <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
     <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
     <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
     <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
     <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>

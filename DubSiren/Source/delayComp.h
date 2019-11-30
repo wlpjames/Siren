@@ -11,17 +11,57 @@
 #pragma once
 
 #include "../JuceLibraryCode/JuceHeader.h"
+#include "delay.h"
 
 //==============================================================================
 /*
 */
-class delayComp    : public Component
+class delayComp    : public Component, public Slider::Listener, public delay
 {
 public:
-    delayComp()
+    
+    //properties
+    Slider decaySlider;
+    Label decayLab;
+
+    Slider mixSlider;
+    Label mixLab;
+    float mixLim = 200;
+
+    Slider lengthSlider;
+    Label lengthLab;
+    
+    delayComp() : delay()
     {
-        // In your constructor, you should add any child components, and
-        // initialise any special settings that your component needs.
+        //decay
+        addAndMakeVisible(decaySlider);
+        decaySlider.setSliderStyle(Slider::RotaryHorizontalVerticalDrag);
+        decaySlider.setTextBoxStyle(Slider::NoTextBox, 0, 0, 0);
+        decaySlider.setRange(0, 2.0);
+        decaySlider.addListener(this);
+
+        addAndMakeVisible(decayLab);
+        decayLab.setText("Decay", dontSendNotification);
+
+        //mix
+        addAndMakeVisible(mixSlider);
+        mixSlider.setSliderStyle(Slider::RotaryHorizontalVerticalDrag);
+        mixSlider.setTextBoxStyle(Slider::NoTextBox, 0, 0, 0);
+        mixSlider.setRange(0, 1.0);
+        mixSlider.addListener(this);
+
+        addAndMakeVisible(mixLab);
+        mixLab.setText("Mix", dontSendNotification);
+
+        //length
+        addAndMakeVisible(lengthSlider);
+        lengthSlider.setSliderStyle(Slider::RotaryHorizontalVerticalDrag);
+        lengthSlider.setTextBoxStyle(Slider::NoTextBox, 0, 0, 0);
+        lengthSlider.setRange(0.1, 1.5);
+        lengthSlider.addListener(this);
+
+        addAndMakeVisible(lengthLab);
+        lengthLab.setText("Delay Len", dontSendNotification);
 
     }
 
@@ -31,29 +71,48 @@ public:
 
     void paint (Graphics& g) override
     {
-        /* This demo code just fills the component's background and
-           draws some placeholder text to get you started.
-
-           You should replace everything in this method with your own
-           drawing code..
-        */
 
         g.fillAll (Colours::black);   // clear the background
 
-        g.setColour (Colours::grey);
-        g.drawRect (getLocalBounds(), 1);   // draw an outline around the component
-
-        g.setColour (Colours::white);
-        g.setFont (14.0f);
-        g.drawText ("delayComp", getLocalBounds(),
-                    Justification::centred, true);   // draw some placeholder text
     }
 
     void resized() override
     {
         // This method is where you should set the bounds of any child
         // components that your component contains..
+        
+        auto area = getLocalBounds();
+        area.reduce(20, 20);
+        
+        int compWidth = area.getWidth() / 3;
+        
+        auto d_area = area.removeFromLeft(compWidth);
+        decayLab.setBounds(d_area.removeFromTop(20));
+        decaySlider.setBounds(d_area);
+        
+        auto m_area = area.removeFromLeft(compWidth);
+        mixLab.setBounds(m_area.removeFromTop(20));
+        mixSlider.setBounds(m_area);
+        
+        auto l_area = area.removeFromLeft(compWidth);
+        lengthLab.setBounds(l_area.removeFromTop(20));
+        lengthSlider.setBounds(l_area);
 
+    }
+    
+    void sliderValueChanged(Slider* slider) override
+    {
+        if (slider == &decaySlider) {
+            setDecay(slider->getValue());
+        }
+        else if (slider == &mixSlider) {
+            setMix(slider->getValue());
+        }
+        else if (slider == &lengthSlider) {
+            setTapeLen(slider->getValue());
+        }
+        
+        return;
     }
 
 private:

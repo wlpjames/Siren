@@ -15,12 +15,15 @@
 //==============================================================================
 /*
 */
-class master    : public Component
+class master    : public Component,
+                  public Button::Listener
 {
 public:
 
 	TextButton playStop;
 	TextButton bleep;
+    
+    bool is_playing = false;
 
     master()
     {
@@ -31,6 +34,7 @@ public:
 		playStop.setColour(0, Colours::black);
 		playStop.setColour(1, Colours::black);
 		playStop.setButtonText("Play/Stop");
+        playStop.addListener (this);
 
 		addAndMakeVisible(bleep);
 		bleep.setColour(0, Colours::red);
@@ -40,8 +44,23 @@ public:
 
     ~master()
     {
+        
     }
-
+    
+    bool get_is_playing()
+    {
+        return is_playing;
+    }
+    
+    void buttonClicked (Button* button) override
+    {
+        if (button == &playStop) {
+            is_playing = !is_playing;
+            return;
+        }
+        return;
+    }
+    
     void paint (Graphics& g) override
     {
         /* This demo code just fills the component's background and
