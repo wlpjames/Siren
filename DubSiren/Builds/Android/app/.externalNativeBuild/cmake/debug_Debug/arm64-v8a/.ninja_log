@@ -1,0 +1,22 @@
+# ninja log v5
+2	161	0	CMakeFiles/cpufeatures.dir/Users/billy/Library/Android/sdk/ndk-bundle/sources/android/cpufeatures/cpu-features.c.o	84971dbab9de2b5b
+162	522	0	libcpufeatures.a	b69aeef7ef7a0ff9
+522	5789	0	CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/Source/Main.cpp.o	cc1385cde39fbdd1
+522	5832	0	CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp.o	2aedc24ebdc50b30
+522	6092	0	CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/BinaryData2.cpp.o	1f6364a5fde1e9a
+523	6307	0	CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_audio_basics.cpp.o	1746ada1c84ea7d7
+523	6718	0	CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_audio_devices.cpp.o	daf7e298080ac8e1
+6718	8234	0	CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_cryptography.cpp.o	426770a9db9ce45e
+8234	11535	0	CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_data_structures.cpp.o	c1355c1ad10006b7
+522	13004	0	CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/BinaryData.cpp.o	e3c7613cc5f4e691
+5791	14585	0	CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_audio_formats.cpp.o	3a7eb7fa56794cb6
+6092	15653	0	CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_audio_utils.cpp.o	d1f93c9068ec67a2
+13004	16300	0	CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_events.cpp.o	dbfe753d321644b9
+11535	18054	0	CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_dsp.cpp.o	99651c687bac307a
+6307	20294	0	CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_core.cpp.o	3c47b3d25065ca24
+5832	23154	0	CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_audio_processors.cpp.o	4e7c42e8edf82bb9
+14586	24136	0	CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_graphics.cpp.o	e05f7df83e290893
+16300	24202	0	CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_gui_extra.cpp.o	64548d5e33848a18
+18054	24274	0	CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_opengl.cpp.o	d4c8f96c8f15fe20
+15653	37435	0	CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_gui_basics.cpp.o	29d42faaa5ae2e61
+37436	43102	0	../../../../build/intermediates/cmake/debug_/debug/obj/arm64-v8a/libjuce_jni.so	9085be956317ede7

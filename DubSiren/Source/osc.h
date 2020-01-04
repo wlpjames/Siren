@@ -21,7 +21,7 @@ class waveGen {
 public:
     
     enum waveType {
-        sine = 0, square, triangle, saw, pulse
+        sine = 0, square, triangle, saw, invsaw
     };
     
     //properties
@@ -34,8 +34,9 @@ public:
     std::complex <float> omega, last;
     const float PI = 4.F * atan(1.0f);
     const std::complex <float> I = std::complex <float> (0.0f, 1.0f);
-
     
+    //for saw and tri
+    float saw_last = -1;
     
     //methods
     waveGen(float Freq, float Vol, int SampleRate)
@@ -46,6 +47,8 @@ public:
         
         last = I;
         omega = getOmega();
+        
+        saw_last = 0;
     }
     
     void nextFrame(float* signal, int sigLen)
@@ -53,9 +56,9 @@ public:
         switch (type) {
             case sine : {getSine(signal, sigLen); return;}
             case square : {getSquare(signal, sigLen); return;}
-            case saw : {return;} //getSaw(signal, sigLen);
-            case triangle : {return;} //getTriangle(signal, sigLen);
-            case pulse : {return;}
+            case saw : {getSaw(signal, sigLen); return;}
+            case triangle : {getTri(signal, sigLen); return;}
+            case invsaw : {getinvsaw(signal, sigLen); return;}
         }
         
         return;
@@ -81,10 +84,45 @@ public:
     {
         
         for ( int i = 0; i < sigLen; i++) {
-            signal[i] = (real(last)) * vol > 0 ? vol : 0-vol;
+            signal[i] = (real(last)) > 0 ? vol : 0-vol;
             last *= omega;
         }
-
+        return;
+    }
+    
+    void getTri(float* signal, int sigLen)
+    {
+        for (int i = 0; i < sigLen; i++) {
+            float angle = 2.0f / ((float)sampleRate / freq);
+            float saw = (saw_last + angle) > 1.0f ? -1.0f : (saw_last + angle);
+            saw_last = saw;
+            signal[i] = ((2.0 * abs(saw)) - 1.0);
+        }
+    }
+    
+    void getSaw(float* signal, int sigLen)
+    {
+        float angle = 2.0f / ((float)sampleRate / freq);
+        float saw;
+        for (int i = 0; i < sigLen; i++) {
+            
+            saw = (saw_last + angle) > 1.0f ? -1.0f : (saw_last + angle);
+            saw_last = saw;
+            signal[i] = saw * vol;
+        }
+        
+    }
+    
+    void getinvsaw(float* signal, int sigLen)
+    {
+        float angle = 2.0f / ((float)sampleRate / freq);
+        float saw;
+        
+        for (int i = 0; i < sigLen; i++) {
+            saw = (saw_last + angle) > 1.0f ? -1.0f : (saw_last + angle);
+            signal[i] = (0-saw) * vol;
+            saw_last = saw;
+        }
     }
     
     void reset()

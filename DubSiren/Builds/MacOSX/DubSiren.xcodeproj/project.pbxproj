@@ -69,6 +69,18 @@
 			isa = PBXBuildFile;
 			fileRef = 946BBEDDAAECA963AF55D457;
 		};
+		837C55ED852A54D94943D32F = {
+			isa = PBXBuildFile;
+			fileRef = 356E3C9BEDAE1850428116C4;
+		};
+		6716FE6768D6BB857A0218C7 = {
+			isa = PBXBuildFile;
+			fileRef = DF89D2AC69BD53B310E94075;
+		};
+		7D6BA39B0E69F6FA92BE9277 = {
+			isa = PBXBuildFile;
+			fileRef = 9E075796DE8250621A9AF7FA;
+		};
 		6DA386F816FE358037F1FD3E = {
 			isa = PBXBuildFile;
 			fileRef = 4CCACF307013D55BD5DC971F;
@@ -139,6 +151,13 @@
 			path = "../../JuceLibraryCode/include_juce_core.mm";
 			sourceTree = "SOURCE_ROOT";
 		};
+		0759ADC3C11E58FE6F3FED80 = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.png;
+			name = "knob3-200.png";
+			path = "../../Resources/knob3-200.png";
+			sourceTree = "SOURCE_ROOT";
+		};
 		10AD35B3B50B0ECD384A7535 = {
 			isa = PBXFileReference;
 			lastKnownFileType = file;
@@ -188,6 +207,13 @@
 			path = DubSiren.app;
 			sourceTree = "BUILT_PRODUCTS_DIR";
 		};
+		23B6A5BFD8041E89508936EA = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = BinaryData.h;
+			path = ../../JuceLibraryCode/BinaryData.h;
+			sourceTree = "SOURCE_ROOT";
+		};
 		25E523D002E9EAD9214F467F = {
 			isa = PBXFileReference;
 			lastKnownFileType = sourcecode.cpp.objcpp;
@@ -230,11 +256,25 @@
 			path = "/Users/billy/Downloads/JUCE/modules/juce_audio_processors";
 			sourceTree = "<absolute>";
 		};
+		30AE5346D6F947C45D7B5214 = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.png;
+			name = "vert_fade_201.png";
+			path = "../../Resources/vert_fade_201.png";
+			sourceTree = "SOURCE_ROOT";
+		};
 		32BFAE23A66CD2D2E6945AD0 = {
 			isa = PBXFileReference;
 			lastKnownFileType = sourcecode.cpp.objcpp;
 			name = "include_juce_opengl.mm";
 			path = "../../JuceLibraryCode/include_juce_opengl.mm";
+			sourceTree = "SOURCE_ROOT";
+		};
+		356E3C9BEDAE1850428116C4 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = BinaryData.cpp;
+			path = ../../JuceLibraryCode/BinaryData.cpp;
 			sourceTree = "SOURCE_ROOT";
 		};
 		3803A7CDBD406A3BFAB4452B = {
@@ -249,6 +289,20 @@
 			lastKnownFileType = sourcecode.c.h;
 			name = softClip.h;
 			path = ../../Source/softClip.h;
+			sourceTree = "SOURCE_ROOT";
+		};
+		3ADE6E6BE4BF19641A45BD4E = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = convolva.h;
+			path = ../../Source/convolva.h;
+			sourceTree = "SOURCE_ROOT";
+		};
+		3B5497A0C7D29197C4E44C7D = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.png;
+			name = "knob2-200.png";
+			path = "../../Resources/knob2-200.png";
 			sourceTree = "SOURCE_ROOT";
 		};
 		3BEF72447A7715AE35BAB2A7 = {
@@ -279,6 +333,13 @@
 			path = System/Library/Frameworks/Carbon.framework;
 			sourceTree = SDKROOT;
 		};
+		3E35C05F6A7A306ABBF16C0E = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.jpeg;
+			name = wood2.jpg;
+			path = ../../Resources/wood2.jpg;
+			sourceTree = "SOURCE_ROOT";
+		};
 		410E2E8B9DE7D32B9519D02D = {
 			isa = PBXFileReference;
 			lastKnownFileType = wrapper.framework;
@@ -305,6 +366,13 @@
 			lastKnownFileType = sourcecode.c.h;
 			name = master.h;
 			path = ../../Source/master.h;
+			sourceTree = "SOURCE_ROOT";
+		};
+		58101E67FAB775C734A7726E = {
+			isa = PBXFileReference;
+			lastKnownFileType = file.wav;
+			name = "guitar_amp.wav";
+			path = "../../Resources/guitar_amp.wav";
 			sourceTree = "SOURCE_ROOT";
 		};
 		5DF0F685B0E9772ABBD3E517 = {
@@ -342,6 +410,20 @@
 			path = ../../Source/lfoComp.h;
 			sourceTree = "SOURCE_ROOT";
 		};
+		6606A57DD073E3FAF5332BD5 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = env.h;
+			path = ../../Source/env.h;
+			sourceTree = "SOURCE_ROOT";
+		};
+		6A508C57A6D55895A5C7E837 = {
+			isa = PBXFileReference;
+			lastKnownFileType = file.wav;
+			name = tubby.wav;
+			path = ../../Resources/tubby.wav;
+			sourceTree = "SOURCE_ROOT";
+		};
 		6ECA1721F1914D8AF5C57A6B = {
 			isa = PBXFileReference;
 			lastKnownFileType = file;
@@ -370,6 +452,13 @@
 			path = ../../Source/osc.h;
 			sourceTree = "SOURCE_ROOT";
 		};
+		784580927C33FAAFC3FC205F = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = knobmanSlider.h;
+			path = ../../Source/knobmanSlider.h;
+			sourceTree = "SOURCE_ROOT";
+		};
 		7FD5E4DD805AC2032F65B9B4 = {
 			isa = PBXFileReference;
 			lastKnownFileType = sourcecode.cpp.objcpp;
@@ -377,11 +466,11 @@
 			path = "../../JuceLibraryCode/include_juce_gui_extra.mm";
 			sourceTree = "SOURCE_ROOT";
 		};
-		8118940ECC999DD7C7FC234C = {
+		89DF31441FD5F4793910CF68 = {
 			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.c.h;
-			name = reverb.h;
-			path = ../../Source/reverb.h;
+			lastKnownFileType = image.png;
+			name = "knob4-200.png";
+			path = "../../Resources/knob4-200.png";
 			sourceTree = "SOURCE_ROOT";
 		};
 		8D04A131FBF0674B3933F085 = {
@@ -403,6 +492,20 @@
 			lastKnownFileType = sourcecode.cpp.cpp;
 			name = Main.cpp;
 			path = ../../Source/Main.cpp;
+			sourceTree = "SOURCE_ROOT";
+		};
+		94758C6E2FDD8053F4EDC6F6 = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.png;
+			name = "switch_press_4.png";
+			path = "../../Resources/switch_press_4.png";
+			sourceTree = "SOURCE_ROOT";
+		};
+		94A4E2126CA8D8230EF6AF33 = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.png;
+			name = "knob5-100.png";
+			path = "../../Resources/knob5-100.png";
 			sourceTree = "SOURCE_ROOT";
 		};
 		95F503A9F6715C5EF9F8B7C4 = {
@@ -433,6 +536,20 @@
 			path = "../../JuceLibraryCode/include_juce_cryptography.mm";
 			sourceTree = "SOURCE_ROOT";
 		};
+		9E075796DE8250621A9AF7FA = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = BinaryData3.cpp;
+			path = ../../JuceLibraryCode/BinaryData3.cpp;
+			sourceTree = "SOURCE_ROOT";
+		};
+		AAB99E9A07EB74B2689AAAF0 = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.png;
+			name = "knob2-4.png";
+			path = "../../Resources/knob2-4.png";
+			sourceTree = "SOURCE_ROOT";
+		};
 		AAFA0532EE81DED96D6FF91B = {
 			isa = PBXFileReference;
 			lastKnownFileType = wrapper.framework;
@@ -447,6 +564,20 @@
 			path = "../../JuceLibraryCode/include_juce_audio_processors.mm";
 			sourceTree = "SOURCE_ROOT";
 		};
+		AF47242B5067110AA245A846 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = sendComp.h;
+			path = ../../Source/sendComp.h;
+			sourceTree = "SOURCE_ROOT";
+		};
+		B2850A669E4C2BE16FE794DE = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.png;
+			name = wood.png;
+			path = ../../Resources/wood.png;
+			sourceTree = "SOURCE_ROOT";
+		};
 		B56ED55815EDF25DD96C026B = {
 			isa = PBXFileReference;
 			lastKnownFileType = wrapper.framework;
@@ -454,12 +585,26 @@
 			path = System/Library/Frameworks/IOKit.framework;
 			sourceTree = SDKROOT;
 		};
+		B5C555177E0AF4A14AB2A851 = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.png;
+			name = knob200.png;
+			path = ../../Resources/knob200.png;
+			sourceTree = "SOURCE_ROOT";
+		};
 		BB406A70CFE9232FC06691EB = {
 			isa = PBXFileReference;
 			lastKnownFileType = wrapper.framework;
 			name = Accelerate.framework;
 			path = System/Library/Frameworks/Accelerate.framework;
 			sourceTree = SDKROOT;
+		};
+		C02476CDD9BADBC3B1480704 = {
+			isa = PBXFileReference;
+			lastKnownFileType = file.wav;
+			name = "cassette_recorder.wav";
+			path = "../../Resources/cassette_recorder.wav";
+			sourceTree = "SOURCE_ROOT";
 		};
 		C1BCA8C6D6CB99B64E157490 = {
 			isa = PBXFileReference;
@@ -495,6 +640,13 @@
 			name = "juce_events";
 			path = "/Users/billy/Downloads/JUCE/modules/juce_events";
 			sourceTree = "<absolute>";
+		};
+		DF89D2AC69BD53B310E94075 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = BinaryData2.cpp;
+			path = ../../JuceLibraryCode/BinaryData2.cpp;
+			sourceTree = "SOURCE_ROOT";
 		};
 		E7285806B93F9B62B1FBAF67 = {
 			isa = PBXFileReference;
@@ -534,7 +686,20 @@
 		5361909E2B21427745CC1CFB = {
 			isa = PBXGroup;
 			children = (
-				8118940ECC999DD7C7FC234C,
+				3E35C05F6A7A306ABBF16C0E,
+				C02476CDD9BADBC3B1480704,
+				58101E67FAB775C734A7726E,
+				AAB99E9A07EB74B2689AAAF0,
+				3B5497A0C7D29197C4E44C7D,
+				0759ADC3C11E58FE6F3FED80,
+				89DF31441FD5F4793910CF68,
+				94A4E2126CA8D8230EF6AF33,
+				B5C555177E0AF4A14AB2A851,
+				6A508C57A6D55895A5C7E837,
+				94758C6E2FDD8053F4EDC6F6,
+				30AE5346D6F947C45D7B5214,
+				B2850A669E4C2BE16FE794DE,
+				3ADE6E6BE4BF19641A45BD4E,
 				4DF57AB48D19D1B7E7ABFF94,
 				380E351123B87BA831D3586F,
 				43B69766EBC426F49E5D9540,
@@ -542,6 +707,9 @@
 				72E9BC2948DAB8DB7A724E79,
 				95F503A9F6715C5EF9F8B7C4,
 				3803A7CDBD406A3BFAB4452B,
+				6606A57DD073E3FAF5332BD5,
+				784580927C33FAAFC3FC205F,
+				AF47242B5067110AA245A846,
 				1609D705B168E1E915BA9DF3,
 				946BBEDDAAECA963AF55D457,
 				14F740180361B691B44D0A00,
@@ -583,6 +751,10 @@
 			isa = PBXGroup;
 			children = (
 				8D4A2D27554E4D280980E13F,
+				356E3C9BEDAE1850428116C4,
+				23B6A5BFD8041E89508936EA,
+				DF89D2AC69BD53B310E94075,
+				9E075796DE8250621A9AF7FA,
 				4CCACF307013D55BD5DC971F,
 				21701A5D6E4BF352F5A88C73,
 				97F6959A971E214866F16863,
@@ -867,6 +1039,9 @@
 			files = (
 				050ABE02570CA23861C22A76,
 				D75DC511E4666FD5D8F821AE,
+				837C55ED852A54D94943D32F,
+				6716FE6768D6BB857A0218C7,
+				7D6BA39B0E69F6FA92BE9277,
 				6DA386F816FE358037F1FD3E,
 				CA8BADC70D20B8B2F7D3DE31,
 				57F487B1BEC2140415BD85B7,

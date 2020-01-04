@@ -1,0 +1,4 @@
+/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/x86/CMakeFiles/edit_cache.dir
+/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/x86/CMakeFiles/rebuild_cache.dir
+/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/x86/CMakeFiles/juce_jni.dir
+/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/x86/CMakeFiles/cpufeatures.dir

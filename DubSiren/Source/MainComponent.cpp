@@ -9,6 +9,7 @@
 #include "oscComp.h"
 #include "lfoComp.h"
 #include "delayComp.h"
+
 using namespace std;
 
 //==============================================================================
@@ -16,8 +17,14 @@ MainComponent::MainComponent()
 {
     // Make sure you set the size of the component after
     // you add any child components.
-    setSize (300, 600);
+    
+    // specify the number of input and output channels that we want to open
+    auto audioDevice = deviceManager.getCurrentAudioDevice();
+    auto numInputChannels  = (audioDevice != nullptr ? audioDevice->getActiveInputChannels() .countNumberOfSetBits() : 0);
+    auto numOutputChannels = jmax (audioDevice != nullptr ? audioDevice->getActiveOutputChannels().countNumberOfSetBits() : 2, 2);
 
+    setAudioChannels (numInputChannels, numOutputChannels);
+    /*
     // Some platforms require permissions to open input channels so request that here
     if (RuntimePermissions::isRequired (RuntimePermissions::recordAudio)
         && ! RuntimePermissions::isGranted (RuntimePermissions::recordAudio))
@@ -28,20 +35,19 @@ MainComponent::MainComponent()
     else
     {
         // Specify the number of input and output channels that we want to open
-        setAudioChannels (1, 1);
+        setAudioChannels (2, 2);
     }
+     */
 
-	//volume
-	addAndMakeVisible(&vol);
-	vol.setRange(0, 1);          // [1]
-	vol.setTextValueSuffix(" Db");     // [2]
-	vol.setSliderStyle(vol.LinearBarVertical);
-	//vol.addListener(this);
-
+    
 	addAndMakeVisible(osc);
 	addAndMakeVisible(lfo);
 	addAndMakeVisible(delay);
 	addAndMakeVisible(Master);
+    addAndMakeVisible(sends);
+    
+    
+    setSize (300, 600);
 }
 
 MainComponent::~MainComponent()
@@ -54,37 +60,63 @@ MainComponent::~MainComponent()
 void MainComponent::prepareToPlay (int samplesPerBlockExpected, double sampleRate)
 {
     osc.setSampleRate(sampleRate);
-    rev.setSamplerate(sampleRate);
+    envelope.prepare(sampleRate);
+    lfo.setSampleRate(sampleRate);
+    delay.setSampleRate(sampleRate);
+    
+    //prepare reverb
+    reverb.setSamplerate(sampleRate);
+    reverb.loadImpulse(BinaryData::tubby_wav, BinaryData::tubby_wavSize);
+    
+    //prepare amptoner
+    amp.setSamplerate(sampleRate);
+    amp.loadImpulse(BinaryData::guitar_amp_wav, BinaryData::guitar_amp_wavSize);
+    amp.setMix(0.5);
+    
 }
 
 void MainComponent::getNextAudioBlock (const AudioSourceChannelInfo& bufferToFill)
 {
-    // Your audio-processing code goes here!
-
-    // For more details, see the help for AudioProcessor::getNextAudioBlock()
-
-    // Right now we are not producing any data, in which case we need to clear the buffer
-    // (to prevent the output of random noise)
+    bufferToFill.clearActiveBufferRegion();
     float** bufferArr = bufferToFill.buffer->getArrayOfWritePointers();
     int bufferLen = bufferToFill.numSamples;
     
-    //do the lfo thing
-    float temp[bufferLen];
-    lfo.nextFrame(&temp[0], bufferLen);
-    osc.setFreqOffset(temp[0]);
-    
-    if (Master.is_playing) {
-        //get osc signal
-        osc.nextFrame(bufferArr[0], bufferLen);
+    //zero the array
+    for (int i = 0; i <bufferLen; i++)
+    {
+        bufferArr[0][i] = 0.0f;
     }
     
+    //do the lfo thing
+    osc.setFreqOffset(lfo.getVal(bufferLen));
+    
+    //do the env thing
+    envelope.setPlaying(Master.is_playing);
+    
+    //get osc signal
+    osc.nextFrame(bufferArr[0], bufferLen);
+    envelope.proccess(bufferArr[0], bufferLen);
+    
     //run through a delay
-    //delay.process(bufferArr[0], bufferLen);
+    float delaySendVal = sends.delayVal;
+    float delaySend[1000];
+    memcpy(delaySend, bufferArr[0], bufferLen * sizeof(float));
+    delay.process(delaySend, bufferLen);
     
-    //will run through reverb
-    rev.process(bufferArr[0], bufferLen);
+    float reverbSendVal = sends.reverbVal;
+    float reverbSend[1000];
+    memcpy(reverbSend, bufferArr[0], bufferLen * sizeof(float));
+    reverb.process(reverbSend, bufferLen);
     
-    //then will run through Analogish IR
+    float dryOutputVal = sends.outputVal;
+    
+
+    for (int i = 0; i < bufferLen; i++) {
+        bufferArr[0][i] = (bufferArr[0][i] * dryOutputVal) + (delaySend[i] * delaySendVal) + (reverbSend[i] * reverbSendVal);
+    }
+    
+    //run through an amp
+    amp.process(bufferArr[0], bufferLen);
     
     for (int i = 1; i < bufferToFill.buffer->getNumChannels(); i++) {
         memcpy(bufferArr[i], bufferArr[0], sizeof(float) * bufferLen);
@@ -102,36 +134,28 @@ void MainComponent::releaseResources()
 //==============================================================================
 void MainComponent::paint (Graphics& g)
 {
-    // (Our component is opaque, so we must completely fill the background with a solid colour)
-    g.fillAll (Colours::grey);
-
-    // You can add your drawing code here!
+    g.setColour(Colours::black);
+    g.fillAll();
 }
 
 void MainComponent::resized()
 {
-    // This is called when the MainContentComponent is resized.
-    // If you add any child components, this is where you should
-    // update their positions.
-	auto area = getLocalBounds();
 
-	int headerHeight = 40;
+	auto area = getLocalBounds().reduced(5);
+    area.removeFromBottom(25);
+	int headerHeight = 70;
 
-	auto compHeight = getHeight() / 4;
+	auto compHeight = getHeight() / 5;
 
 	//for header 
-	area.removeFromTop(headerHeight);
-	
+	area.removeFromTop( headerHeight );
 
-	osc.setBounds(area.removeFromTop(compHeight));
-	lfo.setBounds(area.removeFromTop(compHeight));
-
-	int masterHeight = 70;
-	Master.setBounds(area.removeFromBottom(masterHeight));
-	
-	//the rest is for the lower box area 
-	vol.setBounds(area.removeFromRight(50));
-	delay.setBounds(area);
-
+	osc.setBounds(area.removeFromTop( compHeight ));
+	lfo.setBounds(area.removeFromTop( compHeight ));
+    
+    sends.setBounds(area.removeFromRight(area.getWidth() / 2.5));
+	delay.setBounds(area.removeFromTop(area.getHeight() / 2.2));
+    
+    Master.setBounds(area);
 
 }

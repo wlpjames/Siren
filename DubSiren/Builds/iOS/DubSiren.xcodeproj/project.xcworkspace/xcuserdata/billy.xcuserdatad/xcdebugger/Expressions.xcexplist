@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "juce::dsp::Convolution::processSamples(juce::dsp::AudioBlock&lt;float const&gt; const&amp;, juce::dsp::AudioBlock&lt;float&gt;&amp;, bool):juce_Convolution.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "MainComponent::MainComponent():MainComponent.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "getWidth()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "convolva::loadImpulse(char const*, int):convolva.h">
+      </ContextState>
+      <ContextState
+         contextName = "convolva::process(float*, int):convolva.h">
+         <PersistentStrings>
+            <PersistentString
+               value = "signal[i]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MainComponent::MainComponent():MainComponent.h">
+         <PersistentStrings>
+            <PersistentString
+               value = "getWidth()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "void juce::dsp::Convolution::process&lt;juce::dsp::ProcessContextReplacing&lt;float&gt; &gt;(juce::dsp::ProcessContextReplacing&lt;float&gt; const&amp;):juce_Convolution.h">
+      </ContextState>
+      <ContextState
+         contextName = "waveTable::nextFrame(float*, int):waveTable.h">
+         <PersistentStrings>
+            <PersistentString
+               value = "signal[300]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "knobmanSlider::knobmanSlider(juce::Image):knobmanSlider.h">
+         <PersistentStrings>
+            <PersistentString
+               value = "filmStrip.getWidth()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "waveTable::calc_freq():waveTable.h">
+      </ContextState>
+      <ContextState
+         contextName = "master::buttonClicked(juce::Button*):master.h">
+      </ContextState>
+      <ContextState
+         contextName = "env::setPlaying(bool):env.h">
+      </ContextState>
+      <ContextState
+         contextName = "MainComponent::getNextAudioBlock(juce::AudioSourceChannelInfo const&amp;):MainComponent.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "delayComp::delayComp():delayComp.h">
+         <PersistentStrings>
+            <PersistentString
+               value = "decayKnobImage.getWidth()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

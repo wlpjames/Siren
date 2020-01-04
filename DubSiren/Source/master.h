@@ -20,25 +20,28 @@ class master    : public Component,
 {
 public:
 
-	TextButton playStop;
-	TextButton bleep;
+	ImageButton playStop;
+    
     
     bool is_playing = false;
-
+    Image buttonImages = ImageCache::getFromMemory(BinaryData::switch_press_4_png, BinaryData::switch_press_4_pngSize);
+    
     master()
     {
-        // In your constructor, you should add any child components, and
-        // initialise any special settings that your component needs.
 
+        
 		addAndMakeVisible(playStop);
 		playStop.setColour(0, Colours::black);
 		playStop.setColour(1, Colours::black);
 		playStop.setButtonText("Play/Stop");
-        playStop.addListener (this);
-
-		addAndMakeVisible(bleep);
-		bleep.setColour(0, Colours::red);
-		bleep.setButtonText("Bleep");
+        
+        playStop.setImages(false, true, true,
+                           buttonImages.getClippedImage(Rectangle<int>(0, 0, buttonImages.getWidth(), buttonImages.getHeight() / 10)), 1.0, Colour(NULL),
+                           buttonImages.getClippedImage(Rectangle<int>(0, 0, buttonImages.getWidth(), buttonImages.getHeight() / 10)), 1.0, Colour(NULL),
+                           buttonImages.getClippedImage(Rectangle<int>(0, (buttonImages.getHeight() / 10) * 9, buttonImages.getWidth(), buttonImages.getHeight() / 10)),
+                           1.0, Colour(NULL));
+        
+        playStop.addListener(this);
 
     }
 
@@ -63,29 +66,20 @@ public:
     
     void paint (Graphics& g) override
     {
-        /* This demo code just fills the component's background and
-           draws some placeholder text to get you started.
-
-           You should replace everything in this method with your own
-           drawing code..
-        */
-
-        g.fillAll (Colours::black);   // clear the background
-
-        g.setColour (Colours::darkblue);
-        g.drawRect (getLocalBounds(), 1);   // draw an outline around the component
-
+        g.setColour(Colour(168, 65, 34));
+        int reductSize = 7;
+        g.fillRoundedRectangle(reductSize, reductSize, getWidth() - (reductSize * 2), getHeight() - (reductSize * 2), 15.0);
+        
+        g.setColour(Colours::black);
+        reductSize = 12;
+        g.drawRoundedRectangle(reductSize, reductSize, getWidth() - (reductSize * 2), getHeight() - (reductSize * 2), 12.0, 3.0);
     }
 
     void resized() override
     {
-        // This method is where you should set the bounds of any child
-        // components that your component contains..
-
+        
 		auto area = getLocalBounds();
-		int width = getWidth();
-		playStop.setBounds(area.removeFromRight(width / 3));
-		bleep.setBounds(area.removeFromLeft(width / 3));
+		playStop.setBounds(area.reduced(15));
 
     }
 

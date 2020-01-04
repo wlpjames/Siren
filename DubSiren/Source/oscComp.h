@@ -12,6 +12,7 @@
 
 #include "../JuceLibraryCode/JuceHeader.h"
 #include "waveTable.h"
+#include "knobmanSlider.h"
 
 using namespace std;
 //==============================================================================
@@ -23,24 +24,34 @@ class oscComp    : public Component,
 {
 public:
 
+    Label titleLab;
+    
 	//properties
-	Slider freq;
+    //https://www.g200kg.com/en/webknobman/index.html?f=KNB_DR8_xL.knob&n=1531
+    Image freqKnobImage = ImageCache::getFromMemory(BinaryData::knob2200_png, BinaryData::knob2200_pngSize);
+    
+	knobmanSlider freq;
 	Label freqLab;
-
-	Slider wavtype;
+    //https://www.g200kg.com/en/webknobman/index.html?f=KNB_DR8_xL.knob&n=1531
+    Image wavtypeKnobImage = ImageCache::getFromMemory(BinaryData::knob24_png, BinaryData::knob24_pngSize);
+	knobmanSlider wavtype;
 	Label wavLab;
 
-    oscComp() : waveTable(440, 0.3, 44100, 100)
+    oscComp() : waveTable(440, 0.3, 44100, 100), freq(freqKnobImage, 200), wavtype(wavtypeKnobImage, 4)
     {
         //set up and build tables in waveTables
         
         createTables(); //this might be called before samplerate!!!
         setGlideRate(1);
         
+        addAndMakeVisible(&titleLab);
+        titleLab.setText("OSC", dontSendNotification);
+        titleLab.setJustificationType(Justification::centredBottom);
+        
 		addAndMakeVisible(freq);
 		freq.setSliderStyle(Slider::RotaryHorizontalVerticalDrag);
 		freq.setTextBoxStyle(Slider::NoTextBox, 0, 0, 0);
-		freq.setRange(50, 5000.0); 
+		freq.setRange(50, 1200.0, 1); 
 		freq.setTextValueSuffix(" Hz");  
 		freq.addListener(this);
 
@@ -64,14 +75,15 @@ public:
 
     void paint (Graphics& g) override
     {
-        /* This demo code just fills the component's background and
-           draws some placeholder text to get you started.
 
-           You should replace everything in this method with your own
-           drawing code..
-        */
-
-        g.fillAll (Colours::black);   // clear the background
+        g.setColour(Colour(168, 65, 34));
+        int reductSize = 7;
+        g.fillRoundedRectangle(reductSize, reductSize, getWidth() - (reductSize * 2), getHeight() - (reductSize * 2), 15.0);
+        
+        g.setColour(Colours::black);
+        reductSize = 12;
+        g.drawRoundedRectangle(reductSize, reductSize, getWidth() - (reductSize * 2), getHeight() - (reductSize * 2), 12.0, 3.0);
+        
 
     }
 
@@ -81,17 +93,26 @@ public:
         // components that your component contains..
 
 		auto area = getLocalBounds();
-		
-		int width = getWidth() / 2;
+		area.reduce(20, 20);
+        
+        auto titleArea = area.removeFromTop(20);
+        titleLab.setBounds(titleArea);
+        
+		int width = area.getWidth() / 2;
 
 		//area for freq
 		auto f_area = area.removeFromLeft(width);
-		freqLab.setBounds(f_area.removeFromTop(30));
+		//freqLab.setBounds(f_area.removeFromTop(30));
+        int cutLen = (f_area.getWidth() - f_area.getHeight()) / 2;
+        f_area.removeFromLeft(cutLen);
+        f_area.removeFromRight(cutLen);
 		freq.setBounds(f_area);
 
-		//area for freq
+		//area for type
 		auto t_area = area.removeFromLeft(width);
-		wavLab.setBounds(t_area.removeFromTop(30));
+		//wavLab.setBounds(t_area.removeFromTop(30));
+        t_area.removeFromLeft(cutLen);
+        t_area.removeFromRight(cutLen);
 		wavtype.setBounds(t_area);
     }
 

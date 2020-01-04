@@ -3,21 +3,19 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "waveGen::getSquare(float*, int):osc.h">
+      </ContextState>
+      <ContextState
+         contextName = "waveTable::setType(int):waveTable.h">
+      </ContextState>
+      <ContextState
          contextName = "lfoComp::sliderValueChanged(juce::Slider*):lfoComp.h">
       </ContextState>
       <ContextState
          contextName = "waveTable::selectBand():waveTable.h">
       </ContextState>
       <ContextState
-         contextName = "waveGen::nextFrame(float*, int):osc.h">
-      </ContextState>
-      <ContextState
-         contextName = "waveTable::buildTable(int, float*, float*):waveTable.h">
-         <PersistentStrings>
-            <PersistentString
-               value = "(float(*)[10])harmonicV">
-            </PersistentString>
-         </PersistentStrings>
+         contextName = "sendComp::resized():sendComp.h">
       </ContextState>
       <ContextState
          contextName = "waveTable::createTables():waveTable.h">
@@ -28,10 +26,54 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "waveTable::setType(int):waveTable.h">
+         contextName = "waveGen::setType(int):osc.h">
       </ContextState>
       <ContextState
-         contextName = "waveGen::getSquare(float*, int):osc.h">
+         contextName = "waveGen::getTri(float*, int):osc.h">
+         <PersistentStrings>
+            <PersistentString
+               value = "float[5000] signal">
+            </PersistentString>
+            <PersistentString
+               value = "signal[i]">
+            </PersistentString>
+            <PersistentString
+               value = "(2 * abs(saw) )- 1.0">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "oscComp::oscComp():oscComp.h">
+         <PersistentStrings>
+            <PersistentString
+               value = "freqKnobImage.getWidth()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "lfoComp::getVal(int):lfoComp.h">
+      </ContextState>
+      <ContextState
+         contextName = "knobmanSlider::knobmanSlider(juce::Image):knobmanSlider.h">
+         <PersistentStrings>
+            <PersistentString
+               value = "stripToShow.getWidth()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "waveGen::getinvsaw(float*, int):osc.h">
+      </ContextState>
+      <ContextState
+         contextName = "MainComponent::getNextAudioBlock(juce::AudioSourceChannelInfo const&amp;):MainComponent.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "waveTable::buildTable(int, float*, float*):waveTable.h">
+         <PersistentStrings>
+            <PersistentString
+               value = "(float(*)[10])harmonicV">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
    </ContextStates>
 </VariablesViewState>

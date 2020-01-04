@@ -14,7 +14,10 @@
 #include "lfoComp.h"
 #include "delayComp.h"
 #include "master.h"
-#include "reverb.h"
+#include "convolva.h"
+#include "sendComp.h"
+#include "env.h"
+
 
 //==============================================================================
 /*
@@ -43,11 +46,16 @@ private:
 	delayComp delay;
 	oscComp osc;
 	lfoComp lfo;
-	Slider vol;
 	Label volLab;
 	master Master;
-    reverb rev;
-
+    convolva reverb;
+    convolva amp;
+    sendComp sends;
+    env envelope = env(0.1, 0.2);
+    
+    //background
+    Image backgroundImage;
+    
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainComponent)
 };

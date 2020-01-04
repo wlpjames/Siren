@@ -17,8 +17,9 @@ public:
     float mix;
     float e;
     
-    softClippa(float Mix = 0.2, float E = 2.6)
+    softClippa(float Mix = 0.7, float E = 2.0)
     {
+        mix = Mix;
         return;
     }
 
@@ -31,7 +32,10 @@ public:
     {
         
         for (int i = 0; i < sigLen; i++) {
+            //but it through a soft clipping
             float val  = ((2.0 / (1.0 + pow(e, 0-(signal[i] * e)))) - 1);
+            
+            //mix to the signal
             signal[i] = (val * mix) + (signal[i] * (1 - mix));
         }
         return;

@@ -25,14 +25,8 @@ public:
     float** tables[4];
     int num_tables;
     int numTypes = 4;
-    /*
-    float sineHarmonicVals[200];
-    float squareHarmonicVals [200];
-    float sawHarmonicVals [200];
-    float triHarmonicVals [200];
-    */
+
     float harmonicVals[4][200];
-    
     
     int harm_vals_num = 50;
     const int highest_freq = 6000;
@@ -50,7 +44,7 @@ public:
         vol = Vol;
         sampleRate = SampleRate;
         num_tables = Num_tables;
-        glideRate = 5;
+        glideRate = 1;
         type = waveGen::sine;
         
         osc = new waveGen(freq, vol, sampleRate);
@@ -59,8 +53,6 @@ public:
         for (int i = 0; i < numTypes; i++) {
             tables[i] = (float**) calloc(num_tables, sizeof(float*));
         }
-        
-        
         
         for (int i = 0; i < harm_vals_num; i++) {
             
@@ -89,7 +81,7 @@ public:
         //free all the table data
         for(int i = 0; i < numTypes; i++) {
             
-            for (int j = 0; j < num_tables; i++) {
+            for (int j = 0; j < num_tables; j++) {
                 
                 if (tables[i][j] != nullptr) {
                     free(tables[i][j]);
@@ -168,7 +160,7 @@ public:
                 table_index -= sampleRate;
             }
             
-            signal[i] = band[table_index] * vol;
+            signal[i] = band[table_index] * vol; //found exception here
         }
         
     }
@@ -177,8 +169,9 @@ public:
     {
         //a function to act as a makeshift lp filte on fequency changes
         //gets called on evey buffe call
+        //freqOsett is here set by the LFO with a val between 1 and 2 for a max 1 octave offset
         float adaptive_glide_rate = (desired_freq - freq) / (glideRate);
-        return (freq + adaptive_glide_rate) + freqOffset;
+        return (freq + adaptive_glide_rate) * freqOffset;
     }
     
     void normalize(float* signal, int sigLen, float max_val)
