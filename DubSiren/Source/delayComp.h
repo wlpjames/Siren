@@ -18,7 +18,7 @@
 //==============================================================================
 /*
 */
-class delayComp    : public Component, public Slider::Listener, public delay
+class delayComp    : public Component, public Slider::Listener, public tapeDelay
 {
 public:
     
@@ -34,7 +34,7 @@ public:
     Label lengthLab;
     
     
-    delayComp() : delay(), decaySlider(KnobImage, 200), lengthSlider(KnobImage, 200)
+    delayComp() : tapeDelay(), decaySlider(KnobImage, 200), lengthSlider(KnobImage, 200)
     {
         
         //title
@@ -113,7 +113,7 @@ public:
             setDecay(slider->getValue());
         }
         else if (slider == &lengthSlider) {
-            setTapeLen(slider->getValue());
+            setDelayTime(slider->getValue());
         }
         
         return;

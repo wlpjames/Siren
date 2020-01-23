@@ -898,11 +898,16 @@
 				HEADER_SEARCH_PATHS = (
 					"../../JuceLibraryCode",
 					"/Users/billy/Downloads/JUCE/modules",
+					"/Users/billy/Documents/git/liquid-dsp/include",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Info-App.plist;
 				INFOPLIST_PREPROCESS = NO;
 				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"/Users/billy/Documents/git/liquid-dsp/\"",
+				);
 				LLVM_LTO = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.DubSiren;

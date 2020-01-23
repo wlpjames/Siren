@@ -37,7 +37,7 @@ public:
 	knobmanSlider wavtype;
 	Label wavLab;
 
-    oscComp() : waveTable(440, 0.3, 44100, 100), freq(freqKnobImage, 200), wavtype(wavtypeKnobImage, 4)
+    oscComp() : waveTable(440, 0.3, 44100, 10), freq(freqKnobImage, 200), wavtype(wavtypeKnobImage, 4)
     {
         //set up and build tables in waveTables
         

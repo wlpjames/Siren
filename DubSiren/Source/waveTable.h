@@ -54,15 +54,20 @@ public:
             tables[i] = (float**) calloc(num_tables, sizeof(float*));
         }
         
-        for (int i = 0; i < harm_vals_num; i++) {
+        harmonicVals[0][0] = 1.0;
+        harmonicVals[1][0] = 1.0;
+        harmonicVals[2][0] = 1.0;
+        harmonicVals[3][0] = 1.0;
+        
+        for (int i = 1; i < harm_vals_num; i++) {
             
             harmonicVals[0][i] = 0; //the sine
-            harmonicVals[2][i] = 1.0f / float(i+1); //the saw
+            harmonicVals[2][i] = (1.0f / float(i+1)) / 4; //the saw
             
             //if i is odd
             if (i % 2 == 0) {
-                harmonicVals[1][i] = 1.0f / float(i+1); //the square
-                harmonicVals[3][i] = 1.0f / float(pow(i+1, 2)); //the tri
+                harmonicVals[1][i] = (1.0f / float(i+1)) / 4; //the square
+                harmonicVals[3][i] = (1.0f / float(pow(i+1, 2))); //the tri
             }
             else {
                 harmonicVals[1][i] = 0; //the square

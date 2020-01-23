@@ -17,9 +17,10 @@ public:
     float mix;
     float e;
     
-    softClippa(float Mix = 0.7, float E = 2.0)
+    softClippa(float Mix = 0.5, float E = 2.6)
     {
         mix = Mix;
+        e = E;
         return;
     }
 

@@ -46,12 +46,12 @@ private:
 	delayComp delay;
 	oscComp osc;
 	lfoComp lfo;
-	Label volLab;
 	master Master;
     convolva reverb;
     convolva amp;
     sendComp sends;
-    env envelope = env(0.1, 0.2);
+    env envelope = env(0.05, 0.1);
+    softClippa clipa;
     
     //background
     Image backgroundImage;

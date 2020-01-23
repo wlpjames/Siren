@@ -3,7 +3,7 @@ arguments :
 -H/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app
 -B/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/x86
 -DANDROID_ABI=x86
--DANDROID_PLATFORM=android-16
+-DANDROID_PLATFORM=android-23
 -DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/build/intermediates/cmake/debug_/debug/obj/x86
 -DCMAKE_BUILD_TYPE=Debug
 -DANDROID_NDK=/Users/billy/Library/Android/sdk/ndk-bundle
@@ -13,7 +13,7 @@ arguments :
 -DCMAKE_MAKE_PROGRAM=/Users/billy/Library/Android/sdk/cmake/3.6.4111459/bin/ninja
 -GAndroid Gradle - Ninja
 -DANDROID_TOOLCHAIN=clang
--DANDROID_PLATFORM=android-16
+-DANDROID_PLATFORM=android-23
 -DANDROID_STL=c++_static
 -DANDROID_CPP_FEATURES=exceptions rtti
 -DANDROID_ARM_MODE=arm

@@ -15,37 +15,26 @@ using namespace std;
 //==============================================================================
 MainComponent::MainComponent()
 {
-    // Make sure you set the size of the component after
-    // you add any child components.
-    
+
+
+    auto setup = deviceManager.getAudioDeviceSetup();
+    setup.bufferSize = 412;
+    auto response = deviceManager.setAudioDeviceSetup(setup, true);
+
+
     // specify the number of input and output channels that we want to open
     auto audioDevice = deviceManager.getCurrentAudioDevice();
     auto numInputChannels  = (audioDevice != nullptr ? audioDevice->getActiveInputChannels() .countNumberOfSetBits() : 0);
     auto numOutputChannels = jmax (audioDevice != nullptr ? audioDevice->getActiveOutputChannels().countNumberOfSetBits() : 2, 2);
 
     setAudioChannels (numInputChannels, numOutputChannels);
-    /*
-    // Some platforms require permissions to open input channels so request that here
-    if (RuntimePermissions::isRequired (RuntimePermissions::recordAudio)
-        && ! RuntimePermissions::isGranted (RuntimePermissions::recordAudio))
-    {
-        RuntimePermissions::request (RuntimePermissions::recordAudio,
-                                     [&] (bool granted) { if (granted)  setAudioChannels (2, 2); });
-    }
-    else
-    {
-        // Specify the number of input and output channels that we want to open
-        setAudioChannels (2, 2);
-    }
-     */
 
-    
+
 	addAndMakeVisible(osc);
 	addAndMakeVisible(lfo);
 	addAndMakeVisible(delay);
 	addAndMakeVisible(Master);
     addAndMakeVisible(sends);
-    
     
     setSize (300, 600);
 }
@@ -59,10 +48,11 @@ MainComponent::~MainComponent()
 //==============================================================================
 void MainComponent::prepareToPlay (int samplesPerBlockExpected, double sampleRate)
 {
+
     osc.setSampleRate(sampleRate);
     envelope.prepare(sampleRate);
     lfo.setSampleRate(sampleRate);
-    delay.setSampleRate(sampleRate);
+    delay.setInputSampleRate(sampleRate);
     
     //prepare reverb
     reverb.setSamplerate(sampleRate);
@@ -70,14 +60,15 @@ void MainComponent::prepareToPlay (int samplesPerBlockExpected, double sampleRat
     
     //prepare amptoner
     amp.setSamplerate(sampleRate);
-    amp.loadImpulse(BinaryData::guitar_amp_wav, BinaryData::guitar_amp_wavSize);
-    amp.setMix(0.5);
-    
+    amp.loadImpulse(BinaryData::cassette_recorder_wav, BinaryData::cassette_recorder_wavSize);
+    amp.setMix(0.25);
+
+
 }
 
 void MainComponent::getNextAudioBlock (const AudioSourceChannelInfo& bufferToFill)
 {
-    bufferToFill.clearActiveBufferRegion();
+    //bufferToFill.clearActiveBufferRegion();
     float** bufferArr = bufferToFill.buffer->getArrayOfWritePointers();
     int bufferLen = bufferToFill.numSamples;
     
@@ -96,7 +87,7 @@ void MainComponent::getNextAudioBlock (const AudioSourceChannelInfo& bufferToFil
     //get osc signal
     osc.nextFrame(bufferArr[0], bufferLen);
     envelope.proccess(bufferArr[0], bufferLen);
-    
+    clipa.process(bufferArr[0], bufferLen);
     //run through a delay
     float delaySendVal = sends.delayVal;
     float delaySend[1000];
@@ -105,18 +96,23 @@ void MainComponent::getNextAudioBlock (const AudioSourceChannelInfo& bufferToFil
     
     float reverbSendVal = sends.reverbVal;
     float reverbSend[1000];
-    memcpy(reverbSend, bufferArr[0], bufferLen * sizeof(float));
-    reverb.process(reverbSend, bufferLen);
+
     
     float dryOutputVal = sends.outputVal;
     
+    for (int i = 0; i < bufferLen; i++) {
+        reverbSend[i] = bufferArr[0][i] + (delaySend[i] * delaySendVal);
+    }
+    reverb.process(reverbSend, bufferLen);
 
     for (int i = 0; i < bufferLen; i++) {
-        bufferArr[0][i] = (bufferArr[0][i] * dryOutputVal) + (delaySend[i] * delaySendVal) + (reverbSend[i] * reverbSendVal);
+        bufferArr[0][i] = (bufferArr[0][i] * dryOutputVal) + (reverbSend[i] * reverbSendVal) + (delaySend[i] * delaySendVal);
     }
     
     //run through an amp
     amp.process(bufferArr[0], bufferLen);
+    
+    clipa.process(bufferArr[0], bufferLen);
     
     for (int i = 1; i < bufferToFill.buffer->getNumChannels(); i++) {
         memcpy(bufferArr[i], bufferArr[0], sizeof(float) * bufferLen);

@@ -1,8 +1,10 @@
+
+
 /*
   ==============================================================================
 
-    delay.h
-    Created: 22 Nov 2019 1:27:12pm
+    tapeDelay.h
+    Created: 04 Jan 2020 1:27:12pm
     Author:  William James
 
   ==============================================================================
@@ -13,95 +15,110 @@
 #include "convolva.h"
 
 
-class delay
+class tapeDelay
 {
     int write_ind = 0;
     int read_ind = 0;
     
-    float mix, decay;
-    int tapeLen, sampleRate;
+    float decay, delayTime;
+    int inputSampleRate;
+    
+    const int nativeSR = 100000;
     float* tape;
-    const int max_tapeLen = 100000;
-    
-    float* temp; //usud in the proccessing befor the mix
-    const int MAXSIGLEN = 2048;
-    
+
     softClippa SC;
     convolva tapeimpulse;
     
+    LagrangeInterpolator interpolator1;
+    LagrangeInterpolator interpolator2;
+    
+
 public:
  
-    delay(int TapeLen = 20000, float Mix = 1.0f, float Decay = 0.3f, int SampleRate = 48000)
+    tapeDelay( float DelayTime = 0.1f, float Decay = 0.3f) : tapeimpulse(1.0), SC(1.0)
     {
-        tapeLen = TapeLen;
-        mix = Mix;
+
+        delayTime = DelayTime;
         decay = Decay;
-        sampleRate = SampleRate;
         
         //init arrays
-        tape = (float*) calloc(max_tapeLen, sizeof(float*));
-        temp = new float[MAXSIGLEN];
+        tape = (float*) calloc(nativeSR, sizeof(float*));
+        
+        //this may not be necesary
+        tapeimpulse.setSamplerate(nativeSR);
+        tapeimpulse.loadImpulse(BinaryData::cassette_recorder_wav, BinaryData::cassette_recorder_wavSize);
+        tapeimpulse.setMix(1.0);
+        
     }
     
-    ~delay()
+    ~tapeDelay()
     {
         free(tape);
-        delete[] temp;
     }
     
-    void process(float* signal, int sigLen)
+    void processToTape(float* signal, int sigLen)
     {
         float x;
+        //run the signal through a soft clipping algorythm
         
         for (int i = 0; i < sigLen; i++) {
             
             x = signal[i];
             
             //read the tape and mix with signal
-            temp[i] = readSignal(signal[i]);
+            signal[i] = readSignal();
             
             //enter into array from write point
-            writeSignal(x, sigLen);
+            writeSignal(x);
             
-            SC.process(&tape[i], 1);
-            
-            //advance read points
-            write_ind++;
-            if (write_ind >= tapeLen) {
-                write_ind = 0;
-            }
-            
-            read_ind++;
-            if (read_ind >= tapeLen) {
-                read_ind = 0;
-            }
-            
-        }
-        
-        //run the signal through a soft clipping algorythm
-        SC.process(temp, sigLen);
-        tapeimpulse.process(temp, sigLen);
-        
-        for (int i = 0; i < sigLen; i++)
-        {
-            signal[i] = ( mix * 2 * temp[i] ) + ( (1-mix) * signal[i] );
+            SC.process(&tape[write_ind], 1);
+
         }
         
     }
     
-    void writeSignal(float signal, int sigLen)
+    void process(float* signal, int sigLen)
     {
-        tape[write_ind] = (tape[write_ind] * decay) + signal; //try a softclip here
+
+        //resample signal
+        float r =  ((float) nativeSR / delayTime) / (float) inputSampleRate;     // resampling rate (output/input) //change include tape len
+
+        int ny = (sigLen * r);  // expected output size
+        //perhaps i need to convert to float complex array
+        
+        float resampled[ny];
+        
+        int num_written = interpolator1.process(((float)inputSampleRate / ((float)nativeSR / delayTime)), signal, resampled, ny, sigLen, 0);
+        //std::cout << num_written;
+        
+        //write resampled to tape, read from tape, and proccess
+        processToTape(resampled, ny);
+        //processToTape(signal, sigLen);
+
+        //resample to this sample rate
+        num_written = interpolator2.process(( ((float) nativeSR / delayTime) / (float) inputSampleRate ), resampled, signal, sigLen, ny, 0);
+        tapeimpulse.process(signal, sigLen);
+        //interpolator1.reset();
+        //interpolator2.reset();
     }
     
-    float readSignal(float signal)
+    
+    void writeSignal(float signal)
     {
-        return tape[read_ind];
+        tape[ write_ind ] = ( tape[ write_ind ] * decay ) + signal; //try a softclip here
+        write_ind++;
+        if (write_ind >= nativeSR) {
+            write_ind = 0;
+        }
     }
     
-    void setMix(float val)
+    float readSignal()
     {
-        mix = val;
+        float x = tape[read_ind++];
+        if (read_ind >= nativeSR) {
+            read_ind = 0;
+        }
+        return x;
     }
     
     void setDecay(float val)
@@ -109,23 +126,15 @@ public:
         decay = val;
     }
     
-    void setTapeLen(float sec)
+    void setDelayTime(float sec)
     {
-        int l = sampleRate * sec;
-        
-        if (l > max_tapeLen) {
-            tapeLen = max_tapeLen;
-            return;
-        }
-        
-        tapeLen = l;
-        return;
+        delayTime = sec;
     }
     
-    void setSampleRate(int val) {
-        sampleRate = val;
-        tapeimpulse.setSamplerate(sampleRate);
-        tapeimpulse.loadImpulse(BinaryData::cassette_recorder_wav, BinaryData::cassette_recorder_wavSize);
-        tapeimpulse.setMix(0.8);
+    void setInputSampleRate(int val) {
+
+        //perhaps
+        inputSampleRate = val;
+        
     }
 };

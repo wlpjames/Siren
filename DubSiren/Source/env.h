@@ -47,32 +47,30 @@ public:
     void proccess(float* signal, int sigLen)
     {
 
-        if (currStage == stages::off) {
-            for (int i = 0; i < sigLen; i++) {
-                signal[i] = 0.0;
-            }
-            return;
-        }
-        else if (currStage == stages::playing) {
-            return;
-        }
-        else if (currStage == stages::attacking) {
-            coef += (att_inc*sigLen);
-            if( coef >= 1.0) {
-                currStage = playing;
-                coef = 1.0;
-                return;
-            }
-        }
-        else if (currStage == stages::decaying) {
-            coef -= (dec_inc*sigLen);
-            if( coef <= 0.0) {
-                currStage = off;
-                coef = 0.0;
-            }
-        }
         //loop through
         for (int i = 0; i < sigLen; i++) {
+            
+            if (currStage == stages::off) {
+                coef = 0.0;
+            }
+            else if (currStage == stages::playing) {
+                return;
+            }
+            else if (currStage == stages::attacking) {
+                coef += (att_inc);
+                if( coef >= 1.0) {
+                    currStage = playing;
+                    return;
+                }
+            }
+            else if (currStage == stages::decaying) {
+                coef -= (dec_inc);
+                if( coef <= 0.0) {
+                    currStage = off;
+                    coef = 0.0;
+                }
+            }
+            
             signal[i] *= coef;
         }
         

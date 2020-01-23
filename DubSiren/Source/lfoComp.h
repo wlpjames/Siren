@@ -49,7 +49,7 @@ public:
 		addAndMakeVisible(speed);
 		speed.setSliderStyle(Slider::RotaryHorizontalVerticalDrag);
 		speed.setTextBoxStyle(Slider::NoTextBox, 0, 0, 0);
-		speed.setRange(1, 10.0);
+		speed.setRange(.2, 7.0);
 		speed.setTextValueSuffix(" Hz");
 		speed.addListener(this);
 
