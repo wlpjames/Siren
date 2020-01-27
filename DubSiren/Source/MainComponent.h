@@ -17,6 +17,7 @@
 #include "convolva.h"
 #include "sendComp.h"
 #include "env.h"
+#include "bufferManager.h"
 
 
 //==============================================================================
@@ -52,7 +53,18 @@ private:
     sendComp sends;
     env envelope = env(0.05, 0.1);
     softClippa clipa;
+    static const int maxBufferSize = 2048;
     
+    //variable for quicker send calcuation
+    float delaySendVal;
+    float reverbSendVal;
+    float delaySend[maxBufferSize];
+    float reverbSend[maxBufferSize];
+    
+    
+    int samplecount = 0;
+
+
     //background
     Image backgroundImage;
     

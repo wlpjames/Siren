@@ -5,6 +5,10 @@ cmake_minimum_required(VERSION 3.4.1)
 
 SET(BINARY_NAME "juce_jni")
 
+SET(OBOE_DIR "/Users/billy/Documents/git/oboe")
+
+add_subdirectory (${OBOE_DIR} ./oboe)
+
 add_library("cpufeatures" STATIC "${ANDROID_NDK}/sources/android/cpufeatures/cpu-features.c")
 set_source_files_properties("${ANDROID_NDK}/sources/android/cpufeatures/cpu-features.c" PROPERTIES COMPILE_FLAGS "-Wno-sign-conversion -Wno-gnu-statement-expression")
 
@@ -14,6 +18,7 @@ include_directories( AFTER
     "../../../JuceLibraryCode"
     "/Users/billy/Downloads/JUCE/modules"
     "${ANDROID_NDK}/sources/android/cpufeatures"
+    "${OBOE_DIR}/include"
 )
 
 enable_language(ASM)
@@ -22,6 +27,11 @@ IF(JUCE_BUILD_CONFIGURATION MATCHES "DEBUG")
     add_definitions("-DDEBUG=1" "-D_DEBUG=1")
 ELSEIF(JUCE_BUILD_CONFIGURATION MATCHES "RELEASE")
     add_definitions("-DNDEBUG=1")
+    if(NOT (ANDROID_ABI STREQUAL "mips" OR ANDROID_ABI STREQUAL "mips64"))
+        SET(CMAKE_C_FLAGS_RELEASE "${CMAKE_C_FLAGS_RELEASE} -flto")
+        SET(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -flto")
+        SET(CMAKE_EXE_LINKER_FLAGS_RELEASE "${CMAKE_EXE_LINKER_FLAGS_RELEASE} -flto")
+    ENDIF(NOT (ANDROID_ABI STREQUAL "mips" OR ANDROID_ABI STREQUAL "mips64"))
 ELSE(JUCE_BUILD_CONFIGURATION MATCHES "DEBUG")
     MESSAGE( FATAL_ERROR "No matching build-configuration found." )
 ENDIF(JUCE_BUILD_CONFIGURATION MATCHES "DEBUG")
@@ -58,6 +68,7 @@ add_library( ${BINARY_NAME}
     "../../../Source/Main.cpp"
     "../../../Source/oscComp.h"
     "../../../Source/lfoComp.h"
+    "../../../Source/bufferManager.h"
     "../../../../../../../Downloads/JUCE/modules/juce_audio_basics/audio_play_head/juce_AudioPlayHead.h"
     "../../../../../../../Downloads/JUCE/modules/juce_audio_basics/buffers/juce_AudioChannelSet.cpp"
     "../../../../../../../Downloads/JUCE/modules/juce_audio_basics/buffers/juce_AudioChannelSet.h"
@@ -1484,6 +1495,7 @@ set_source_files_properties("../../../Source/sendComp.h" PROPERTIES HEADER_FILE_
 set_source_files_properties("../../../Source/delayComp.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties("../../../Source/oscComp.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties("../../../Source/lfoComp.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties("../../../Source/bufferManager.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties("../../../../../../../Downloads/JUCE/modules/juce_audio_basics/audio_play_head/juce_AudioPlayHead.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties("../../../../../../../Downloads/JUCE/modules/juce_audio_basics/buffers/juce_AudioChannelSet.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties("../../../../../../../Downloads/JUCE/modules/juce_audio_basics/buffers/juce_AudioChannelSet.h" PROPERTIES HEADER_FILE_ONLY TRUE)
@@ -2878,4 +2890,5 @@ target_link_libraries( ${BINARY_NAME}
     ${glesv3}
     ${egl}
     "cpufeatures"
+    "oboe"
 )

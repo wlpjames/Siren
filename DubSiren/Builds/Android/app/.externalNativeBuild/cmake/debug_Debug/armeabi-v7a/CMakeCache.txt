@@ -67,7 +67,7 @@ CMAKE_BUILD_TYPE:STRING=Debug
 CMAKE_CXX_FLAGS:STRING=-fsigned-char -std=c++14
 
 //Flags used by the compiler during debug builds.
-CMAKE_CXX_FLAGS_DEBUG:STRING=-O0
+CMAKE_CXX_FLAGS_DEBUG:STRING=-Ofast
 
 //Flags used by the compiler during release builds for minimum
 // size.
@@ -86,7 +86,7 @@ CMAKE_CXX_STANDARD_LIBRARIES:STRING=-latomic -lm
 CMAKE_C_FLAGS:STRING=-fsigned-char
 
 //Flags used by the compiler during debug builds.
-CMAKE_C_FLAGS_DEBUG:STRING=-O0
+CMAKE_C_FLAGS_DEBUG:STRING=-Ofast
 
 //Flags used by the compiler during release builds for minimum
 // size.
@@ -232,10 +232,19 @@ egl:FILEPATH=/Users/billy/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuil
 glesv3:FILEPATH=/Users/billy/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/arm-linux-androideabi/23/libGLESv3.so
 
 //Dependencies for the target
-juce_jni_LIB_DEPENDS:STATIC=general;/Users/billy/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/arm-linux-androideabi/23/liblog.so;general;/Users/billy/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/arm-linux-androideabi/23/libandroid.so;general;/Users/billy/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/arm-linux-androideabi/23/libGLESv3.so;general;/Users/billy/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/arm-linux-androideabi/23/libEGL.so;general;cpufeatures;
+juce_jni_LIB_DEPENDS:STATIC=general;/Users/billy/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/arm-linux-androideabi/23/liblog.so;general;/Users/billy/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/arm-linux-androideabi/23/libandroid.so;general;/Users/billy/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/arm-linux-androideabi/23/libGLESv3.so;general;/Users/billy/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/arm-linux-androideabi/23/libEGL.so;general;cpufeatures;general;oboe;
 
 //Path to a library.
 log:FILEPATH=/Users/billy/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/arm-linux-androideabi/23/liblog.so
+
+//Value Computed by CMake
+oboe_BINARY_DIR:STATIC=/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/armeabi-v7a/oboe
+
+//Dependencies for the target
+oboe_LIB_DEPENDS:STATIC=general;log;general;OpenSLES;
+
+//Value Computed by CMake
+oboe_SOURCE_DIR:STATIC=/Users/billy/Documents/git/oboe
 
 
 ########################
@@ -335,7 +344,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

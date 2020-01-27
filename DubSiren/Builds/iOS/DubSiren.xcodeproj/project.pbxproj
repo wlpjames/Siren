@@ -681,6 +681,13 @@
 			path = ../../JuceLibraryCode/BinaryData2.cpp;
 			sourceTree = "SOURCE_ROOT";
 		};
+		E5E1BDA40D35A0760274E6CF = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = bufferManager.h;
+			path = ../../Source/bufferManager.h;
+			sourceTree = "SOURCE_ROOT";
+		};
 		E7285806B93F9B62B1FBAF67 = {
 			isa = PBXFileReference;
 			lastKnownFileType = wrapper.framework;
@@ -755,6 +762,7 @@
 			isa = PBXGroup;
 			children = (
 				5361909E2B21427745CC1CFB,
+				E5E1BDA40D35A0760274E6CF,
 			);
 			name = DubSiren;
 			sourceTree = "<group>";
@@ -914,7 +922,7 @@
 				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
 				DEAD_CODE_STRIPPING = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_OPTIMIZATION_LEVEL = fast;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"_NDEBUG=1",
 					"NDEBUG=1",

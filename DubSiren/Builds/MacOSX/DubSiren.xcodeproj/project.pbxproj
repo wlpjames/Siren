@@ -648,6 +648,13 @@
 			path = ../../JuceLibraryCode/BinaryData2.cpp;
 			sourceTree = "SOURCE_ROOT";
 		};
+		E5E1BDA40D35A0760274E6CF = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = bufferManager.h;
+			path = ../../Source/bufferManager.h;
+			sourceTree = "SOURCE_ROOT";
+		};
 		E7285806B93F9B62B1FBAF67 = {
 			isa = PBXFileReference;
 			lastKnownFileType = wrapper.framework;
@@ -722,6 +729,7 @@
 			isa = PBXGroup;
 			children = (
 				5361909E2B21427745CC1CFB,
+				E5E1BDA40D35A0760274E6CF,
 			);
 			name = DubSiren;
 			sourceTree = "<group>";

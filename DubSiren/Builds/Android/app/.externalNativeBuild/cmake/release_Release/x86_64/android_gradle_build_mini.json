@@ -1,6 +1,7 @@
 {
   "buildFiles": [
-    "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/CMakeLists.txt"
+    "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/CMakeLists.txt",
+    "/Users/billy/Documents/git/oboe/CMakeLists.txt"
   ],
   "cleanCommands": [
     "/Users/billy/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.externalNativeBuild/cmake/release_Release/x86_64 --target clean"
@@ -17,6 +18,12 @@
       "buildCommand": "/Users/billy/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.externalNativeBuild/cmake/release_Release/x86_64 --target juce_jni",
       "abi": "x86_64",
       "output": "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/build/intermediates/cmake/release_/release/obj/x86_64/libjuce_jni.so"
+    },
+    "oboe-Release-x86_64": {
+      "artifactName": "oboe",
+      "buildCommand": "/Users/billy/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.externalNativeBuild/cmake/release_Release/x86_64 --target oboe",
+      "abi": "x86_64",
+      "output": "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.externalNativeBuild/cmake/release_Release/x86_64/oboe/liboboe.a"
     }
   }
 }

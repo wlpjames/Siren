@@ -50,6 +50,7 @@ public:
 		speed.setSliderStyle(Slider::RotaryHorizontalVerticalDrag);
 		speed.setTextBoxStyle(Slider::NoTextBox, 0, 0, 0);
 		speed.setRange(.2, 7.0);
+        speed.setValue(1);
 		speed.setTextValueSuffix(" Hz");
 		speed.addListener(this);
 
@@ -61,6 +62,7 @@ public:
 		depth.setSliderStyle(Slider::RotaryHorizontalVerticalDrag);
 		depth.setTextBoxStyle(Slider::NoTextBox, 0, 0, 0);
 		depth.setRange(0.0, 1.0);
+        depth.setValue(0.7);
 		depth.setTextValueSuffix(" Hz");
 		depth.addListener(this);
 
@@ -140,7 +142,7 @@ public:
 		}
 	}
     
-    static const int maxPeriodLen = 2048;;
+    static const int maxPeriodLen = 10000;
     float lfoSig[maxPeriodLen];
                                                                                                                                                                                                                 
     float getVal(int periodLen)

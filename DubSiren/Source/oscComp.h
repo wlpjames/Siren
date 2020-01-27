@@ -52,7 +52,8 @@ public:
 		freq.setSliderStyle(Slider::RotaryHorizontalVerticalDrag);
 		freq.setTextBoxStyle(Slider::NoTextBox, 0, 0, 0);
 		freq.setRange(50, 1200.0, 1); 
-		freq.setTextValueSuffix(" Hz");  
+		freq.setTextValueSuffix(" Hz");
+        freq.setValue(440);
 		freq.addListener(this);
 
 		addAndMakeVisible(freqLab);

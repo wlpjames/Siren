@@ -1,6 +1,7 @@
 {
   "buildFiles": [
-    "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/CMakeLists.txt"
+    "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/CMakeLists.txt",
+    "/Users/billy/Documents/git/oboe/CMakeLists.txt"
   ],
   "cleanCommands": [
     "/Users/billy/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a --target clean"
@@ -17,6 +18,12 @@
       "buildCommand": "/Users/billy/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a --target cpufeatures",
       "abi": "arm64-v8a",
       "output": "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/libcpufeatures.a"
+    },
+    "oboe-Debug-arm64-v8a": {
+      "artifactName": "oboe",
+      "buildCommand": "/Users/billy/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a --target oboe",
+      "abi": "arm64-v8a",
+      "output": "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/oboe/liboboe.a"
     }
   }
 }

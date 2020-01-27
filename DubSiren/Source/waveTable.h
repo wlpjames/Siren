@@ -30,7 +30,8 @@ public:
     
     int harm_vals_num = 50;
     const int highest_freq = 6000;
-    float freq, desired_freq, vol, glideRate, freqOffset;
+    float freq, desired_freq, vol, glideRate;
+    float freqOffset = 1;
     int sampleRate;
     int table_index = 0;
     waveGen* osc;

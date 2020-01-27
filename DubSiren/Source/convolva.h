@@ -54,11 +54,18 @@ public:
         return;
     }
     
+    void reset()
+    {
+        convolution.reset();
+        delete[] tempMix;
+        tempMix = new float[MAXBUFFERLEN];
+    }
+    
     void process(float* signal, int siglen)
     {
         
         //dont process untill samplerate is set.
-        if (!is_prepared || !is_loaded) {
+        if (!is_prepared || !is_loaded || siglen > MAXBUFFERLEN) {
             return;
         }
         

@@ -154,6 +154,9 @@
     <content url="file://$MODULE_DIR$/../../../Source">
       <sourceFolder url="file://$MODULE_DIR$/../../../Source" isTestSource="false" />
     </content>
+    <content url="file://$MODULE_DIR$/../../../../../oboe/src">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../oboe/src" isTestSource="false" />
+    </content>
     <content url="file://$USER_HOME$/Downloads/JUCE/modules/juce_audio_basics">
       <sourceFolder url="file://$USER_HOME$/Downloads/JUCE/modules/juce_audio_basics" isTestSource="false" />
     </content>

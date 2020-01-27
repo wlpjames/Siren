@@ -37,6 +37,13 @@ public:
         d = D;
     }
     
+    void reset()
+    {
+        currStage = stages::off;
+        curr = 0;
+        coef = 0;
+    }
+    
     void prepare(int SampleRate)
     {
         samplerate = SampleRate;

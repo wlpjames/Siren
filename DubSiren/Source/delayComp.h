@@ -46,8 +46,9 @@ public:
         addAndMakeVisible(decaySlider);
         decaySlider.setSliderStyle(Slider::RotaryHorizontalVerticalDrag);
         decaySlider.setTextBoxStyle(Slider::NoTextBox, 0, 0, 0);
-        decaySlider.setRange(0, 2.0);
+        decaySlider.setRange(0, 1.5);
         decaySlider.addListener(this);
+        decaySlider.setValue(0.3);
 
         addAndMakeVisible(decayLab);
         decayLab.setText("Decay", dontSendNotification);
@@ -58,6 +59,7 @@ public:
         lengthSlider.setSliderStyle(Slider::RotaryHorizontalVerticalDrag);
         lengthSlider.setTextBoxStyle(Slider::NoTextBox, 0, 0, 0);
         lengthSlider.setRange(0.1, 1.5);
+        lengthSlider.setValue(0.5);
         lengthSlider.addListener(this);
 
         addAndMakeVisible(lengthLab);

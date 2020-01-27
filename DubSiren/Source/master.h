@@ -36,10 +36,10 @@ public:
 		playStop.setButtonText("Play/Stop");
         
         playStop.setImages(false, true, true,
-                           buttonImages.getClippedImage(Rectangle<int>(0, 0, buttonImages.getWidth(), buttonImages.getHeight() / 10)), 1.0, Colour(NULL),
-                           buttonImages.getClippedImage(Rectangle<int>(0, 0, buttonImages.getWidth(), buttonImages.getHeight() / 10)), 1.0, Colour(NULL),
+                           buttonImages.getClippedImage(Rectangle<int>(0, 0, buttonImages.getWidth(), buttonImages.getHeight() / 10)), 1.0, Colour(0),
+                           buttonImages.getClippedImage(Rectangle<int>(0, 0, buttonImages.getWidth(), buttonImages.getHeight() / 10)), 1.0, Colour(0),
                            buttonImages.getClippedImage(Rectangle<int>(0, (buttonImages.getHeight() / 10) * 9, buttonImages.getWidth(), buttonImages.getHeight() / 10)),
-                           1.0, Colour(NULL));
+                           1.0, Colour(0));
         
         playStop.addListener(this);
 
@@ -53,6 +53,11 @@ public:
     bool get_is_playing()
     {
         return is_playing;
+    }
+    
+    void reset()
+    {
+        is_playing = false;
     }
     
     void buttonClicked (Button* button) override

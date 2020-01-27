@@ -25,9 +25,9 @@ class tapeDelay
     
     const int nativeSR = 100000;
     float* tape;
-
-    softClippa SC;
+    
     convolva tapeimpulse;
+    softClippa SC;
     
     LagrangeInterpolator interpolator1;
     LagrangeInterpolator interpolator2;
@@ -35,25 +35,33 @@ class tapeDelay
 
 public:
  
-    tapeDelay( float DelayTime = 0.1f, float Decay = 0.3f) : tapeimpulse(1.0), SC(1.0)
+    tapeDelay( float DelayTime = 0.1f, float Decay = 0.3f) : tapeimpulse(0.5), SC(0.5)
     {
 
         delayTime = DelayTime;
         decay = Decay;
         
         //init arrays
-        tape = (float*) calloc(nativeSR, sizeof(float*));
+        tape = (float*) calloc(nativeSR, sizeof(float));
         
         //this may not be necesary
         tapeimpulse.setSamplerate(nativeSR);
         tapeimpulse.loadImpulse(BinaryData::cassette_recorder_wav, BinaryData::cassette_recorder_wavSize);
-        tapeimpulse.setMix(1.0);
         
     }
     
     ~tapeDelay()
     {
         free(tape);
+    }
+    
+    void reset() {
+        //will reinit all values to stop any distortion on app resating and navigation
+        free(tape);
+        tape = (float*) calloc(nativeSR, sizeof(float));
+        interpolator1.reset();
+        interpolator2.reset();
+        tapeimpulse.reset();
     }
     
     void processToTape(float* signal, int sigLen)

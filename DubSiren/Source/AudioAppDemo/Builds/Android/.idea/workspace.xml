@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2b6a9d37-cdb5-4a62-8e39-4a789205efc6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AudioAppDemo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/.gradle/4.10/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/.gradle/4.10/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/.gradle/4.10/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/.gradle/4.10/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/.gradle/4.10/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/.gradle/4.10/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/Source/Main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/Source/Main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/cmake_build_output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/cmake_build_output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/armeabi-v7a/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/armeabi-v7a/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/armeabi-v7a/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/armeabi-v7a/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/armeabi-v7a/cmake_build_output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/armeabi-v7a/cmake_build_output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/x86/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/x86/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/x86/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/x86/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/x86/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/x86/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/x86/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/Source/Main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/x86/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/Source/Main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/x86/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/x86/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/x86/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/x86/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/x86/cmake_build_output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/x86/cmake_build_output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/x86_64/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/x86_64/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/x86_64/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/x86_64/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/x86_64/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/x86_64/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/x86_64/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/Source/Main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/x86_64/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/Source/Main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/x86_64/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/x86_64/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/x86_64/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/x86_64/cmake_build_output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/x86_64/cmake_build_output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/release_Release/arm64-v8a/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/release_Release/arm64-v8a/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/release_Release/arm64-v8a/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/release_Release/arm64-v8a/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/release_Release/arm64-v8a/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/release_Release/arm64-v8a/android_gradle_build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/release_Release/arm64-v8a/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/release_Release/arm64-v8a/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/release_Release/arm64-v8a/cmake_build_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/release_Release/arm64-v8a/cmake_build_command.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/release_Release/armeabi-v7a/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/release_Release/armeabi-v7a/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/release_Release/armeabi-v7a/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/release_Release/armeabi-v7a/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/release_Release/armeabi-v7a/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/release_Release/armeabi-v7a/android_gradle_build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/release_Release/armeabi-v7a/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/release_Release/armeabi-v7a/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/release_Release/armeabi-v7a/cmake_build_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/release_Release/armeabi-v7a/cmake_build_command.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/release_Release/x86/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/release_Release/x86/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/release_Release/x86/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/release_Release/x86/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/release_Release/x86/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/release_Release/x86/android_gradle_build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/release_Release/x86/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/release_Release/x86/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/release_Release/x86/cmake_build_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/release_Release/x86/cmake_build_command.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/release_Release/x86_64/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/release_Release/x86_64/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/release_Release/x86_64/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/release_Release/x86_64/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/release_Release/x86_64/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/release_Release/x86_64/android_gradle_build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/release_Release/x86_64/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/release_Release/x86_64/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/release_Release/x86_64/cmake_build_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/app/.externalNativeBuild/cmake/release_Release/x86_64/cmake_build_command.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/app/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/Android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/Android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/MacOSX/DubSiren.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/MacOSX/DubSiren.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/MacOSX/DubSiren.xcodeproj/project.xcworkspace/xcuserdata/billy.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/MacOSX/DubSiren.xcodeproj/project.xcworkspace/xcuserdata/billy.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/MacOSX/build/Debug/DubSiren.app/Contents/MacOS/DubSiren" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/MacOSX/build/Debug/DubSiren.app/Contents/MacOS/DubSiren" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/iOS/DubSiren.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/iOS/DubSiren.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/iOS/DubSiren.xcodeproj/project.xcworkspace/xcuserdata/billy.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/iOS/DubSiren.xcodeproj/project.xcworkspace/xcuserdata/billy.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/iOS/DubSiren.xcodeproj/project.xcworkspace/xcuserdata/billy.xcuserdatad/xcdebugger/Expressions.xcexplist" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/iOS/DubSiren.xcodeproj/project.xcworkspace/xcuserdata/billy.xcuserdatad/xcdebugger/Expressions.xcexplist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/iOS/DubSiren.xcodeproj/xcuserdata/billy.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/iOS/DubSiren.xcodeproj/xcuserdata/billy.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Builds/iOS/build/Debug/DubSiren.app/DubSiren" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Builds/iOS/build/Debug/DubSiren.app/DubSiren" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../DubSiren.jucer" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../DubSiren.jucer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MainComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MainComponent.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MainComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MainComponent.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../lfoComp.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../../lfoComp.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../master.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../../master.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../waveTable.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../../waveTable.h" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="d30563905080" />
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="42" />
+    <option name="y" value="403" />
+    <option name="width" value="1680" />
+    <option name="height" value="947" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="AudioAppDemo" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="AudioAppDemo" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="cpp" type="9a30073f:AndroidJniFolderNode" />
+            </path>
+            <path>
+              <item name="AudioAppDemo" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="cpp" type="9a30073f:AndroidJniFolderNode" />
+              <item name="" type="557542c:NdkLibraryEnhancedHeadersNode" />
+            </path>
+            <path>
+              <item name="AudioAppDemo" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="cpp" type="9a30073f:AndroidJniFolderNode" />
+              <item name="" type="557542c:NdkLibraryEnhancedHeadersNode" />
+              <item name="AudioAppDemo" type="6cf0337f:NdkSourceFolderNode" />
+            </path>
+            <path>
+              <item name="AudioAppDemo" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="cpp" type="9a30073f:AndroidJniFolderNode" />
+              <item name="" type="557542c:NdkLibraryEnhancedHeadersNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="not.eligible.for.single.variant.sync" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2b6a9d37-cdb5-4a62-8e39-4a789205efc6" name="Default Changelist" comment="" />
+      <created>1579864371758</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579864371758</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="42" y="403" width="1680" height="947" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" visible="true" weight="0.32967034" />
+      <window_info id="Structure" side_tool="true" />
+      <window_info id="Build Variants" side_tool="true" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="Resources Explorer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Run" />
+      <window_info anchor="bottom" id="Logcat" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="TODO" />
+      <window_info anchor="bottom" id="Android Profiler" />
+      <window_info anchor="bottom" id="Debug" weight="0.32982457" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32982457" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Build" weight="0.32982457" />
+      <window_info anchor="right" id="Device File Explorer" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Gradle" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Palette&#9;" />
+    </layout>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>bufferToFill.numSamples</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../../Source/AudioAppDemo.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="91" column="12" selection-start-line="91" selection-start-column="12" selection-end-line="91" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Source/Main.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+  </component>
+</project>

@@ -1,6 +1,7 @@
 {
   "buildFiles": [
-    "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/CMakeLists.txt"
+    "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/CMakeLists.txt",
+    "/Users/billy/Documents/git/oboe/CMakeLists.txt"
   ],
   "cleanCommands": [
     "/Users/billy/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/armeabi-v7a --target clean"
@@ -11,6 +12,12 @@
       "buildCommand": "/Users/billy/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/armeabi-v7a --target cpufeatures",
       "abi": "armeabi-v7a",
       "output": "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/armeabi-v7a/libcpufeatures.a"
+    },
+    "oboe-Debug-armeabi-v7a": {
+      "artifactName": "oboe",
+      "buildCommand": "/Users/billy/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/armeabi-v7a --target oboe",
+      "abi": "armeabi-v7a",
+      "output": "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.externalNativeBuild/cmake/debug_Debug/armeabi-v7a/oboe/liboboe.a"
     },
     "juce_jni-Debug-armeabi-v7a": {
       "artifactName": "juce_jni",
