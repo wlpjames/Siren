@@ -67,7 +67,7 @@ CMAKE_BUILD_TYPE:STRING=Debug
 CMAKE_CXX_FLAGS:STRING=-fsigned-char -std=c++14
 
 //Flags used by the compiler during debug builds.
-CMAKE_CXX_FLAGS_DEBUG:STRING=-Ofast
+CMAKE_CXX_FLAGS_DEBUG:STRING=-O3
 
 //Flags used by the compiler during release builds for minimum
 // size.
@@ -86,7 +86,7 @@ CMAKE_CXX_STANDARD_LIBRARIES:STRING=-latomic -lm
 CMAKE_C_FLAGS:STRING=-fsigned-char
 
 //Flags used by the compiler during debug builds.
-CMAKE_C_FLAGS_DEBUG:STRING=-Ofast
+CMAKE_C_FLAGS_DEBUG:STRING=-O3
 
 //Flags used by the compiler during release builds for minimum
 // size.

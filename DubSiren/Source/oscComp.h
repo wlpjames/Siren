@@ -27,22 +27,19 @@ public:
     Label titleLab;
     
 	//properties
-    //https://www.g200kg.com/en/webknobman/index.html?f=KNB_DR8_xL.knob&n=1531
-    Image freqKnobImage = ImageCache::getFromMemory(BinaryData::knob2200_png, BinaryData::knob2200_pngSize);
+    Image freqKnobImage = ImageCache::getFromMemory(BinaryData::osc_freq100_png, BinaryData::osc_freq100_pngSize);
     
 	knobmanSlider freq;
 	Label freqLab;
-    //https://www.g200kg.com/en/webknobman/index.html?f=KNB_DR8_xL.knob&n=1531
-    Image wavtypeKnobImage = ImageCache::getFromMemory(BinaryData::knob24_png, BinaryData::knob24_pngSize);
+    Image wavtypeKnobImage = ImageCache::getFromMemory(BinaryData::osc_waveform4_png, BinaryData::osc_waveform4_pngSize);
 	knobmanSlider wavtype;
 	Label wavLab;
 
-    oscComp() : waveTable(440, 0.3, 44100, 10), freq(freqKnobImage, 200), wavtype(wavtypeKnobImage, 4)
+    oscComp() : waveTable(440, 0.3, 44100, 10), freq(freqKnobImage, 100), wavtype(wavtypeKnobImage, 4)
     {
         //set up and build tables in waveTables
         
         createTables(); //this might be called before samplerate!!!
-        setGlideRate(1);
         
         addAndMakeVisible(&titleLab);
         titleLab.setText("OSC", dontSendNotification);
@@ -84,7 +81,6 @@ public:
         g.setColour(Colours::black);
         reductSize = 12;
         g.drawRoundedRectangle(reductSize, reductSize, getWidth() - (reductSize * 2), getHeight() - (reductSize * 2), 12.0, 3.0);
-        
 
     }
 
@@ -94,10 +90,12 @@ public:
         // components that your component contains..
 
 		auto area = getLocalBounds();
-		area.reduce(20, 20);
+        area.reduce(10, 10);
+        area.removeFromRight(20);
+        area.removeFromLeft(20);
         
-        auto titleArea = area.removeFromTop(20);
-        titleLab.setBounds(titleArea);
+        //auto titleArea = area.removeFromTop(35);
+        //titleLab.setBounds(titleArea);
         
 		int width = area.getWidth() / 2;
 
@@ -110,7 +108,7 @@ public:
 		freq.setBounds(f_area);
 
 		//area for type
-		auto t_area = area.removeFromLeft(width);
+		auto t_area = area.removeFromLeft(width).reduced(5);
 		//wavLab.setBounds(t_area.removeFromTop(30));
         t_area.removeFromLeft(cutLen);
         t_area.removeFromRight(cutLen);

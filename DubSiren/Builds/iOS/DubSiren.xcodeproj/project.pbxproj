@@ -93,6 +93,10 @@
 			isa = PBXBuildFile;
 			fileRef = 9E075796DE8250621A9AF7FA;
 		};
+		B286636DA7BCFA929354B063 = {
+			isa = PBXBuildFile;
+			fileRef = 6F154F09742F434327F398BB;
+		};
 		6DA386F816FE358037F1FD3E = {
 			isa = PBXBuildFile;
 			fileRef = 4CCACF307013D55BD5DC971F;
@@ -168,6 +172,13 @@
 			lastKnownFileType = image.png;
 			name = "knob3-200.png";
 			path = "../../Resources/knob3-200.png";
+			sourceTree = "SOURCE_ROOT";
+		};
+		08F8CE03AF77A859F9B4841D = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.png;
+			name = "osc_freq100.png";
+			path = "../../Resources/osc_freq100.png";
 			sourceTree = "SOURCE_ROOT";
 		};
 		10AD35B3B50B0ECD384A7535 = {
@@ -324,6 +335,13 @@
 			path = ../../Source/softClip.h;
 			sourceTree = "SOURCE_ROOT";
 		};
+		3945EA66FDCC6C34A9DCB309 = {
+			isa = PBXFileReference;
+			lastKnownFileType = file.svg;
+			name = "reverb_button.svg";
+			path = "../../Resources/reverb_button.svg";
+			sourceTree = "SOURCE_ROOT";
+		};
 		3ADE6E6BE4BF19641A45BD4E = {
 			isa = PBXFileReference;
 			lastKnownFileType = sourcecode.c.h;
@@ -387,6 +405,13 @@
 			path = ../../Source/master.h;
 			sourceTree = "SOURCE_ROOT";
 		};
+		54E4694E62F2A966CC5BB50B = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.png;
+			name = "lfo_waveform5.png";
+			path = "../../Resources/lfo_waveform5.png";
+			sourceTree = "SOURCE_ROOT";
+		};
 		58101E67FAB775C734A7726E = {
 			isa = PBXFileReference;
 			lastKnownFileType = file.wav;
@@ -407,6 +432,13 @@
 			name = CoreAudioKit.framework;
 			path = System/Library/Frameworks/CoreAudioKit.framework;
 			sourceTree = SDKROOT;
+		};
+		5EACB3854D79F46EA6E794D8 = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.png;
+			name = "delay_length100.png";
+			path = "../../Resources/delay_length100.png";
+			sourceTree = "SOURCE_ROOT";
 		};
 		5FCD45E8C3FF4D1057DC251B = {
 			isa = PBXFileReference;
@@ -442,6 +474,20 @@
 			name = "juce_audio_basics";
 			path = "/Users/billy/Downloads/JUCE/modules/juce_audio_basics";
 			sourceTree = "<absolute>";
+		};
+		6ED7BD528EF3C44C5AB02623 = {
+			isa = PBXFileReference;
+			lastKnownFileType = file.svg;
+			name = logo.svg;
+			path = ../../Resources/logo.svg;
+			sourceTree = "SOURCE_ROOT";
+		};
+		6F154F09742F434327F398BB = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = BinaryData4.cpp;
+			path = ../../JuceLibraryCode/BinaryData4.cpp;
+			sourceTree = "SOURCE_ROOT";
 		};
 		7075993FEF823F436FE06BAB = {
 			isa = PBXFileReference;
@@ -506,6 +552,13 @@
 			path = ../../JuceLibraryCode/AppConfig.h;
 			sourceTree = "SOURCE_ROOT";
 		};
+		8E7DB772E0A2076A414D47AD = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.png;
+			name = "delay_decay100.png";
+			path = "../../Resources/delay_decay100.png";
+			sourceTree = "SOURCE_ROOT";
+		};
 		91D8FD186D742666B76366C7 = {
 			isa = PBXFileReference;
 			lastKnownFileType = wrapper.framework;
@@ -555,6 +608,13 @@
 			path = "../../JuceLibraryCode/include_juce_audio_utils.mm";
 			sourceTree = "SOURCE_ROOT";
 		};
+		98CFCA5B00F9B4B0B6CCBAB6 = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.png;
+			name = "lfo_speed100.png";
+			path = "../../Resources/lfo_speed100.png";
+			sourceTree = "SOURCE_ROOT";
+		};
 		9DAEF31AB12921D72BEF5D2E = {
 			isa = PBXFileReference;
 			lastKnownFileType = sourcecode.cpp.objcpp;
@@ -567,6 +627,13 @@
 			lastKnownFileType = sourcecode.cpp.cpp;
 			name = BinaryData3.cpp;
 			path = ../../JuceLibraryCode/BinaryData3.cpp;
+			sourceTree = "SOURCE_ROOT";
+		};
+		A70B175C7663C9436CA7971C = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = head.h;
+			path = ../../Source/head.h;
 			sourceTree = "SOURCE_ROOT";
 		};
 		A8821359731DD3437D04A70A = {
@@ -646,6 +713,13 @@
 			path = DubSiren/Images.xcassets;
 			sourceTree = "SOURCE_ROOT";
 		};
+		CB0832684C6250FF48AF0B42 = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.png;
+			name = "osc_waveform4.png";
+			path = "../../Resources/osc_waveform4.png";
+			sourceTree = "SOURCE_ROOT";
+		};
 		CC29D1DEBD40B1A8CCC19BCE = {
 			isa = PBXFileReference;
 			lastKnownFileType = file;
@@ -666,6 +740,13 @@
 			name = OpenGLES.framework;
 			path = System/Library/Frameworks/OpenGLES.framework;
 			sourceTree = SDKROOT;
+		};
+		DC58998093761C95501D4505 = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.png;
+			name = "lfo_depth100.png";
+			path = "../../Resources/lfo_depth100.png";
+			sourceTree = "SOURCE_ROOT";
 		};
 		DDABD15D1730FC13FC0D1FD6 = {
 			isa = PBXFileReference;
@@ -726,6 +807,14 @@
 		5361909E2B21427745CC1CFB = {
 			isa = PBXGroup;
 			children = (
+				08F8CE03AF77A859F9B4841D,
+				3945EA66FDCC6C34A9DCB309,
+				CB0832684C6250FF48AF0B42,
+				54E4694E62F2A966CC5BB50B,
+				DC58998093761C95501D4505,
+				98CFCA5B00F9B4B0B6CCBAB6,
+				8E7DB772E0A2076A414D47AD,
+				5EACB3854D79F46EA6E794D8,
 				3E35C05F6A7A306ABBF16C0E,
 				C02476CDD9BADBC3B1480704,
 				58101E67FAB775C734A7726E,
@@ -763,6 +852,8 @@
 			children = (
 				5361909E2B21427745CC1CFB,
 				E5E1BDA40D35A0760274E6CF,
+				6ED7BD528EF3C44C5AB02623,
+				A70B175C7663C9436CA7971C,
 			);
 			name = DubSiren;
 			sourceTree = "<group>";
@@ -796,6 +887,7 @@
 				23B6A5BFD8041E89508936EA,
 				DF89D2AC69BD53B310E94075,
 				9E075796DE8250621A9AF7FA,
+				6F154F09742F434327F398BB,
 				4CCACF307013D55BD5DC971F,
 				21701A5D6E4BF352F5A88C73,
 				97F6959A971E214866F16863,
@@ -1093,6 +1185,7 @@
 				837C55ED852A54D94943D32F,
 				6716FE6768D6BB857A0218C7,
 				7D6BA39B0E69F6FA92BE9277,
+				B286636DA7BCFA929354B063,
 				6DA386F816FE358037F1FD3E,
 				CA8BADC70D20B8B2F7D3DE31,
 				57F487B1BEC2140415BD85B7,

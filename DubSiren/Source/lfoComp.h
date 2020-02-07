@@ -21,7 +21,8 @@ class lfoComp    : public Component, public Slider::Listener, public waveGen
 {
 public:
     
-    Image KnobImage = ImageCache::getFromMemory(BinaryData::knob3200_png, BinaryData::knob3200_pngSize);
+    Image SpeedImage = ImageCache::getFromMemory(BinaryData::lfo_speed100_png, BinaryData::lfo_speed100_pngSize);
+    Image DepthImage = ImageCache::getFromMemory(BinaryData::lfo_depth100_png, BinaryData::lfo_depth100_pngSize);
     Label titleLab;
     
 	//properties
@@ -31,11 +32,11 @@ public:
 	knobmanSlider depth;
 	Label depthLab;
 
-    Image WTKnobImage = ImageCache::getFromMemory(BinaryData::knob24_png, BinaryData::knob24_pngSize);
+    Image WFKnobImage = ImageCache::getFromMemory(BinaryData::lfo_waveform5_png, BinaryData::lfo_waveform5_pngSize);
 	knobmanSlider wavtype;
 	Label wavLab;
 
-    lfoComp() : waveGen(3, 1.0, 44100), speed(KnobImage, 200), depth(KnobImage, 200), wavtype(WTKnobImage, 4)
+    lfoComp() : waveGen(3, 1.0, 44100), speed(SpeedImage, 100), depth(DepthImage, 100), wavtype(WFKnobImage, 5)
     {
         // In your constructor, you should add any child components, and
         // initialise any special settings that your component needs.
@@ -73,7 +74,7 @@ public:
 		addAndMakeVisible(wavtype);
 		wavtype.setSliderStyle(Slider::RotaryHorizontalVerticalDrag);
 		wavtype.setTextBoxStyle(Slider::NoTextBox, 0, 0, 0);
-		wavtype.setRange(0, 3, 1);
+		wavtype.setRange(0, 4, 1);
 		wavtype.addListener(this);
 
 		addAndMakeVisible(wavLab);
@@ -100,12 +101,9 @@ public:
         // This method is where you should set the bounds of any child
         // components that your component contains..
         int cutLen;
-		auto area = getLocalBounds();
+		auto area = getLocalBounds().reduced(20);;
 
-		int width = getWidth() / 3;
-
-        auto titleArea = area.removeFromTop(35);
-        titleLab.setBounds(titleArea);
+		int width = area.getWidth() / 3;
         
 		//area for speed
 		auto s_area = area.removeFromLeft(width);
@@ -126,7 +124,7 @@ public:
         cutLen = (t_area.getWidth() - t_area.getHeight()) / 2;
         t_area.removeFromLeft(cutLen);
         t_area.removeFromRight(cutLen);
-		wavtype.setBounds(t_area.reduced(20));
+		wavtype.setBounds(t_area);
     }
 
 	void sliderValueChanged(Slider* slider) override

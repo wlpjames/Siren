@@ -8,6 +8,30 @@
 
 namespace BinaryData
 {
+    extern const char*   osc_freq100_png;
+    const int            osc_freq100_pngSize = 978074;
+
+    extern const char*   reverb_button_svg;
+    const int            reverb_button_svgSize = 193930;
+
+    extern const char*   osc_waveform4_png;
+    const int            osc_waveform4_pngSize = 47637;
+
+    extern const char*   lfo_waveform5_png;
+    const int            lfo_waveform5_pngSize = 61111;
+
+    extern const char*   lfo_depth100_png;
+    const int            lfo_depth100_pngSize = 609348;
+
+    extern const char*   lfo_speed100_png;
+    const int            lfo_speed100_pngSize = 610022;
+
+    extern const char*   delay_decay100_png;
+    const int            delay_decay100_pngSize = 608743;
+
+    extern const char*   delay_length100_png;
+    const int            delay_length100_pngSize = 981487;
+
     extern const char*   wood2_jpg;
     const int            wood2_jpgSize = 2269963;
 
@@ -47,8 +71,11 @@ namespace BinaryData
     extern const char*   wood_png;
     const int            wood_pngSize = 347600;
 
+    extern const char*   logo_svg;
+    const int            logo_svgSize = 3548;
+
     // Number of elements in the namedResourceList and originalFileNames arrays.
-    const int namedResourceListSize = 13;
+    const int namedResourceListSize = 22;
 
     // Points to the start of a list of resource names.
     extern const char* namedResourceList[];

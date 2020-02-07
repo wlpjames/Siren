@@ -35,7 +35,7 @@ class tapeDelay
 
 public:
  
-    tapeDelay( float DelayTime = 0.1f, float Decay = 0.3f) : tapeimpulse(0.5), SC(0.5)
+    tapeDelay( float DelayTime = 0.1f, float Decay = 0.3f) : tapeimpulse(0.85), SC(0.5)
     {
 
         delayTime = DelayTime;
@@ -92,12 +92,11 @@ public:
         float r =  ((float) nativeSR / delayTime) / (float) inputSampleRate;     // resampling rate (output/input) //change include tape len
 
         int ny = (sigLen * r);  // expected output size
-        //perhaps i need to convert to float complex array
         
         float resampled[ny];
         
         int num_written = interpolator1.process(((float)inputSampleRate / ((float)nativeSR / delayTime)), signal, resampled, ny, sigLen, 0);
-        //std::cout << num_written;
+
         
         //write resampled to tape, read from tape, and proccess
         processToTape(resampled, ny);

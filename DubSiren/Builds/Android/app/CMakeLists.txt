@@ -25,6 +25,11 @@ enable_language(ASM)
 
 IF(JUCE_BUILD_CONFIGURATION MATCHES "DEBUG")
     add_definitions("-DDEBUG=1" "-D_DEBUG=1")
+    if(NOT (ANDROID_ABI STREQUAL "mips" OR ANDROID_ABI STREQUAL "mips64"))
+        SET(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -flto")
+        SET(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -flto")
+        SET(CMAKE_EXE_LINKER_FLAGS_DEBUG "${CMAKE_EXE_LINKER_FLAGS_DEBUG} -flto")
+    ENDIF(NOT (ANDROID_ABI STREQUAL "mips" OR ANDROID_ABI STREQUAL "mips64"))
 ELSEIF(JUCE_BUILD_CONFIGURATION MATCHES "RELEASE")
     add_definitions("-DNDEBUG=1")
     if(NOT (ANDROID_ABI STREQUAL "mips" OR ANDROID_ABI STREQUAL "mips64"))
@@ -40,6 +45,14 @@ add_library( ${BINARY_NAME}
 
     SHARED
 
+    "../../../Resources/osc_freq100.png"
+    "../../../Resources/reverb_button.svg"
+    "../../../Resources/osc_waveform4.png"
+    "../../../Resources/lfo_waveform5.png"
+    "../../../Resources/lfo_depth100.png"
+    "../../../Resources/lfo_speed100.png"
+    "../../../Resources/delay_decay100.png"
+    "../../../Resources/delay_length100.png"
     "../../../Resources/wood2.jpg"
     "../../../Resources/cassette_recorder.wav"
     "../../../Resources/guitar_amp.wav"
@@ -69,6 +82,8 @@ add_library( ${BINARY_NAME}
     "../../../Source/oscComp.h"
     "../../../Source/lfoComp.h"
     "../../../Source/bufferManager.h"
+    "../../../Resources/logo.svg"
+    "../../../Source/head.h"
     "../../../../../../../Downloads/JUCE/modules/juce_audio_basics/audio_play_head/juce_AudioPlayHead.h"
     "../../../../../../../Downloads/JUCE/modules/juce_audio_basics/buffers/juce_AudioChannelSet.cpp"
     "../../../../../../../Downloads/JUCE/modules/juce_audio_basics/buffers/juce_AudioChannelSet.h"
@@ -1452,6 +1467,7 @@ add_library( ${BINARY_NAME}
     "../../../JuceLibraryCode/BinaryData.h"
     "../../../JuceLibraryCode/BinaryData2.cpp"
     "../../../JuceLibraryCode/BinaryData3.cpp"
+    "../../../JuceLibraryCode/BinaryData4.cpp"
     "../../../JuceLibraryCode/include_juce_audio_basics.cpp"
     "../../../JuceLibraryCode/include_juce_audio_devices.cpp"
     "../../../JuceLibraryCode/include_juce_audio_formats.cpp"
@@ -1469,6 +1485,14 @@ add_library( ${BINARY_NAME}
     "../../../JuceLibraryCode/JuceHeader.h"
 )
 
+set_source_files_properties("../../../Resources/osc_freq100.png" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties("../../../Resources/reverb_button.svg" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties("../../../Resources/osc_waveform4.png" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties("../../../Resources/lfo_waveform5.png" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties("../../../Resources/lfo_depth100.png" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties("../../../Resources/lfo_speed100.png" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties("../../../Resources/delay_decay100.png" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties("../../../Resources/delay_length100.png" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties("../../../Resources/wood2.jpg" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties("../../../Resources/cassette_recorder.wav" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties("../../../Resources/guitar_amp.wav" PROPERTIES HEADER_FILE_ONLY TRUE)
@@ -1496,6 +1520,8 @@ set_source_files_properties("../../../Source/delayComp.h" PROPERTIES HEADER_FILE
 set_source_files_properties("../../../Source/oscComp.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties("../../../Source/lfoComp.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties("../../../Source/bufferManager.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties("../../../Resources/logo.svg" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties("../../../Source/head.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties("../../../../../../../Downloads/JUCE/modules/juce_audio_basics/audio_play_head/juce_AudioPlayHead.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties("../../../../../../../Downloads/JUCE/modules/juce_audio_basics/buffers/juce_AudioChannelSet.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties("../../../../../../../Downloads/JUCE/modules/juce_audio_basics/buffers/juce_AudioChannelSet.h" PROPERTIES HEADER_FILE_ONLY TRUE)

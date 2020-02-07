@@ -157,6 +157,24 @@
     <content url="file://$MODULE_DIR$/../../../../../oboe/src">
       <sourceFolder url="file://$MODULE_DIR$/../../../../../oboe/src" isTestSource="false" />
     </content>
+    <content url="file://$MODULE_DIR$/../../../../../oboe/src/aaudio">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../oboe/src/aaudio" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../../../oboe/src/common">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../oboe/src/common" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../../../oboe/src/fifo">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../oboe/src/fifo" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../../../oboe/src/flowgraph">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../oboe/src/flowgraph" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../../../oboe/src/flowgraph/resampler">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../oboe/src/flowgraph/resampler" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../../../oboe/src/opensles">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../oboe/src/opensles" isTestSource="false" />
+    </content>
     <content url="file://$USER_HOME$/Downloads/JUCE/modules/juce_audio_basics">
       <sourceFolder url="file://$USER_HOME$/Downloads/JUCE/modules/juce_audio_basics" isTestSource="false" />
     </content>

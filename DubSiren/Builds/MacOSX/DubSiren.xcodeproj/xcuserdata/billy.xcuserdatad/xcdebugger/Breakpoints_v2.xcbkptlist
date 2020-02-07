@@ -32,7 +32,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "103"
             endingLineNumber = "103"
-            landmarkName = "sliderValueChanged(slider)"
+            landmarkName = "resized()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -48,7 +48,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "118"
             endingLineNumber = "118"
-            landmarkName = "sliderValueChanged(slider)"
+            landmarkName = "resized()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -64,7 +64,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "114"
             endingLineNumber = "114"
-            landmarkName = "sliderValueChanged(slider)"
+            landmarkName = "resized()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -318,7 +318,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "138"
             endingLineNumber = "138"
-            landmarkName = "getVal(periodLen)"
+            landmarkName = "sliderValueChanged(slider)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -334,7 +334,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "119"
             endingLineNumber = "119"
-            landmarkName = "sliderValueChanged(slider)"
+            landmarkName = "resized()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -494,7 +494,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "136"
             endingLineNumber = "136"
-            landmarkName = "getVal(periodLen)"
+            landmarkName = "sliderValueChanged(slider)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -510,7 +510,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "27"
             endingLineNumber = "27"
-            landmarkName = "knobmanSlider(stripToShow)"
+            landmarkName = "knobmanSlider(stripToShow, NumFrames)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -622,7 +622,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "139"
             endingLineNumber = "139"
-            landmarkName = "getVal(periodLen)"
+            landmarkName = "sliderValueChanged(slider)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -846,7 +846,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "118"
             endingLineNumber = "118"
-            landmarkName = "MainComponent::releaseResources()"
+            landmarkName = "MainComponent::getNextAudioBlock(bufferToFill)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -863,7 +863,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "115"
             endingLineNumber = "115"
-            landmarkName = "MainComponent::releaseResources()"
+            landmarkName = "MainComponent::getNextAudioBlock(bufferToFill)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -911,7 +911,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "86"
             endingLineNumber = "86"
-            landmarkName = "process(signal, sigLen)"
+            landmarkName = "processToTape(signal, sigLen)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -993,7 +993,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "121"
             endingLineNumber = "121"
-            landmarkName = "readSignal()"
+            landmarkName = "writeSignal(signal)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1009,8 +1009,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "113"
             endingLineNumber = "113"
-            landmarkName = "writeSignal(signal)"
-            landmarkType = "7">
+            landmarkName = "tapeDelay"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1073,7 +1073,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "110"
             endingLineNumber = "110"
-            landmarkName = "writeSignal(signal)"
+            landmarkName = "process(signal, sigLen)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

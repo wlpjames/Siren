@@ -2,7 +2,23 @@
 
 <JUCERPROJECT id="qWBalf" name="DubSiren" projectType="guiapp" jucerVersion="5.4.5">
   <MAINGROUP id="SsE8Lb" name="DubSiren">
+    <GROUP id="{252CA69A-2943-4AF6-4800-08C35B21B7D2}" name="Resources"/>
     <GROUP id="{7BB44CBD-9136-6A61-6DBC-7420BF4E448D}" name="Source">
+      <FILE id="zRJDK7" name="osc_freq100.png" compile="0" resource="1" file="Resources/osc_freq100.png"/>
+      <FILE id="e9HCAm" name="reverb_button.svg" compile="0" resource="1"
+            file="Resources/reverb_button.svg"/>
+      <FILE id="UCOtda" name="osc_waveform4.png" compile="0" resource="1"
+            file="Resources/osc_waveform4.png"/>
+      <FILE id="peupvK" name="lfo_waveform5.png" compile="0" resource="1"
+            file="Resources/lfo_waveform5.png"/>
+      <FILE id="U98kVD" name="lfo_depth100.png" compile="0" resource="1"
+            file="Resources/lfo_depth100.png"/>
+      <FILE id="g7x7zH" name="lfo_speed100.png" compile="0" resource="1"
+            file="Resources/lfo_speed100.png"/>
+      <FILE id="h9PEmK" name="delay_decay100.png" compile="0" resource="1"
+            file="Resources/delay_decay100.png"/>
+      <FILE id="tgNbtC" name="delay_length100.png" compile="0" resource="1"
+            file="Resources/delay_length100.png"/>
       <FILE id="ZY2mmk" name="wood2.jpg" compile="0" resource="1" file="Resources/wood2.jpg"/>
       <FILE id="LokLzN" name="cassette_recorder.wav" compile="0" resource="1"
             file="Resources/cassette_recorder.wav"/>
@@ -45,6 +61,8 @@
       <FILE id="kbqngw" name="lfoComp.h" compile="0" resource="0" file="Source/lfoComp.h"/>
     </GROUP>
     <FILE id="IGYuZ7" name="bufferManager.h" compile="0" resource="0" file="Source/bufferManager.h"/>
+    <FILE id="nuwLcg" name="logo.svg" compile="0" resource="1" file="Resources/logo.svg"/>
+    <FILE id="JjKb99" name="head.h" compile="0" resource="0" file="Source/head.h"/>
   </MAINGROUP>
   <EXPORTFORMATS>
     <XCODE_MAC targetFolder="Builds/MacOSX">
@@ -95,8 +113,8 @@
     <ANDROIDSTUDIO targetFolder="Builds/Android" androidTargetSDK="28" androidMinimumSDK="23"
                    androidOboeRepositoryPath="/Users/billy/Documents/git/oboe" androidTheme="@android:style/Theme.NoTitleBar">
       <CONFIGURATIONS>
-        <CONFIGURATION isDebug="1" name="Debug" optimisation="6"/>
-        <CONFIGURATION isDebug="0" name="Release" optimisation="6" linkTimeOptimisation="1"/>
+        <CONFIGURATION isDebug="1" name="Debug" optimisation="3" linkTimeOptimisation="1"/>
+        <CONFIGURATION isDebug="0" name="Release" linkTimeOptimisation="1" optimisation="3"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
         <MODULEPATH id="juce_opengl"/>
@@ -135,5 +153,6 @@
   <LIVE_SETTINGS>
     <OSX/>
   </LIVE_SETTINGS>
-  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_USE_ANDROID_OBOE="1"/>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_USE_ANDROID_OBOE="1" JUCE_JACK="1"
+               JUCE_ALSA="1"/>
 </JUCERPROJECT>

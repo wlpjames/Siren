@@ -17,7 +17,7 @@
 #include "convolva.h"
 #include "sendComp.h"
 #include "env.h"
-#include "bufferManager.h"
+#include "head.h"
 
 
 //==============================================================================
@@ -53,6 +53,7 @@ private:
     sendComp sends;
     env envelope = env(0.05, 0.1);
     softClippa clipa;
+    head header;
     static const int maxBufferSize = 2048;
     
     //variable for quicker send calcuation
@@ -61,13 +62,7 @@ private:
     float delaySend[maxBufferSize];
     float reverbSend[maxBufferSize];
     
-    
     int samplecount = 0;
-
-
-    //background
-    Image backgroundImage;
-    
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainComponent)
 };

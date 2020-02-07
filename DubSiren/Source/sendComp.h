@@ -24,11 +24,11 @@ public:
     knobmanSlider volSlider;
     knobmanSlider delaySlider;
     knobmanSlider reverbSlider;
-    TextButton output;
-    TextButton delay;
-    TextButton reverb;
+    DrawableButton output;
+    TextButton delay ;
+    TextButton reverb ;
     
-    Colour selectedColor = Colours::red;
+    Colour selectedColor = Colour(161, 28, 13);
     
     enum sliderState {
         vol = 0,
@@ -41,7 +41,8 @@ public:
     float delayVal  = 0.2;
     float outputVal = 0.8;
     
-    sendComp() : volSlider(sliderImg, 201), delaySlider(sliderImg, 201), reverbSlider(sliderImg, 201)
+    sendComp() : volSlider(sliderImg, 201), delaySlider(sliderImg, 201), reverbSlider(sliderImg, 201),
+    output("output", DrawableButton::ImageFitted)
     {
         // In your constructor, you should add any child components, and
         // initialise any special settings that your component needs.
@@ -67,12 +68,12 @@ public:
         reverbSlider.setRange(0, 1);
         reverbSlider.addListener(this);
         
-        
+        //Setup for the buttons
         addAndMakeVisible(&output);
-
         output.setButtonText("OUT");
         output.setColour(TextButton::buttonColourId, Colour(161, 28, 13));
         output.addListener (this);
+        //output.setImages(Drawable().create)
         output.colourChanged();
         
         addAndMakeVisible(&delay);
@@ -124,9 +125,9 @@ public:
         //the rest is for buttons
         int buttonHeight = area.getHeight() / 3;
         area = area.removeFromLeft(area.getWidth() - 15);
-        output.setBounds(area.removeFromTop(buttonHeight));
-        delay.setBounds(area.removeFromTop(buttonHeight));
-        reverb.setBounds(area.removeFromTop(buttonHeight));
+        output.setBounds(area.removeFromTop(buttonHeight).reduced(2));
+        delay.setBounds(area.removeFromTop(buttonHeight).reduced(2));
+        reverb.setBounds(area.removeFromTop(buttonHeight).reduced(2));
     }
     
     void sliderValueChanged(Slider* slider) override
@@ -188,3 +189,5 @@ public:
 private:
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (sendComp)
 };
+
+

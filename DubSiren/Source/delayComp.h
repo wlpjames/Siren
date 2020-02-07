@@ -25,8 +25,9 @@ public:
     //properties
     Label titleLab;
     
-    Image KnobImage = ImageCache::getFromMemory(BinaryData::knob3200_png, BinaryData::knob3200_pngSize);
-   
+    Image lengthImage = ImageCache::getFromMemory(BinaryData::delay_length100_png, BinaryData::delay_length100_pngSize);
+    Image decayImage = ImageCache::getFromMemory(BinaryData::delay_decay100_png, BinaryData::delay_decay100_pngSize);
+    
     knobmanSlider decaySlider;
     Label decayLab;
 
@@ -34,7 +35,7 @@ public:
     Label lengthLab;
     
     
-    delayComp() : tapeDelay(), decaySlider(KnobImage, 200), lengthSlider(KnobImage, 200)
+    delayComp() : tapeDelay(), decaySlider(decayImage, 100), lengthSlider(lengthImage, 100)
     {
         
         //title
