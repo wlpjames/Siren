@@ -1,17 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ae10469-c314-4c54-9deb-c441bdf97e1c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/ic_launcher-web.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/.ninja_log" afterDir="false" />
@@ -21,6 +46,7 @@
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/BinaryData.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/BinaryData.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/BinaryData2.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/BinaryData2.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/BinaryData3.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/BinaryData3.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/BinaryData4.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/BinaryData4.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_audio_basics.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_audio_basics.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_audio_devices.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_audio_devices.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_audio_formats.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_audio_formats.cpp.o" afterDir="false" />
@@ -31,15 +57,12 @@
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_data_structures.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_data_structures.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_dsp.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_dsp.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_events.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_events.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_graphics.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_graphics.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_gui_basics.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_gui_basics.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_gui_extra.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_gui_extra.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_opengl.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_opengl.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/Source/Main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/Source/Main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/Source/Main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/android_gradle_build.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/build.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/cmake_build_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/cmake_build_command.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/cmake_build_output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/cmake_build_output.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/libcpufeatures.a" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/libcpufeatures.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/oboe/liboboe.a" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/arm64-v8a/oboe/liboboe.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/armeabi-v7a/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/armeabi-v7a/CMakeCache.txt" afterDir="false" />
@@ -47,135 +70,81 @@
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/armeabi-v7a/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/armeabi-v7a/android_gradle_build.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/armeabi-v7a/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/armeabi-v7a/build.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/armeabi-v7a/cmake_build_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/armeabi-v7a/cmake_build_command.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/.ninja_deps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/.ninja_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/armeabi-v7a/cmake_build_output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/armeabi-v7a/cmake_build_output.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/CMakeCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/CMakeFiles/cpufeatures.dir/Users/billy/Library/Android/sdk/ndk-bundle/sources/android/cpufeatures/cpu-features.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/BinaryData.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/BinaryData2.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/BinaryData3.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_audio_basics.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_audio_devices.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_audio_formats.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_audio_processors.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_audio_utils.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_core.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_cryptography.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_data_structures.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_dsp.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_events.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_graphics.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_gui_basics.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_gui_extra.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_opengl.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/Source/Main.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/android_gradle_build.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/build.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/cmake_build_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/cmake_build_command.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/libcpufeatures.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/aaudio/AAudioLoader.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/aaudio/AudioStreamAAudio.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/common/AudioSourceCaller.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/common/AudioStream.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/common/AudioStreamBuilder.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/common/DataConversionFlowGraph.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/common/FilterAudioStream.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/common/FixedBlockAdapter.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/common/FixedBlockReader.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/common/FixedBlockWriter.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/common/LatencyTuner.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/common/QuirksManager.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/common/SourceFloatCaller.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/common/SourceI16Caller.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/common/StabilizedCallback.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/common/Trace.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/common/Utilities.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/common/Version.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/fifo/FifoBuffer.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/fifo/FifoController.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/fifo/FifoControllerBase.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/fifo/FifoControllerIndirect.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/flowgraph/ClipToRange.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/flowgraph/FlowGraphNode.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/flowgraph/ManyToMultiConverter.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/flowgraph/MonoToMultiConverter.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/flowgraph/RampLinear.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/flowgraph/SampleRateConverter.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkFloat.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkI16.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkI24.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceFloat.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceI16.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceI24.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/IntegerRatio.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/LinearResampler.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/MultiChannelResampler.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResampler.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResamplerMono.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResamplerStereo.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/SincResampler.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/SincResamplerStereo.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/opensles/AudioInputStreamOpenSLES.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/opensles/AudioOutputStreamOpenSLES.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/opensles/AudioStreamBuffered.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/opensles/AudioStreamOpenSLES.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/opensles/EngineOpenSLES.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/opensles/OpenSLESUtilities.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/CMakeFiles/oboe.dir/src/opensles/OutputMixerOpenSLES.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/oboe/liboboe.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/cmake_build_output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86/cmake_build_output.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86_64/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86_64/CMakeCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86_64/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86_64/CMakeFiles/CMakeOutput.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86_64/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86_64/android_gradle_build.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86_64/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86_64/build.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86_64/cmake_build_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86_64/cmake_build_command.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86_64/cmake_build_output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/debug_Debug/x86_64/cmake_build_output.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/arm64-v8a/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/arm64-v8a/CMakeCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/arm64-v8a/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/arm64-v8a/CMakeFiles/CMakeOutput.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/arm64-v8a/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/arm64-v8a/android_gradle_build.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/arm64-v8a/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/arm64-v8a/build.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/arm64-v8a/cmake_build_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/arm64-v8a/cmake_build_command.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/arm64-v8a/cmake_build_output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/arm64-v8a/cmake_build_output.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/armeabi-v7a/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/armeabi-v7a/CMakeCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/armeabi-v7a/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/armeabi-v7a/CMakeFiles/CMakeOutput.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/armeabi-v7a/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/armeabi-v7a/android_gradle_build.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/armeabi-v7a/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/armeabi-v7a/build.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/armeabi-v7a/cmake_build_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/armeabi-v7a/cmake_build_command.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/armeabi-v7a/cmake_build_output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/armeabi-v7a/cmake_build_output.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/x86/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/x86/CMakeCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/x86/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/x86/CMakeFiles/CMakeOutput.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/x86/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/x86/android_gradle_build.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/x86/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/x86/build.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/x86/cmake_build_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/x86/cmake_build_command.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/x86/cmake_build_output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/x86/cmake_build_output.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/x86_64/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/x86_64/CMakeCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/x86_64/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/x86_64/CMakeFiles/CMakeOutput.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/x86_64/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/x86_64/android_gradle_build.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/x86_64/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/x86_64/build.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/x86_64/cmake_build_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/x86_64/cmake_build_command.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/x86_64/cmake_build_output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/.externalNativeBuild/cmake/release_Release/x86_64/cmake_build_output.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MacOSX/DubSiren.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../MacOSX/DubSiren.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MacOSX/DubSiren.xcodeproj/project.xcworkspace/xcuserdata/billy.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/../MacOSX/DubSiren.xcodeproj/project.xcworkspace/xcuserdata/billy.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MacOSX/DubSiren.xcodeproj/xcuserdata/billy.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" beforeDir="false" afterPath="$PROJECT_DIR$/../MacOSX/DubSiren.xcodeproj/xcuserdata/billy.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MacOSX/build/Debug/DubSiren.app/Contents/MacOS/DubSiren" beforeDir="false" afterPath="$PROJECT_DIR$/../MacOSX/build/Debug/DubSiren.app/Contents/MacOS/DubSiren" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MacOSX/Info-App.plist" beforeDir="false" afterPath="$PROJECT_DIR$/../MacOSX/Info-App.plist" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../iOS/DubSiren.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../iOS/DubSiren.xcodeproj/project.pbxproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../iOS/DubSiren.xcodeproj/project.xcworkspace/xcuserdata/billy.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/../iOS/DubSiren.xcodeproj/project.xcworkspace/xcuserdata/billy.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iOS/DubSiren.xcodeproj/project.xcworkspace/xcuserdata/billy.xcuserdatad/xcdebugger/Expressions.xcexplist" beforeDir="false" afterPath="$PROJECT_DIR$/../iOS/DubSiren.xcodeproj/project.xcworkspace/xcuserdata/billy.xcuserdatad/xcdebugger/Expressions.xcexplist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iOS/DubSiren.xcodeproj/xcuserdata/billy.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" beforeDir="false" afterPath="$PROJECT_DIR$/../iOS/DubSiren.xcodeproj/xcuserdata/billy.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iOS/Info-App.plist" beforeDir="false" afterPath="$PROJECT_DIR$/../iOS/Info-App.plist" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../iOS/build/Debug/DubSiren.app/DubSiren" beforeDir="false" afterPath="$PROJECT_DIR$/../iOS/build/Debug/DubSiren.app/DubSiren" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iOS/build/Debug/DubSiren.app/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/../iOS/build/Debug/DubSiren.app/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iOS/build/Debug/DubSiren.app/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/objects-13.0+.nib" beforeDir="false" afterPath="$PROJECT_DIR$/../iOS/build/Debug/DubSiren.app/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/objects-13.0+.nib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iOS/build/Debug/DubSiren.app/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/runtime.nib" beforeDir="false" afterPath="$PROJECT_DIR$/../iOS/build/Debug/DubSiren.app/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/runtime.nib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iOS/build/Debug/DubSiren.app/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/objects-13.0+.nib" beforeDir="false" afterPath="$PROJECT_DIR$/../iOS/build/Debug/DubSiren.app/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/objects-13.0+.nib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iOS/build/Debug/DubSiren.app/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/runtime.nib" beforeDir="false" afterPath="$PROJECT_DIR$/../iOS/build/Debug/DubSiren.app/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/runtime.nib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iOS/build/Debug/DubSiren.app/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/../iOS/build/Debug/DubSiren.app/_CodeSignature/CodeResources" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../DubSiren.jucer" beforeDir="false" afterPath="$PROJECT_DIR$/../../DubSiren.jucer" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../JuceLibraryCode/AppConfig.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../JuceLibraryCode/AppConfig.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../JuceLibraryCode/BinaryData.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../JuceLibraryCode/BinaryData.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../JuceLibraryCode/BinaryData.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../JuceLibraryCode/BinaryData.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../JuceLibraryCode/BinaryData2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../JuceLibraryCode/BinaryData2.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../JuceLibraryCode/BinaryData3.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../JuceLibraryCode/BinaryData3.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JuceLibraryCode/BinaryData4.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Resources/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../../Resources/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Resources/wood.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Resources/wood2.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Source/MainComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Source/MainComponent.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/MainComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Source/MainComponent.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/bufferManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Source/bufferManager.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/convolva.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Source/convolva.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Source/delay.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Source/delay.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Source/delayComp.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Source/delayComp.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Source/lfoComp.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Source/lfoComp.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/master.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Source/master.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/osc.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Source/osc.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Source/oscComp.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Source/oscComp.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Source/sendComp.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Source/sendComp.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Source/waveTable.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Source/waveTable.h" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -186,7 +155,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="d30563905080" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_API_29" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -205,29 +174,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../Source/MainComponent.cpp">
+        <entry file="file://$PROJECT_DIR$/../../Source/Main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-250">
-              <caret line="60" column="6" selection-start-line="60" selection-start-column="6" selection-end-line="60" selection-end-column="6" />
+            <state relative-caret-position="150">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
               <folding>
-                <element signature="e#204#223#0" expanded="true" />
+                <element signature="e#269#311#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../Source/convolva.h">
+        <entry file="file://$PROJECT_DIR$/../../Source/sendComp.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../../oboe/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="67" column="14" selection-start-line="67" selection-start-column="10" selection-end-line="67" selection-end-column="14" />
+            <state relative-caret-position="60">
+              <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -235,8 +197,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../Source/delay.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1231">
-              <caret line="93" column="55" selection-start-line="93" selection-start-column="55" selection-end-line="93" selection-end-column="55" />
+            <state relative-caret-position="750">
+              <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
               <folding>
                 <element signature="e#264#285#0" expanded="true" />
               </folding>
@@ -245,55 +207,55 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/JUCE/modules/juce_audio_devices/sources/juce_AudioSourcePlayer.cpp">
+        <entry file="file://$PROJECT_DIR$/../../Source/delayComp.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2280">
-              <caret line="152" column="71" selection-start-line="152" selection-start-column="71" selection-end-line="152" selection-end-column="71" />
+            <state relative-caret-position="810">
+              <caret line="54" selection-start-line="54" selection-end-line="54" />
+              <folding>
+                <element signature="e#256#298#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../Source/convolva.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1635">
+              <caret line="109" column="9" selection-start-line="109" selection-start-column="9" selection-end-line="109" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/CMakeLists.txt">
+        <entry file="file://$PROJECT_DIR$/../../Source/lfoComp.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="73" selection-start-line="22" selection-start-column="73" selection-end-line="22" selection-end-column="73" />
+            <state relative-caret-position="2100">
+              <caret line="142" column="9" selection-start-line="142" selection-start-column="9" selection-end-line="142" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-ldpi/icon.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../Source/master.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="39" column="148" selection-start-line="39" selection-start-column="148" selection-end-line="39" selection-end-column="148" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-mdpi/icon.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../Source/bufferManager.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="46" selection-start-line="46" selection-end-line="46" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/icon.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/JUCE/modules/juce_events/native/juce_android_Messaging.cpp">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4065">
-              <caret line="271" selection-start-line="271" selection-end-line="271" />
+            <state>
+              <caret column="3" selection-start-column="3" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -311,7 +273,18 @@
       <find>O</find>
       <find>0</find>
       <find>compile</find>
+      <find>glide</find>
+      <find>glideRate</find>
+      <find>setPriorit</find>
+      <find>ic_launcher</find>
+      <find>logo</find>
+      <find>icon</find>
     </findStrings>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="EXPORT_PRIVATE_KEY" value="false" />
+    <option name="KEY_STORE_PATH" value="$USER_HOME$/GoogleSigningKey" />
+    <option name="KEY_ALIAS" value="key0" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
@@ -319,21 +292,25 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../../Source/oscComp.h" />
-        <option value="$PROJECT_DIR$/../../Source/master.h" />
         <option value="$PROJECT_DIR$/../../Source/lfoComp.h" />
-        <option value="$PROJECT_DIR$/../../Source/bufferManager.h" />
-        <option value="$PROJECT_DIR$/../../Source/MainComponent.h" />
+        <option value="$PROJECT_DIR$/../../Source/oscComp.h" />
         <option value="$PROJECT_DIR$/../../Source/waveTable.h" />
-        <option value="$PROJECT_DIR$/../../Source/delay.h" />
-        <option value="$PROJECT_DIR$/../../Source/MainComponent.cpp" />
         <option value="$PROJECT_DIR$/app/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/../../Source/MainComponent.h" />
+        <option value="$PROJECT_DIR$/../../Source/convolva.h" />
+        <option value="$PROJECT_DIR$/../../Source/delay.h" />
+        <option value="$PROJECT_DIR$/../../Source/Main.cpp" />
+        <option value="$PROJECT_DIR$/../../Source/MainComponent.cpp" />
+        <option value="$PROJECT_DIR$/../../Source/master.h" />
+        <option value="$PROJECT_DIR$/../../Source/delayComp.h" />
+        <option value="$PROJECT_DIR$/../../Source/bufferManager.h" />
+        <option value="$PROJECT_DIR$/../../Source/sendComp.h" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="42" />
-    <option name="y" value="403" />
+    <option name="x" value="102" />
+    <option name="y" value="341" />
     <option name="width" value="1680" />
     <option name="height" value="947" />
   </component>
@@ -344,8 +321,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
-      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -355,24 +330,54 @@
             </path>
             <path>
               <item name="DubSiren" type="1abcf292:AndroidViewProjectNode" />
-              <item name="External Build Files" type="62ab2ea3:ExternalBuildFilesGroupNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="cpp" type="9a30073f:AndroidJniFolderNode" />
+            </path>
+            <path>
+              <item name="DubSiren" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="cpp" type="9a30073f:AndroidJniFolderNode" />
+              <item name="" type="557542c:NdkLibraryEnhancedHeadersNode" />
+            </path>
+            <path>
+              <item name="DubSiren" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="cpp" type="9a30073f:AndroidJniFolderNode" />
+              <item name="" type="557542c:NdkLibraryEnhancedHeadersNode" />
+              <item name="DubSiren" type="6cf0337f:NdkSourceFolderNode" />
+            </path>
+            <path>
+              <item name="DubSiren" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="cpp" type="9a30073f:AndroidJniFolderNode" />
+              <item name="" type="557542c:NdkLibraryEnhancedHeadersNode" />
+              <item name="DubSiren" type="6cf0337f:NdkSourceFolderNode" />
+              <item name="Source" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="DubSiren" type="1abcf292:AndroidViewProjectNode" />
+              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="emulator-5554" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-01-24T14:58:29.921Z" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="d30563905080" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-02-16T18:50:43.961Z" />
+    <property name="ExportApk.ApkPath" value="$PROJECT_DIR$/app" />
+    <property name="ExportApk.BuildVariants" value="release_Release" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="not.eligible.for.single.variant.sync" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.13020831" />
-    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
     <property name="sync.plugin.last.upgrade.timestamp" value="1580759427738" />
   </component>
   <component name="RunDashboard">
@@ -532,9 +537,9 @@
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.8993007" visible="true" weight="0.2899878" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.872093" visible="true" weight="0.2899878" />
       <window_info id="Structure" order="2" side_tool="true" />
-      <window_info id="Build Variants" order="3" sideWeight="0.1006993" side_tool="true" visible="true" weight="0.2899878" />
+      <window_info id="Build Variants" order="3" sideWeight="0.12790698" side_tool="true" visible="true" weight="0.2899878" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Designer" order="5" />
       <window_info id="Capture Tool" order="6" />
@@ -542,32 +547,24 @@
       <window_info id="Favorites" order="8" sideWeight="0.50457036" side_tool="true" weight="0.34462446" />
       <window_info anchor="bottom" id="Version Control" order="0" sideWeight="0.74153167" weight="0.32883435" />
       <window_info anchor="bottom" id="TODO" order="1" sideWeight="0.4992636" weight="0.32865497" />
-      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.49779087" weight="0.32865497" />
-      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.503663" side_tool="true" weight="0.61988306" />
-      <window_info anchor="bottom" id="Build" order="4" sideWeight="0.9206349" visible="true" weight="0.16374269" />
+      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.496337" weight="0.32865497" />
+      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.35897437" side_tool="true" visible="true" weight="0.49707603" />
+      <window_info active="true" anchor="bottom" id="Build" order="4" sideWeight="0.64102566" visible="true" weight="0.49707603" />
       <window_info anchor="bottom" id="Find" order="5" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.8644689" weight="0.03508772" />
-      <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.8681319" weight="0.32865497" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.86263734" weight="0.27719298" />
+      <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.8669109" weight="0.32865497" />
       <window_info anchor="bottom" id="Logcat" order="8" sideWeight="0.4981685" weight="0.32865497" />
-      <window_info anchor="bottom" id="Android Profiler" order="9" sideWeight="0.496337" weight="0.61988306" />
+      <window_info anchor="bottom" id="Android Profiler" order="9" sideWeight="0.496337" weight="0.9649123" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Gradle" order="1" />
       <window_info anchor="right" id="Theme Preview" order="2" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="right" id="Device File Explorer" order="4" side_tool="true" />
-      <window_info anchor="right" id="Assistant" order="5" weight="0.2716728" />
+      <window_info anchor="right" id="Assistant" order="4" weight="0.2716728" />
+      <window_info anchor="right" id="Device File Explorer" order="5" side_tool="true" weight="0.32967034" />
+      <window_info anchor="right" id="Preview" order="6" />
     </layout>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/../../Source/MainComponent.cpp</url>
-          <line>133</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="AndroidRunConfigurationType">
         <watch expression="*bufferArr[100]" language="ObjectiveC" />
@@ -684,13 +681,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Source/sendComp.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/JUCE/modules/juce_audio_devices/native/juce_android_OpenSL.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="13665">
@@ -712,13 +702,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Source/oscComp.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" column="37" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/JUCE/modules/juce_dsp/containers/juce_AudioBlock.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5325">
@@ -726,29 +709,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Source/Main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1575">
-          <caret line="105" selection-start-line="105" selection-end-line="105" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-28/android.jar!/android/os/MessageQueue.class">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Source/lfoComp.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2130">
-          <caret line="142" column="37" selection-start-line="142" selection-start-column="37" selection-end-line="142" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Source/waveTable.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="3" selection-start-line="37" selection-start-column="3" selection-end-line="37" selection-end-column="3" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../Source/env.h">
       <provider selected="true" editor-type-id="text-editor">
@@ -757,10 +719,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Source/MainComponent.h">
+    <entry file="file://$USER_HOME$/Downloads/JUCE/modules/juce_audio_devices/native/juce_android_Oboe.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="64" column="24" selection-start-line="64" selection-start-column="24" selection-end-line="64" selection-end-column="24" />
+        <state relative-caret-position="-11232" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../oboe/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1005">
+          <caret line="67" column="14" selection-start-line="67" selection-start-column="10" selection-end-line="67" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -771,17 +738,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Source/master.h">
+    <entry file="file://$PROJECT_DIR$/../../Source/osc.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Source/waveTable.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="148" selection-start-line="39" selection-start-column="148" selection-end-line="39" selection-end-column="148" />
+        <state relative-caret-position="720">
+          <caret line="48" column="18" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Source/bufferManager.h">
+    <entry file="file://$PROJECT_DIR$/../../Source/oscComp.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="555">
+          <caret line="37" column="46" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/JUCE/modules/juce_gui_basics/native/juce_android_Windowing.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16485">
+          <caret line="1099" column="17" selection-start-line="1099" selection-start-column="17" selection-end-line="1099" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Source/MainComponent.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1305">
+          <caret line="87" column="6" selection-start-line="87" selection-start-column="6" selection-end-line="87" selection-end-column="6" />
+          <folding>
+            <element signature="e#2360#2556#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../../JUCE/modules/juce_gui_basics/components/juce_Component.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8670">
+          <caret line="578" selection-start-line="578" selection-end-line="578" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../../JUCE/modules/juce_gui_basics/native/juce_android_Windowing.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7710">
+          <caret line="514" selection-start-line="514" selection-end-line="514" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Source/MainComponent.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Source/master.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="63" column="28" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../../JUCE/modules/juce_gui_basics/buttons/juce_Button.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -792,54 +814,142 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../Source/bufferManager.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2742">
+          <caret line="47" column="24" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="64" column="147" selection-start-line="64" selection-start-column="147" selection-end-line="64" selection-end-column="147" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_foreground.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/icon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-ldpi/icon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-mdpi/icon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/icon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="3" selection-start-column="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Source/Main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#269#311#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Source/sendComp.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../../Source/delay.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1231">
-          <caret line="93" column="55" selection-start-line="93" selection-start-column="55" selection-end-line="93" selection-end-column="55" />
+        <state relative-caret-position="750">
+          <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
           <folding>
             <element signature="e#264#285#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+    <entry file="file://$PROJECT_DIR$/../../Source/delayComp.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/JUCE/modules/juce_audio_devices/native/juce_android_Oboe.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11232" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Source/MainComponent.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-250">
-          <caret line="60" column="6" selection-start-line="60" selection-start-column="6" selection-end-line="60" selection-end-column="6" />
+        <state relative-caret-position="810">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
           <folding>
-            <element signature="e#204#223#0" expanded="true" />
+            <element signature="e#256#298#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../Source/convolva.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../oboe/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="67" column="14" selection-start-line="67" selection-start-column="10" selection-end-line="67" selection-end-column="14" />
+        <state relative-caret-position="1635">
+          <caret line="109" column="9" selection-start-line="109" selection-start-column="9" selection-end-line="109" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/../../Source/lfoComp.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="73" selection-start-line="22" selection-start-column="73" selection-end-line="22" selection-end-column="73" />
+        <state relative-caret-position="2100">
+          <caret line="142" column="9" selection-start-line="142" selection-start-column="9" selection-end-line="142" selection-end-column="9" />
         </state>
       </provider>
     </entry>

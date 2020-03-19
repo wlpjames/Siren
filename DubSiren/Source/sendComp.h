@@ -24,11 +24,11 @@ public:
     knobmanSlider volSlider;
     knobmanSlider delaySlider;
     knobmanSlider reverbSlider;
-    DrawableButton output;
+    TextButton output;
     TextButton delay ;
     TextButton reverb ;
     
-    Colour selectedColor = Colour(161, 28, 13);
+    Colour MyRed = Colour(161, 28, 13);
     
     enum sliderState {
         vol = 0,
@@ -41,8 +41,7 @@ public:
     float delayVal  = 0.2;
     float outputVal = 0.8;
     
-    sendComp() : volSlider(sliderImg, 201), delaySlider(sliderImg, 201), reverbSlider(sliderImg, 201),
-    output("output", DrawableButton::ImageFitted)
+    sendComp() : volSlider(sliderImg, 201), delaySlider(sliderImg, 201), reverbSlider(sliderImg, 201)
     {
         // In your constructor, you should add any child components, and
         // initialise any special settings that your component needs.
@@ -51,6 +50,7 @@ public:
         volSlider.setSliderStyle(volSlider.RotaryVerticalDrag);
         volSlider.setTextBoxStyle(Slider::NoTextBox, 0, 0, 0);
         volSlider.setRange(0, 1.0);
+        volSlider.setValue(0.7);
         volSlider.addListener(this);
         
         //delay
@@ -59,6 +59,7 @@ public:
         delaySlider.setSliderStyle(volSlider.RotaryVerticalDrag);
         delaySlider.setTextBoxStyle(Slider::NoTextBox, 0, 0, 0);
         delaySlider.setRange(0, 1);
+        delaySlider.setValue(0.35);
         delaySlider.addListener(this);
         
         //reverb
@@ -66,25 +67,28 @@ public:
         reverbSlider.setSliderStyle(volSlider.RotaryVerticalDrag);
         reverbSlider.setTextBoxStyle(Slider::NoTextBox, true, 0, 0);
         reverbSlider.setRange(0, 1);
+        reverbSlider.setValue(0.45);
         reverbSlider.addListener(this);
         
         //Setup for the buttons
         addAndMakeVisible(&output);
         output.setButtonText("OUT");
-        output.setColour(TextButton::buttonColourId, Colour(161, 28, 13));
+        output.setColour(TextButton::buttonColourId, MyRed);
         output.addListener (this);
-        //output.setImages(Drawable().create)
         output.colourChanged();
+        output.changeWidthToFitText();
         
         addAndMakeVisible(&delay);
         delay.setColour(TextButton::buttonColourId, Colours::black);
         delay.setButtonText("DEL");
         delay.addListener (this);
+        delay.changeWidthToFitText();
         
         addAndMakeVisible(&reverb);
         reverb.setColour(TextButton::buttonColourId, Colours::black);
         reverb.setButtonText("REV");
         reverb.addListener (this);
+        reverb.changeWidthToFitText();
     }
 
     ~sendComp()
@@ -99,8 +103,8 @@ public:
         g.fillRoundedRectangle(reductSize, reductSize, getWidth() - (reductSize * 2), getHeight() - (reductSize * 2), 15.0);
         
         g.setColour(Colours::black);
-        reductSize = 12;
-        g.drawRoundedRectangle(reductSize, reductSize, getWidth() - (reductSize * 2), getHeight() - (reductSize * 2), 12.0, 3.0);
+        reductSize = 11;
+        g.drawRoundedRectangle(reductSize, reductSize, getWidth() - (reductSize * 2), getHeight() - (reductSize * 2), 12.0, 2.0);
     
     }
 
@@ -124,7 +128,7 @@ public:
         
         //the rest is for buttons
         int buttonHeight = area.getHeight() / 3;
-        area = area.removeFromLeft(area.getWidth() - 15);
+        area = area.removeFromLeft(area.getWidth() - 10 );
         output.setBounds(area.removeFromTop(buttonHeight).reduced(2));
         delay.setBounds(area.removeFromTop(buttonHeight).reduced(2));
         reverb.setBounds(area.removeFromTop(buttonHeight).reduced(2));
@@ -151,7 +155,6 @@ public:
         reverb.setColour(TextButton::buttonColourId, Colours::black);
         delay.setColour(TextButton::buttonColourId, Colours::black);
         
-        Colour MyRed = Colour(161, 28, 13);
         if (button == &output) {
             if (currSlider != vol) {
                 currSlider = vol;

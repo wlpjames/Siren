@@ -12,7 +12,7 @@
     <key>CFBundleExecutable</key>
     <string>${EXECUTABLE_NAME}</string>
     <key>CFBundleIdentifier</key>
-    <string>com.yourcompany.DubSiren</string>
+    <string>com.SoulSlingshotSound.DubSiren</string>
     <key>CFBundleName</key>
     <string>DubSiren</string>
     <key>CFBundleDisplayName</key>
@@ -36,8 +36,6 @@
     <key>UISupportedInterfaceOrientations</key>
     <array>
       <string>UIInterfaceOrientationPortrait</string>
-      <string>UIInterfaceOrientationLandscapeLeft</string>
-      <string>UIInterfaceOrientationLandscapeRight</string>
     </array>
     <key>UIBackgroundModes</key>
     <array/>

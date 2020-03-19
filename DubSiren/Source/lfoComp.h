@@ -46,11 +46,12 @@ public:
         titleLab.setText("LFO", dontSendNotification);
         titleLab.setJustificationType(Justification::centredBottom);
         
+        
         //speed
 		addAndMakeVisible(speed);
 		speed.setSliderStyle(Slider::RotaryHorizontalVerticalDrag);
 		speed.setTextBoxStyle(Slider::NoTextBox, 0, 0, 0);
-		speed.setRange(.2, 7.0);
+		speed.setRange(.1, 6.0);
         speed.setValue(1);
 		speed.setTextValueSuffix(" Hz");
 		speed.addListener(this);
@@ -92,8 +93,8 @@ public:
         g.fillRoundedRectangle(reductSize, reductSize, getWidth() - (reductSize * 2), getHeight() - (reductSize * 2), 15.0);
         
         g.setColour(Colours::black);
-        reductSize = 12;
-        g.drawRoundedRectangle(reductSize, reductSize, getWidth() - (reductSize * 2), getHeight() - (reductSize * 2), 12.0, 3.0);
+        reductSize = 11;
+        g.drawRoundedRectangle(reductSize, reductSize, getWidth() - (reductSize * 2), getHeight() - (reductSize * 2), 12.0, 2.0);
     }
 
     void resized() override
@@ -101,13 +102,18 @@ public:
         // This method is where you should set the bounds of any child
         // components that your component contains..
         int cutLen;
-		auto area = getLocalBounds().reduced(20);;
+		auto area = getLocalBounds().reduced(20);
 
 		int width = area.getWidth() / 3;
         
+        //title allowed overlay w. knobs
+        titleLab.setBounds(getLocalBounds().reduced(20).removeFromTop(15));
+        
 		//area for speed
 		auto s_area = area.removeFromLeft(width);
+        
         cutLen = (s_area.getWidth() - s_area.getHeight()) / 2;
+        
         s_area.removeFromLeft(cutLen);
         s_area.removeFromRight(cutLen);
 		speed.setBounds(s_area);
@@ -130,7 +136,10 @@ public:
 	void sliderValueChanged(Slider* slider) override
 	{
 		if (slider == &speed) {
-            setFreq(slider->getValue());
+            
+            //we want this to get progressivly less active
+            float freq = sinh(slider->getValue() / 2.5);
+            setFreq(freq);
 		}
 		else if (slider == &depth) {
             setVol(slider->getValue());

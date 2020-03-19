@@ -21,7 +21,7 @@ class waveGen {
 public:
     
     enum waveType {
-        sine = 0, square, triangle, saw, invsaw
+        sine = 0, triangle, saw , invsaw, square
     };
     
     //properties

@@ -39,9 +39,11 @@ public:
     {
         
         //title
-        titleLab.setText("DELAY", dontSendNotification);
+        titleLab.setText("TAPE DELAY", dontSendNotification);
         titleLab.setJustificationType(Justification::centredBottom);
+        titleLab.setFont(Font("sans serif", 14.0, Font::plain));
         addAndMakeVisible(&titleLab);
+        
         
         //decay
         addAndMakeVisible(decaySlider);
@@ -60,7 +62,7 @@ public:
         lengthSlider.setSliderStyle(Slider::RotaryHorizontalVerticalDrag);
         lengthSlider.setTextBoxStyle(Slider::NoTextBox, 0, 0, 0);
         lengthSlider.setRange(0.1, 1.5);
-        lengthSlider.setValue(0.5);
+        lengthSlider.setValue(0.6);
         lengthSlider.addListener(this);
 
         addAndMakeVisible(lengthLab);
@@ -79,30 +81,31 @@ public:
         g.fillRoundedRectangle(reductSize, reductSize, getWidth() - (reductSize * 2), getHeight() - (reductSize * 2), 15.0);
         
         g.setColour(Colours::black);
-        reductSize = 12;
-        g.drawRoundedRectangle(reductSize, reductSize, getWidth() - (reductSize * 2), getHeight() - (reductSize * 2), 12.0, 3.0);
+        reductSize = 11;
+        g.drawRoundedRectangle(reductSize, reductSize, getWidth() - (reductSize * 2), getHeight() - (reductSize * 2), 12.0, 2.0);
     }
 
     void resized() override
     {
 
         int cutLen;
-        auto area = getLocalBounds();
-        area.reduce(15, 15);
+        auto area = getLocalBounds().reduced(10);
+
+        //commented this to see what would happen
+        area.reduce(7, 7);
         
         int compWidth = area.getWidth() / 2;
         
-        titleLab.setBounds(area.removeFromTop(20));
+        //title allowed overlay w. knobs
+        titleLab.setBounds(getLocalBounds().reduced(15).removeFromTop(20));
         
         auto d_area = area.removeFromLeft(compWidth);
-        //decayLab.setBounds(d_area.removeFromTop(15));
         cutLen = (d_area.getWidth() - d_area.getHeight()) / 2;
         d_area.removeFromLeft(cutLen);
         d_area.removeFromRight(cutLen);
         decaySlider.setBounds(d_area);
         
         auto l_area = area.removeFromLeft(compWidth);
-        //lengthLab.setBounds(l_area.removeFromTop(15));
         cutLen = (l_area.getWidth() - l_area.getHeight()) / 2;
         l_area.removeFromLeft(cutLen);
         l_area.removeFromRight(cutLen);

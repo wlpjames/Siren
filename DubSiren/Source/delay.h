@@ -91,7 +91,7 @@ public:
         //resample signal
         float r =  ((float) nativeSR / delayTime) / (float) inputSampleRate;     // resampling rate (output/input) //change include tape len
 
-        int ny = (sigLen * r);  // expected output size
+        int ny = (sigLen * r);  // expected output size // risk of rounding errors
         
         float resampled[ny];
         

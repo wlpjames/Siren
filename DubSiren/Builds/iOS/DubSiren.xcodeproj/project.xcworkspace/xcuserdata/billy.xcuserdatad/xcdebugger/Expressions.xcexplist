@@ -3,10 +3,10 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "delayComp::delayComp():delayComp.h">
+         contextName = "MainComponent::getNextAudioBlock(juce::AudioSourceChannelInfo const&amp;):MainComponent.cpp">
          <PersistentStrings>
             <PersistentString
-               value = "decayKnobImage.getWidth()">
+               value = "bufferArr[0][100]">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -18,6 +18,14 @@
          <PersistentStrings>
             <PersistentString
                value = "getWidth()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "lfoComp::sliderValueChanged(juce::Slider*):lfoComp.h">
+         <PersistentStrings>
+            <PersistentString
+               value = "slider-&gt;getValue()">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -44,7 +52,24 @@
          contextName = "void juce::dsp::Convolution::process&lt;juce::dsp::ProcessContextReplacing&lt;float&gt; &gt;(juce::dsp::ProcessContextReplacing&lt;float&gt; const&amp;):juce_Convolution.h">
       </ContextState>
       <ContextState
-         contextName = "env::setPlaying(bool):env.h">
+         contextName = "waveTable::nextFrame(float*, int):waveTable.h">
+         <PersistentStrings>
+            <PersistentString
+               value = "signal[300]">
+            </PersistentString>
+            <PersistentString
+               value = "band[table_index] 8 vol">
+            </PersistentString>
+            <PersistentString
+               value = "band[0]">
+            </PersistentString>
+            <PersistentString
+               value = "signal[100]">
+            </PersistentString>
+            <PersistentString
+               value = "signal[504]">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "knobmanSlider::knobmanSlider(juce::Image):knobmanSlider.h">
@@ -61,33 +86,16 @@
          contextName = "master::buttonClicked(juce::Button*):master.h">
       </ContextState>
       <ContextState
-         contextName = "waveTable::nextFrame(float*, int):waveTable.h">
-         <PersistentStrings>
-            <PersistentString
-               value = "signal[300]">
-            </PersistentString>
-            <PersistentString
-               value = "signal[504]">
-            </PersistentString>
-            <PersistentString
-               value = "band[table_index] 8 vol">
-            </PersistentString>
-            <PersistentString
-               value = "signal[100]">
-            </PersistentString>
-            <PersistentString
-               value = "band[0]">
-            </PersistentString>
-         </PersistentStrings>
+         contextName = "env::setPlaying(bool):env.h">
       </ContextState>
       <ContextState
          contextName = "juce::dsp::Convolution::processSamples(juce::dsp::AudioBlock&lt;float const&gt; const&amp;, juce::dsp::AudioBlock&lt;float&gt;&amp;, bool):juce_Convolution.cpp">
       </ContextState>
       <ContextState
-         contextName = "MainComponent::getNextAudioBlock(juce::AudioSourceChannelInfo const&amp;):MainComponent.cpp">
+         contextName = "delayComp::delayComp():delayComp.h">
          <PersistentStrings>
             <PersistentString
-               value = "bufferArr[0][100]">
+               value = "decayKnobImage.getWidth()">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

@@ -25,7 +25,7 @@
     This component lives inside our window, and this is where you should put all
     your controls and content.
 */
-class MainComponent   : public AudioAppComponent
+class MainComponent   : public AudioAppComponent, public Timer
 {
 public:
     //==============================================================================
@@ -40,6 +40,7 @@ public:
     //==============================================================================
     void paint (Graphics& g) override;
     void resized() override;
+    void timerCallback() override;
 
 private:
     //==============================================================================
@@ -61,8 +62,6 @@ private:
     float reverbSendVal;
     float delaySend[maxBufferSize];
     float reverbSend[maxBufferSize];
-    
-    int samplecount = 0;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainComponent)
 };

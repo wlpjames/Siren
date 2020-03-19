@@ -1,0 +1,5 @@
+[1/3] Building CXX object CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp.o
+[2/3] Building CXX object CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/Source/Main.cpp.o
+clang++: warning: argument unused during compilation: '-Wa,--noexecstack' [-Wunused-command-line-argument]
+clang++: warning: argument unused during compilation: '-Wa,--noexecstack' [-Wunused-command-line-argument]
+[3/3] Linking CXX shared library ../../../../build/intermediates/cmake/debug_Debug/obj/x86_64/libjuce_jni.so

@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/build/intermediates/res/merged/release_/release/values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/release/res/values/string.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "2",
+                        "startOffsets": "54",
+                        "endColumns": "43",
+                        "endOffsets": "95"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "45",
+                        "endOffsets": "96"
+                    }
+                }
+            ]
+        }
+    ]
+}

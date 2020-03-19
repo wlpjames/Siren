@@ -1,0 +1,85 @@
+{
+  "variant": {
+    "module": {
+      "rootBuildGradleFolder": "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android",
+      "sdkFolder": "/Users/billy/Library/Android/sdk",
+      "isNativeCompilerSettingsCacheEnabled": false,
+      "isBuildOnlyTargetAbiEnabled": true,
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/build/intermediates",
+      "gradleModulePathName": ":app",
+      "moduleRootFolder": "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app",
+      "makeFile": "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/CMakeLists.txt",
+      "buildSystem": "CMAKE",
+      "compilerSettingsCacheFolder": "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/.cxx",
+      "cxxFolder": "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx",
+      "ndkFolder": "/Users/billy/Library/Android/sdk/ndk-bundle",
+      "ndkVersion": "20.1.5948944",
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "cmakeToolchainFile": "."
+    },
+    "buildSystemArgumentList": [
+      "-DANDROID_TOOLCHAIN\u003dclang",
+      "-DANDROID_PLATFORM\u003dandroid-23",
+      "-DANDROID_STL\u003dc++_static",
+      "-DANDROID_CPP_FEATURES\u003dexceptions rtti",
+      "-DANDROID_ARM_MODE\u003darm",
+      "-DANDROID_ARM_NEON\u003dTRUE",
+      "-DJUCE_BUILD_CONFIGURATION\u003dDEBUG",
+      "-DCMAKE_CXX_FLAGS_DEBUG\u003d-Ofast",
+      "-DCMAKE_C_FLAGS_DEBUG\u003d-Ofast"
+    ],
+    "cFlagList": [
+      "-fsigned-char"
+    ],
+    "cppFlagsList": [
+      "-fsigned-char",
+      "-std\u003dc++14"
+    ],
+    "variantName": "debug_Debug",
+    "soFolder": "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/build/intermediates/cmake/debug_Debug/lib",
+    "objFolder": "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/build/intermediates/cmake/debug_Debug/obj",
+    "jsonFolder": "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/debug_Debug",
+    "gradleBuildOutputFolder": "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cxx/debug_Debug",
+    "isDebuggableEnabled": true,
+    "validAbiList": [
+      "ARMEABI_V7A",
+      "ARM64_V8A",
+      "X86",
+      "X86_64"
+    ],
+    "buildTargetSet": []
+  },
+  "abi": "X86_64",
+  "abiPlatformVersion": 23,
+  "cxxBuildFolder": "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/debug_Debug/x86_64",
+  "jsonFile": "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/debug_Debug/x86_64/android_gradle_build.json",
+  "gradleBuildOutputFolder": "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cxx/debug_Debug/x86_64",
+  "objFolder": "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/build/intermediates/cmake/debug_Debug/obj/x86_64",
+  "buildCommandFile": "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/debug_Debug/x86_64/build_command.txt",
+  "buildOutputFile": "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/debug_Debug/x86_64/build_output.txt",
+  "modelOutputFile": "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/debug_Debug/x86_64/build_model.json",
+  "cmake": {
+    "cmakeListsWrapperFile": "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cxx/debug_Debug/x86_64/CMakeLists.txt",
+    "toolchainWrapperFile": "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cxx/debug_Debug/x86_64/android_gradle_build.toolchain.cmake",
+    "buildGenerationStateFile": "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cxx/debug_Debug/x86_64/build_generation_state.json",
+    "cacheKeyFile": "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cxx/debug_Debug/x86_64/compiler_cache_key.json",
+    "compilerCacheUseFile": "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cxx/debug_Debug/x86_64/compiler_cache_use.json",
+    "compilerCacheWriteFile": "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cxx/debug_Debug/x86_64/compiler_cache_write.json",
+    "toolchainSettingsFromCacheFile": "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cxx/debug_Debug/x86_64/compiler_settings_cache.cmake",
+    "cmakeWrappingBaseFolder": "."
+  },
+  "jsonGenerationLoggingRecordFile": "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/debug_Debug/x86_64/json_generation_record.json",
+  "compileCommandsJsonFile": "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/debug_Debug/x86_64/compile_commands.json"
+}

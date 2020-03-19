@@ -1,0 +1,46 @@
+[
+  {
+    "level": "INFO",
+    "message": "Start JSON generation. Platform version: 23 min SDK version: arm64-v8a"
+  },
+  {
+    "level": "INFO",
+    "message": "rebuilding JSON /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/release_Release/arm64-v8a/android_gradle_build.json due to:"
+  },
+  {
+    "level": "INFO",
+    "message": "- a dependent build file changed"
+  },
+  {
+    "level": "INFO",
+    "message": "  - /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/CMakeLists.txt"
+  },
+  {
+    "level": "INFO",
+    "message": "keeping json folder \u0027/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/release_Release/arm64-v8a\u0027 but regenerating project"
+  },
+  {
+    "level": "INFO",
+    "message": "executing cmake Executable : /Users/billy/Library/Android/sdk/cmake/3.6.4111459/bin/cmake\narguments : \n-H/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app\n-B/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/release_Release/arm64-v8a\n-DANDROID_ABI\u003darm64-v8a\n-DANDROID_PLATFORM\u003dandroid-23\n-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003d/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/build/intermediates/cmake/release_Release/obj/arm64-v8a\n-DCMAKE_BUILD_TYPE\u003dRelease\n-DANDROID_NDK\u003d/Users/billy/Library/Android/sdk/ndk-bundle\n-DCMAKE_C_FLAGS\u003d-fsigned-char\n-DCMAKE_CXX_FLAGS\u003d-fsigned-char -std\u003dc++14\n-DCMAKE_TOOLCHAIN_FILE\u003d/Users/billy/Library/Android/sdk/ndk-bundle/build/cmake/android.toolchain.cmake\n-DCMAKE_MAKE_PROGRAM\u003d/Users/billy/Library/Android/sdk/cmake/3.6.4111459/bin/ninja\n-GAndroid Gradle - Ninja\n-DANDROID_TOOLCHAIN\u003dclang\n-DANDROID_PLATFORM\u003dandroid-23\n-DANDROID_STL\u003dc++_static\n-DANDROID_CPP_FEATURES\u003dexceptions rtti\n-DANDROID_ARM_MODE\u003darm\n-DANDROID_ARM_NEON\u003dTRUE\n-DJUCE_BUILD_CONFIGURATION\u003dRELEASE\n-DCMAKE_CXX_FLAGS_RELEASE\u003d-Ofast -Wall -Wshadow-all -Wshorten-64-to-32 -Wstrict-aliasing -Wuninitialized -Wunused-parameter -Wconversion -Wsign-compare -Wint-conversion -Wconditional-uninitialized -Woverloaded-virtual -Wreorder -Wconstant-conversion -Wsign-conversion -Wunused-private-field -Wbool-conversion -Wextra-semi -Wunreachable-code -Wzero-as-null-pointer-constant -Wcast-align -Winconsistent-missing-destructor-override -Wshift-sign-overflow -Wnullable-to-nonnull-conversion -Wno-missing-field-initializers -Wno-ignored-qualifiers\n-DCMAKE_C_FLAGS_RELEASE\u003d-Ofast\njvmArgs : \n\n"
+  },
+  {
+    "level": "INFO",
+    "message": "Executable : /Users/billy/Library/Android/sdk/cmake/3.6.4111459/bin/cmake\narguments : \n-H/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app\n-B/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/release_Release/arm64-v8a\n-DANDROID_ABI\u003darm64-v8a\n-DANDROID_PLATFORM\u003dandroid-23\n-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003d/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/build/intermediates/cmake/release_Release/obj/arm64-v8a\n-DCMAKE_BUILD_TYPE\u003dRelease\n-DANDROID_NDK\u003d/Users/billy/Library/Android/sdk/ndk-bundle\n-DCMAKE_C_FLAGS\u003d-fsigned-char\n-DCMAKE_CXX_FLAGS\u003d-fsigned-char -std\u003dc++14\n-DCMAKE_TOOLCHAIN_FILE\u003d/Users/billy/Library/Android/sdk/ndk-bundle/build/cmake/android.toolchain.cmake\n-DCMAKE_MAKE_PROGRAM\u003d/Users/billy/Library/Android/sdk/cmake/3.6.4111459/bin/ninja\n-GAndroid Gradle - Ninja\n-DANDROID_TOOLCHAIN\u003dclang\n-DANDROID_PLATFORM\u003dandroid-23\n-DANDROID_STL\u003dc++_static\n-DANDROID_CPP_FEATURES\u003dexceptions rtti\n-DANDROID_ARM_MODE\u003darm\n-DANDROID_ARM_NEON\u003dTRUE\n-DJUCE_BUILD_CONFIGURATION\u003dRELEASE\n-DCMAKE_CXX_FLAGS_RELEASE\u003d-Ofast -Wall -Wshadow-all -Wshorten-64-to-32 -Wstrict-aliasing -Wuninitialized -Wunused-parameter -Wconversion -Wsign-compare -Wint-conversion -Wconditional-uninitialized -Woverloaded-virtual -Wreorder -Wconstant-conversion -Wsign-conversion -Wunused-private-field -Wbool-conversion -Wextra-semi -Wunreachable-code -Wzero-as-null-pointer-constant -Wcast-align -Winconsistent-missing-destructor-override -Wshift-sign-overflow -Wnullable-to-nonnull-conversion -Wno-missing-field-initializers -Wno-ignored-qualifiers\n-DCMAKE_C_FLAGS_RELEASE\u003d-Ofast\njvmArgs : \n\n"
+  },
+  {
+    "level": "INFO",
+    "message": "done executing cmake"
+  },
+  {
+    "level": "INFO",
+    "message": "write build output /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/release_Release/arm64-v8a/build_output.txt"
+  },
+  {
+    "level": "INFO",
+    "message": "write command file /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/release_Release/arm64-v8a/build_command.txt"
+  },
+  {
+    "level": "INFO",
+    "message": "JSON generation completed without problems"
+  }
+]

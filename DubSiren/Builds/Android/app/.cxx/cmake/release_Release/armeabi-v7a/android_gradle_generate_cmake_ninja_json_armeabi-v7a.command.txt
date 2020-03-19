@@ -1,0 +1,25 @@
+Executable : /Users/billy/Library/Android/sdk/cmake/3.6.4111459/bin/cmake
+arguments : 
+-H/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app
+-B/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/release_Release/armeabi-v7a
+-DANDROID_ABI=armeabi-v7a
+-DANDROID_PLATFORM=android-23
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/build/intermediates/cmake/release_Release/obj/armeabi-v7a
+-DCMAKE_BUILD_TYPE=Release
+-DANDROID_NDK=/Users/billy/Library/Android/sdk/ndk-bundle
+-DCMAKE_C_FLAGS=-fsigned-char
+-DCMAKE_CXX_FLAGS=-fsigned-char -std=c++14
+-DCMAKE_TOOLCHAIN_FILE=/Users/billy/Library/Android/sdk/ndk-bundle/build/cmake/android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=/Users/billy/Library/Android/sdk/cmake/3.6.4111459/bin/ninja
+-GAndroid Gradle - Ninja
+-DANDROID_TOOLCHAIN=clang
+-DANDROID_PLATFORM=android-23
+-DANDROID_STL=c++_static
+-DANDROID_CPP_FEATURES=exceptions rtti
+-DANDROID_ARM_MODE=arm
+-DANDROID_ARM_NEON=TRUE
+-DJUCE_BUILD_CONFIGURATION=RELEASE
+-DCMAKE_CXX_FLAGS_RELEASE=-Ofast -Wall -Wshadow-all -Wshorten-64-to-32 -Wstrict-aliasing -Wuninitialized -Wunused-parameter -Wconversion -Wsign-compare -Wint-conversion -Wconditional-uninitialized -Woverloaded-virtual -Wreorder -Wconstant-conversion -Wsign-conversion -Wunused-private-field -Wbool-conversion -Wextra-semi -Wunreachable-code -Wzero-as-null-pointer-constant -Wcast-align -Winconsistent-missing-destructor-override -Wshift-sign-overflow -Wnullable-to-nonnull-conversion -Wno-missing-field-initializers -Wno-ignored-qualifiers
+-DCMAKE_C_FLAGS_RELEASE=-Ofast
+jvmArgs : 
+

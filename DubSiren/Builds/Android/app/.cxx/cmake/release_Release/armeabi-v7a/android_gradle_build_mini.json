@@ -1,0 +1,29 @@
+{
+  "buildFiles": [
+    "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/CMakeLists.txt",
+    "/Users/billy/Documents/git/oboe/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/Users/billy/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/release_Release/armeabi-v7a --target clean"
+  ],
+  "libraries": {
+    "cpufeatures-Release-armeabi-v7a": {
+      "artifactName": "cpufeatures",
+      "buildCommand": "/Users/billy/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/release_Release/armeabi-v7a --target cpufeatures",
+      "abi": "armeabi-v7a",
+      "output": "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/release_Release/armeabi-v7a/libcpufeatures.a"
+    },
+    "juce_jni-Release-armeabi-v7a": {
+      "artifactName": "juce_jni",
+      "buildCommand": "/Users/billy/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/release_Release/armeabi-v7a --target juce_jni",
+      "abi": "armeabi-v7a",
+      "output": "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/build/intermediates/cmake/release_Release/obj/armeabi-v7a/libjuce_jni.so"
+    },
+    "oboe-Release-armeabi-v7a": {
+      "artifactName": "oboe",
+      "buildCommand": "/Users/billy/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/release_Release/armeabi-v7a --target oboe",
+      "abi": "armeabi-v7a",
+      "output": "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/release_Release/armeabi-v7a/oboe/liboboe.a"
+    }
+  }
+}

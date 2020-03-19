@@ -1,0 +1,29 @@
+{
+  "buildFiles": [
+    "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/CMakeLists.txt",
+    "/Users/billy/Documents/git/oboe/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/Users/billy/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/release_Release/x86 --target clean"
+  ],
+  "libraries": {
+    "cpufeatures-Release-x86": {
+      "artifactName": "cpufeatures",
+      "buildCommand": "/Users/billy/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/release_Release/x86 --target cpufeatures",
+      "abi": "x86",
+      "output": "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/release_Release/x86/libcpufeatures.a"
+    },
+    "juce_jni-Release-x86": {
+      "artifactName": "juce_jni",
+      "buildCommand": "/Users/billy/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/release_Release/x86 --target juce_jni",
+      "abi": "x86",
+      "output": "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/build/intermediates/cmake/release_Release/obj/x86/libjuce_jni.so"
+    },
+    "oboe-Release-x86": {
+      "artifactName": "oboe",
+      "buildCommand": "/Users/billy/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/release_Release/x86 --target oboe",
+      "abi": "x86",
+      "output": "/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/release_Release/x86/oboe/liboboe.a"
+    }
+  }
+}

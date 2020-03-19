@@ -59,17 +59,25 @@ void MainComponent::prepareToPlay (int samplesPerBlockExpected, double sampleRat
     reverb.loadImpulse(BinaryData::tubby_wav, BinaryData::tubby_wavSize);
     
     //prepare amptoner
-    //amp.setSamplerate(sampleRate);
-    //amp.loadImpulse(BinaryData::cassette_recorder_wav, BinaryData::cassette_recorder_wavSize);
-    //amp.setMix(0.75); // try uping it?
+    amp.setSamplerate(sampleRate);
+    amp.loadImpulse(BinaryData::cassette_recorder_wav, BinaryData::cassette_recorder_wavSize);
+    amp.setMix(0.95); // try uping it?
 
+    //at this point we will set a timed call to repaint to keep the CPU active and
+    //avoid re-scalling on android -- a known hacky solution
+    startTimer(1);
+
+    //if this works the wayhey -- might not though
+    Process::setPriority(Process::RealtimePriority);
+    
 }
 
 void MainComponent::getNextAudioBlock (const AudioSourceChannelInfo& bufferToFill)
 {
-    
-    
-    if ( !Process::isForegroundProcess()  ) {
+
+    //this will not catch on android
+#if JUCE_IOS
+    if ( !isShowing() || !Process::isForegroundProcess() ) {
         delay.reset();
         envelope.reset();
         amp.reset();
@@ -77,7 +85,8 @@ void MainComponent::getNextAudioBlock (const AudioSourceChannelInfo& bufferToFil
         Master.reset();
         return;
     }
-    
+#endif
+
     //bufferToFill.clearActiveBufferRegion();
     float** bufferArr = bufferToFill.buffer->getArrayOfWritePointers();
     int bufferLen = bufferToFill.numSamples;
@@ -107,11 +116,11 @@ void MainComponent::getNextAudioBlock (const AudioSourceChannelInfo& bufferToFil
     
     //sum the outputs of the send
     for (int i = 0; i < bufferLen; i++) {
-        bufferArr[0][i] = (bufferArr[0][i] * dryOutputVal) + (reverbSend[i] * reverbSendVal) + (delaySend[i] * delaySendVal);
+        bufferArr[0][i] = (bufferArr[0][i] * dryOutputVal) + (reverbSend[i] * (reverbSendVal/10)) + (delaySend[i] * delaySendVal);
     }
     
     //run through an amp
-    //amp.process(bufferArr[0], bufferLen);
+    amp.process(bufferArr[0], bufferLen);
     
     //do some more wave shaping
     clipa.process(bufferArr[0], bufferLen);
@@ -164,4 +173,9 @@ void MainComponent::resized()
     
     Master.setBounds(area);
 
+}
+
+void MainComponent::timerCallback()
+{
+    repaint();
 }

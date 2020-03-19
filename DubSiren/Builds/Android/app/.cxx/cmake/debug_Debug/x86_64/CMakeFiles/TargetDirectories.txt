@@ -1,0 +1,15 @@
+/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/debug_Debug/x86_64/CMakeFiles/edit_cache.dir
+/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/debug_Debug/x86_64/CMakeFiles/rebuild_cache.dir
+/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/debug_Debug/x86_64/CMakeFiles/list_install_components.dir
+/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/debug_Debug/x86_64/CMakeFiles/cpufeatures.dir
+/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/debug_Debug/x86_64/CMakeFiles/install.dir
+/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/debug_Debug/x86_64/CMakeFiles/install/strip.dir
+/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/debug_Debug/x86_64/CMakeFiles/install/local.dir
+/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/debug_Debug/x86_64/CMakeFiles/juce_jni.dir
+/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/debug_Debug/x86_64/oboe/CMakeFiles/edit_cache.dir
+/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/debug_Debug/x86_64/oboe/CMakeFiles/rebuild_cache.dir
+/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/debug_Debug/x86_64/oboe/CMakeFiles/list_install_components.dir
+/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/debug_Debug/x86_64/oboe/CMakeFiles/install.dir
+/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/debug_Debug/x86_64/oboe/CMakeFiles/install/strip.dir
+/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/debug_Debug/x86_64/oboe/CMakeFiles/install/local.dir
+/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/debug_Debug/x86_64/oboe/CMakeFiles/oboe.dir

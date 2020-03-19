@@ -59,15 +59,35 @@ public:
     {
         is_playing = false;
     }
-    
+
+
     void buttonClicked (Button* button) override
     {
+#if JUCE_IOS
+        /*
         if (button == &playStop) {
             is_playing = !is_playing;
             return;
         }
+         */
+#endif
         return;
     }
+
+
+
+    void buttonStateChanged(Button* button) override
+    {
+#if JUCE_ANDROID || JUCE_IOS
+        if (button == &playStop) {
+
+            is_playing = button->isDown();
+
+        }
+#endif
+        return;
+    }
+
     
     void paint (Graphics& g) override
     {
@@ -76,8 +96,8 @@ public:
         g.fillRoundedRectangle(reductSize, reductSize, getWidth() - (reductSize * 2), getHeight() - (reductSize * 2), 15.0);
         
         g.setColour(Colours::black);
-        reductSize = 12;
-        g.drawRoundedRectangle(reductSize, reductSize, getWidth() - (reductSize * 2), getHeight() - (reductSize * 2), 12.0, 3.0);
+        reductSize = 11;
+        g.drawRoundedRectangle(reductSize, reductSize, getWidth() - (reductSize * 2), getHeight() - (reductSize * 2), 12.0, 2.0);
     }
 
     void resized() override

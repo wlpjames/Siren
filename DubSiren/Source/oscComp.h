@@ -44,13 +44,15 @@ public:
         addAndMakeVisible(&titleLab);
         titleLab.setText("OSC", dontSendNotification);
         titleLab.setJustificationType(Justification::centredBottom);
+        titleLab.setFont(Font(18.0));
+        
         
 		addAndMakeVisible(freq);
 		freq.setSliderStyle(Slider::RotaryHorizontalVerticalDrag);
 		freq.setTextBoxStyle(Slider::NoTextBox, 0, 0, 0);
-		freq.setRange(50, 1200.0, 1); 
+        freq.setNormalisableRange(NormalisableRange<double>(50, 1000, 1, .3, false));
 		freq.setTextValueSuffix(" Hz");
-        freq.setValue(440);
+        freq.setValue(290);
 		freq.addListener(this);
 
 		addAndMakeVisible(freqLab);
@@ -79,8 +81,8 @@ public:
         g.fillRoundedRectangle(reductSize, reductSize, getWidth() - (reductSize * 2), getHeight() - (reductSize * 2), 15.0);
         
         g.setColour(Colours::black);
-        reductSize = 12;
-        g.drawRoundedRectangle(reductSize, reductSize, getWidth() - (reductSize * 2), getHeight() - (reductSize * 2), 12.0, 3.0);
+        reductSize = 11;
+        g.drawRoundedRectangle(reductSize, reductSize, getWidth() - (reductSize * 2), getHeight() - (reductSize * 2), 12.0, 2);
 
     }
 
@@ -94,8 +96,8 @@ public:
         area.removeFromRight(20);
         area.removeFromLeft(20);
         
-        //auto titleArea = area.removeFromTop(35);
-        //titleLab.setBounds(titleArea);
+        //title allowed overlay w. knobs
+        titleLab.setBounds(getLocalBounds().reduced(20).removeFromTop(20));
         
 		int width = area.getWidth() / 2;
 

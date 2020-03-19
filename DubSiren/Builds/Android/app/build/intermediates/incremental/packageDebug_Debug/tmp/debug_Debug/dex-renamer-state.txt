@@ -1,0 +1,4 @@
+#Fri Feb 28 23:35:59 GMT 2020
+base.0=/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/build/intermediates/dex/debug_Debug/mergeProjectDexDebug_Debug/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

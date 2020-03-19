@@ -1,0 +1,117 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:3:1-24:12
+INJECTED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:3:1-24:12
+INJECTED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:3:1-24:12
+INJECTED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:3:1-24:12
+INJECTED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:3:1-24:12
+INJECTED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:3:1-24:12
+INJECTED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:3:1-24:12
+	package
+		ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:4:11-52
+		INJECTED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:3:94-121
+		INJECTED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:3:11-69
+	android:versionCode
+		ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:3:70-93
+		INJECTED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml
+supports-screens
+ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:5:3-133
+	android:largeScreens
+		ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:5:78-105
+	android:smallScreens
+		ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:5:21-48
+	android:normalScreens
+		ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:5:49-77
+	android:anyDensity
+		ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:5:106-131
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:6:3-78
+	android:name
+		ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:6:20-76
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:7:3-77
+	android:name
+		ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:7:20-75
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:8:3-78
+	android:name
+		ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:8:20-76
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:9:3-71
+	android:name
+		ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:9:20-69
+uses-permission#android.permission.BLUETOOTH
+ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:10:3-65
+	android:name
+		ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:10:20-63
+uses-permission#android.permission.CHANGE_WIFI_MULTICAST_STATE
+ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:11:3-83
+	android:name
+		ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:11:20-81
+uses-permission#android.permission.INTERNET
+ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:12:3-64
+	android:name
+		ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:12:20-62
+uses-feature#0x00030000
+ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:13:3-75
+	android:glEsVersion
+		ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:13:17-49
+	android:required
+		ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:13:50-73
+application
+ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:14:3-23:17
+	android:label
+		ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:14:16-48
+	android:hardwareAccelerated
+		ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:15:46-81
+	android:icon
+		ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:15:16-45
+	android:theme
+		ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:14:86-133
+	android:name
+		ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:14:49-85
+activity#com.roli.juce.JuceActivity
+ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:16:5-22:16
+	android:screenOrientation
+		ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:17:15-51
+	android:label
+		ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:16:57-89
+	android:launchMode
+		ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:17:52-83
+	android:hardwareAccelerated
+		ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:17:84-118
+	android:configChanges
+		ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:16:90-151
+	android:name
+		ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:16:15-56
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:18:7-21:23
+action#android.intent.action.MAIN
+ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:19:9-60
+	android:name
+		ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:19:17-58
+category#android.intent.category.LAUNCHER
+ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:20:9-68
+	android:name
+		ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml:20:19-66
+uses-sdk
+INJECTED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/src/main/AndroidManifest.xml

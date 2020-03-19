@@ -32,8 +32,7 @@ public:
             //reset values for a new buffer
             currIndex = 0;
         }
-        
-        
+
         if (currIndex >= bufferInSize) {
             //check if buffer has been filled, return 0 if so
             return 0;

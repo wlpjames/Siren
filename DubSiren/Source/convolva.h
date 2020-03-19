@@ -26,6 +26,7 @@ public:
     float mix;
     float* tempMix;
     const int MAXBUFFERLEN = 2048;
+    int samplerate;
     
     convolva(float Mix = 0.9)
     {
@@ -73,7 +74,7 @@ public:
         memcpy(tempMix, signal, sizeof(float) * siglen);
 
         //proccess
-        dsp::AudioBlock<float> block (&tempMix, 1, siglen);
+        dsp::AudioBlock<float> block (&signal, 1, siglen);
         convolution.process(ProcessContextReplacing<float> (block));
         
         //loop through to apply a mix
@@ -90,7 +91,8 @@ public:
         spec.sampleRate = sr*2;
         spec.maximumBlockSize = 2048;
         convolution.prepare(spec);
-        
+        samplerate = sr;
+
         //get everything else ready
         convolution.reset();
         is_prepared = true;
@@ -106,7 +108,7 @@ public:
         while (! dir.getChildFile ("Resources").exists() && numTries++ < 15) {
             dir = dir.getParentDirectory();
         }
-        convolution.loadImpulseResponse (file, fileSize, false, false, 0);
+        convolution.loadImpulseResponse (file, fileSize, false, false, 88000, false);
         is_loaded = true;
     }
     
@@ -117,13 +119,6 @@ public:
         }
         return;
     }
-    
-private:
-    enum
-    {
-        convolutionIndex               // [2]
-    };
-    
     
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (convolva)
     

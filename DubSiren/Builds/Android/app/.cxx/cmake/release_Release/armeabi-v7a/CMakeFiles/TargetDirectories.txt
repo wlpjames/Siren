@@ -1,0 +1,15 @@
+/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/release_Release/armeabi-v7a/CMakeFiles/edit_cache.dir
+/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/release_Release/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/release_Release/armeabi-v7a/CMakeFiles/list_install_components.dir
+/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/release_Release/armeabi-v7a/CMakeFiles/cpufeatures.dir
+/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/release_Release/armeabi-v7a/CMakeFiles/install.dir
+/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/release_Release/armeabi-v7a/CMakeFiles/install/strip.dir
+/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/release_Release/armeabi-v7a/CMakeFiles/install/local.dir
+/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/release_Release/armeabi-v7a/CMakeFiles/juce_jni.dir
+/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/release_Release/armeabi-v7a/oboe/CMakeFiles/edit_cache.dir
+/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/release_Release/armeabi-v7a/oboe/CMakeFiles/rebuild_cache.dir
+/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/release_Release/armeabi-v7a/oboe/CMakeFiles/list_install_components.dir
+/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/release_Release/armeabi-v7a/oboe/CMakeFiles/install.dir
+/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/release_Release/armeabi-v7a/oboe/CMakeFiles/install/strip.dir
+/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/release_Release/armeabi-v7a/oboe/CMakeFiles/install/local.dir
+/Users/billy/Documents/git/Siren/DubSiren/Builds/Android/app/.cxx/cmake/release_Release/armeabi-v7a/oboe/CMakeFiles/oboe.dir

@@ -1,0 +1,2148 @@
+[1/72] Building C object CMakeFiles/cpufeatures.dir/Users/billy/Library/Android/sdk/ndk-bundle/sources/android/cpufeatures/cpu-features.c.o
+[2/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/aaudio/AAudioLoader.cpp.o
+[3/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/aaudio/AudioStreamAAudio.cpp.o
+[4/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/AudioSourceCaller.cpp.o
+[5/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/AudioStream.cpp.o
+[6/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/AudioStreamBuilder.cpp.o
+/Users/billy/Documents/git/oboe/src/aaudio/AAudioLoader.cpp:134:56: warning: unused parameter 'functionName' [-Wunused-parameter]
+static void AAudioLoader_check(void *proc, const char *functionName) {
+                                                       ^
+1 warning generated.
+[7/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/DataConversionFlowGraph.cpp.o
+clang: warning: argument unused during compilation: '-Wa,--noexecstack' [-Wunused-command-line-argument]
+[8/72] Linking C static library libcpufeatures.a
+[9/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/FilterAudioStream.cpp.o
+In file included from /Users/billy/Documents/git/oboe/src/common/AudioSourceCaller.cpp:17:
+In file included from /Users/billy/Documents/git/oboe/src/common/AudioSourceCaller.h:23:
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:215:13: warning: '~FlowGraphPortFloatOutput' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphPortFloatOutput() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:185:13: note: overridden virtual function is here
+    virtual ~FlowGraphPortFloat() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:265:13: warning: '~FlowGraphPortFloatInput' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphPortFloatInput() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:185:13: note: overridden virtual function is here
+    virtual ~FlowGraphPortFloat() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:383:13: warning: '~FlowGraphSink' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphSink() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:62:13: note: overridden virtual function is here
+    virtual ~FlowGraphNode() = default;
+            ^
+In file included from /Users/billy/Documents/git/oboe/src/common/AudioSourceCaller.cpp:17:
+In file included from /Users/billy/Documents/git/oboe/src/common/AudioSourceCaller.h:24:
+/Users/billy/Documents/git/oboe/src/common/FixedBlockReader.h:35:13: warning: '~FixedBlockReader' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FixedBlockReader() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/common/FixedBlockAdapter.h:47:13: note: overridden virtual function is here
+    virtual ~FixedBlockAdapter();
+            ^
+4 warnings generated.
+[10/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/FixedBlockAdapter.cpp.o
+In file included from /Users/billy/Documents/git/oboe/src/common/AudioStream.cpp:23:
+/Users/billy/Documents/git/oboe/src/common/AudioClock.h:50:67: warning: zero as null pointer constant [-Wzero-as-null-pointer-constant]
+        return 0 - clock_nanosleep(clockId, TIMER_ABSTIME, &time, NULL);
+                                                                  ^~~~
+                                                                  nullptr
+/Users/billy/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.7/include/stddef.h:100:18: note: expanded from macro 'NULL'
+#    define NULL __null
+                 ^
+In file included from /Users/billy/Documents/git/oboe/src/common/AudioStream.cpp:23:
+/Users/billy/Documents/git/oboe/src/common/AudioClock.h:48:32: warning: implicit conversion loses integer precision: 'long long' to 'time_t' (aka 'long') [-Wshorten-64-to-32]
+        time.tv_sec = nanoTime / kNanosPerSecond;
+                    ~ ~~~~~~~~~^~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/common/AudioClock.h:49:33: warning: implicit conversion loses integer precision: 'long long' to 'long' [-Wshorten-64-to-32]
+        time.tv_nsec = nanoTime - (time.tv_sec * kNanosPerSecond);
+                     ~ ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/common/AudioClock.h:67:59: warning: zero as null pointer constant [-Wzero-as-null-pointer-constant]
+            return 0 - clock_nanosleep(clockId, 0, &time, NULL);
+                                                          ^~~~
+                                                          nullptr
+/Users/billy/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.7/include/stddef.h:100:18: note: expanded from macro 'NULL'
+#    define NULL __null
+                 ^
+In file included from /Users/billy/Documents/git/oboe/src/common/AudioStream.cpp:23:
+/Users/billy/Documents/git/oboe/src/common/AudioClock.h:65:39: warning: implicit conversion loses integer precision: 'long long' to 'time_t' (aka 'long') [-Wshorten-64-to-32]
+            time.tv_sec = nanoseconds / kNanosPerSecond;
+                        ~ ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/common/AudioClock.h:66:40: warning: implicit conversion loses integer precision: 'long long' to 'long' [-Wshorten-64-to-32]
+            time.tv_nsec = nanoseconds - (time.tv_sec * kNanosPerSecond);
+                         ~ ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/common/AudioStream.cpp:155:77: warning: implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int' [-Wshorten-64-to-32]
+    if (readCounter < 0) return ResultWithValue<int32_t>::createBasedOnSign(readCounter);
+                                ~~~~~~~~~~~~~~~                             ^~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/common/AudioStream.cpp:157:78: warning: implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int' [-Wshorten-64-to-32]
+    if (writeCounter < 0) return ResultWithValue<int32_t>::createBasedOnSign(writeCounter);
+                                 ~~~~~~~~~~~~~~~                             ^~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/common/AudioStream.cpp:158:44: warning: implicit conversion loses integer precision: 'long long' to 'int32_t' (aka 'int') [-Wshorten-64-to-32]
+    int32_t framesAvailable = writeCounter - readCounter;
+            ~~~~~~~~~~~~~~~   ~~~~~~~~~~~~~^~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/common/AudioStream.cpp:184:40: warning: implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int' [-Wshorten-64-to-32]
+            : ResultWithValue<int32_t>(framesAvailable);
+              ~~~~~~~~~~~~~~~          ^~~~~~~~~~~~~~~
+10 warnings generated.
+[11/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/FixedBlockReader.cpp.o
+/Users/billy/Documents/git/oboe/src/common/FixedBlockAdapter.cpp:27:44: warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'size_t' (aka 'unsigned int') [-Wsign-conversion]
+    mStorage = std::make_unique<uint8_t[]>(bytesPerFixedBlock);
+               ~~~                         ^~~~~~~~~~~~~~~~~~
+1 warning generated.
+[12/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/FixedBlockWriter.cpp.o
+In file included from /Users/billy/Documents/git/oboe/src/aaudio/AudioStreamAAudio.cpp:22:
+/Users/billy/Documents/git/oboe/src/aaudio/AudioStreamAAudio.h:42:13: warning: '~AudioStreamAAudio' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~AudioStreamAAudio() = default;
+            ^
+/Users/billy/Documents/git/oboe/include/oboe/AudioStream.h:56:13: note: overridden virtual function is here
+    virtual ~AudioStream() = default;
+            ^
+In file included from /Users/billy/Documents/git/oboe/src/aaudio/AudioStreamAAudio.cpp:23:
+/Users/billy/Documents/git/oboe/src/common/AudioClock.h:50:67: warning: zero as null pointer constant [-Wzero-as-null-pointer-constant]
+        return 0 - clock_nanosleep(clockId, TIMER_ABSTIME, &time, NULL);
+                                                                  ^~~~
+                                                                  nullptr
+/Users/billy/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.7/include/stddef.h:100:18: note: expanded from macro 'NULL'
+#    define NULL __null
+                 ^
+In file included from /Users/billy/Documents/git/oboe/src/aaudio/AudioStreamAAudio.cpp:23:
+/Users/billy/Documents/git/oboe/src/common/AudioClock.h:48:32: warning: implicit conversion loses integer precision: 'long long' to '__kernel_time_t' (aka 'long') [-Wshorten-64-to-32]
+        time.tv_sec = nanoTime / kNanosPerSecond;
+                    ~ ~~~~~~~~~^~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/common/AudioClock.h:49:33: warning: implicit conversion loses integer precision: 'long long' to 'long' [-Wshorten-64-to-32]
+        time.tv_nsec = nanoTime - (time.tv_sec * kNanosPerSecond);
+                     ~ ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/common/AudioClock.h:67:59: warning: zero as null pointer constant [-Wzero-as-null-pointer-constant]
+            return 0 - clock_nanosleep(clockId, 0, &time, NULL);
+                                                          ^~~~
+                                                          nullptr
+/Users/billy/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.7/include/stddef.h:100:18: note: expanded from macro 'NULL'
+#    define NULL __null
+                 ^
+In file included from /Users/billy/Documents/git/oboe/src/aaudio/AudioStreamAAudio.cpp:23:
+/Users/billy/Documents/git/oboe/src/common/AudioClock.h:65:39: warning: implicit conversion loses integer precision: 'long long' to '__kernel_time_t' (aka 'long') [-Wshorten-64-to-32]
+            time.tv_sec = nanoseconds / kNanosPerSecond;
+                        ~ ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/common/AudioClock.h:66:40: warning: implicit conversion loses integer precision: 'long long' to 'long' [-Wshorten-64-to-32]
+            time.tv_nsec = nanoseconds - (time.tv_sec * kNanosPerSecond);
+                         ~ ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/aaudio/AudioStreamAAudio.cpp:283:70: warning: unused parameter 'stream' [-Wunused-parameter]
+DataCallbackResult AudioStreamAAudio::callOnAudioReady(AAudioStream *stream,
+                                                                     ^
+8 warnings generated.
+[13/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/LatencyTuner.cpp.o
+In file included from /Users/billy/Documents/git/oboe/src/common/FixedBlockReader.cpp:22:
+/Users/billy/Documents/git/oboe/src/common/FixedBlockReader.h:35:13: warning: '~FixedBlockReader' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FixedBlockReader() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/common/FixedBlockAdapter.h:47:13: note: overridden virtual function is here
+    virtual ~FixedBlockAdapter();
+            ^
+/Users/billy/Documents/git/oboe/src/common/FixedBlockReader.cpp:43:48: warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'size_t' (aka 'unsigned int') [-Wsign-conversion]
+    memcpy(buffer, mStorage.get() + mPosition, bytesToRead);
+    ~~~~~~                                     ^~~~~~~~~~~
+2 warnings generated.
+[14/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/SourceFloatCaller.cpp.o
+/Users/billy/Documents/git/oboe/src/common/FixedBlockWriter.cpp:33:48: warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'size_t' (aka 'unsigned int') [-Wsign-conversion]
+    memcpy(mStorage.get() + mPosition, buffer, bytesToStore);
+    ~~~~~~                                     ^~~~~~~~~~~~
+1 warning generated.
+[15/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/SourceI16Caller.cpp.o
+In file included from /Users/billy/Documents/git/oboe/src/common/AudioStreamBuilder.cpp:19:
+/Users/billy/Documents/git/oboe/src/aaudio/AudioStreamAAudio.h:42:13: warning: '~AudioStreamAAudio' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~AudioStreamAAudio() = default;
+            ^
+/Users/billy/Documents/git/oboe/include/oboe/AudioStream.h:56:13: note: overridden virtual function is here
+    virtual ~AudioStream() = default;
+            ^
+In file included from /Users/billy/Documents/git/oboe/src/common/AudioStreamBuilder.cpp:20:
+In file included from /Users/billy/Documents/git/oboe/src/common/FilterAudioStream.h:22:
+In file included from /Users/billy/Documents/git/oboe/src/common/DataConversionFlowGraph.h:24:
+In file included from /Users/billy/Documents/git/oboe/src/flowgraph/MonoToMultiConverter.h:23:
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:215:13: warning: '~FlowGraphPortFloatOutput' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphPortFloatOutput() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:185:13: note: overridden virtual function is here
+    virtual ~FlowGraphPortFloat() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:265:13: warning: '~FlowGraphPortFloatInput' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphPortFloatInput() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:185:13: note: overridden virtual function is here
+    virtual ~FlowGraphPortFloat() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:383:13: warning: '~FlowGraphSink' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphSink() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:62:13: note: overridden virtual function is here
+    virtual ~FlowGraphNode() = default;
+            ^
+In file included from /Users/billy/Documents/git/oboe/src/common/AudioStreamBuilder.cpp:20:
+In file included from /Users/billy/Documents/git/oboe/src/common/FilterAudioStream.h:22:
+In file included from /Users/billy/Documents/git/oboe/src/common/DataConversionFlowGraph.h:24:
+/Users/billy/Documents/git/oboe/src/flowgraph/MonoToMultiConverter.h:35:13: warning: '~MonoToMultiConverter' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~MonoToMultiConverter();
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:62:13: note: overridden virtual function is here
+    virtual ~FlowGraphNode() = default;
+            ^
+In file included from /Users/billy/Documents/git/oboe/src/common/AudioStreamBuilder.cpp:20:
+In file included from /Users/billy/Documents/git/oboe/src/common/FilterAudioStream.h:22:
+In file included from /Users/billy/Documents/git/oboe/src/common/DataConversionFlowGraph.h:25:
+/Users/billy/Documents/git/oboe/src/flowgraph/SampleRateConverter.h:32:13: warning: '~SampleRateConverter' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~SampleRateConverter() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:414:13: note: overridden virtual function is here
+    virtual ~FlowGraphFilter() = default;
+            ^
+In file included from /Users/billy/Documents/git/oboe/src/common/AudioStreamBuilder.cpp:20:
+In file included from /Users/billy/Documents/git/oboe/src/common/FilterAudioStream.h:22:
+In file included from /Users/billy/Documents/git/oboe/src/common/DataConversionFlowGraph.h:27:
+In file included from /Users/billy/Documents/git/oboe/src/common/AudioSourceCaller.h:24:
+/Users/billy/Documents/git/oboe/src/common/FixedBlockReader.h:35:13: warning: '~FixedBlockReader' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FixedBlockReader() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/common/FixedBlockAdapter.h:47:13: note: overridden virtual function is here
+    virtual ~FixedBlockAdapter();
+            ^
+In file included from /Users/billy/Documents/git/oboe/src/common/AudioStreamBuilder.cpp:20:
+/Users/billy/Documents/git/oboe/src/common/FilterAudioStream.h:57:13: warning: '~FilterAudioStream' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FilterAudioStream() = default;
+            ^
+/Users/billy/Documents/git/oboe/include/oboe/AudioStream.h:56:13: note: overridden virtual function is here
+    virtual ~AudioStream() = default;
+            ^
+In file included from /Users/billy/Documents/git/oboe/src/common/AudioStreamBuilder.cpp:20:
+/Users/billy/Documents/git/oboe/src/common/FilterAudioStream.h:49:59: warning: implicit conversion changes signedness: 'const int' to 'size_t' (aka 'unsigned int') [-Wsign-conversion]
+            mBlockingBuffer = std::make_unique<uint8_t[]>(size);
+                              ~~~                         ^~~~
+/Users/billy/Documents/git/oboe/src/common/FilterAudioStream.h:172:40: warning: implicit conversion turns floating-point number into integer: 'double' to 'int64_t' (aka 'long long') [-Wfloat-conversion]
+        *framePosition = childPosition * mRateScaler;
+                       ~ ~~~~~~~~~~~~~~^~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/common/FilterAudioStream.h:190:42: warning: unused parameter 'oboeStream' [-Wunused-parameter]
+    void onErrorBeforeClose(AudioStream *oboeStream, Result error) override {}
+                                         ^
+/Users/billy/Documents/git/oboe/src/common/FilterAudioStream.h:190:61: warning: unused parameter 'error' [-Wunused-parameter]
+    void onErrorBeforeClose(AudioStream *oboeStream, Result error) override {}
+                                                            ^
+/Users/billy/Documents/git/oboe/src/common/FilterAudioStream.h:192:41: warning: unused parameter 'oboeStream' [-Wunused-parameter]
+    void onErrorAfterClose(AudioStream *oboeStream, Result error) override {}
+                                        ^
+/Users/billy/Documents/git/oboe/src/common/FilterAudioStream.h:192:60: warning: unused parameter 'error' [-Wunused-parameter]
+    void onErrorAfterClose(AudioStream *oboeStream, Result error) override {}
+                                                           ^
+In file included from /Users/billy/Documents/git/oboe/src/common/AudioStreamBuilder.cpp:24:
+In file included from /Users/billy/Documents/git/oboe/src/opensles/AudioInputStreamOpenSLES.h:25:
+/Users/billy/Documents/git/oboe/src/opensles/AudioStreamOpenSLES.h:50:13: warning: '~AudioStreamOpenSLES' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~AudioStreamOpenSLES() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/opensles/AudioStreamBuffered.h:31:7: note: overridden virtual function is here
+class AudioStreamBuffered : public AudioStream {
+      ^
+In file included from /Users/billy/Documents/git/oboe/src/common/AudioStreamBuilder.cpp:24:
+/Users/billy/Documents/git/oboe/src/opensles/AudioInputStreamOpenSLES.h:38:13: warning: '~AudioInputStreamOpenSLES' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~AudioInputStreamOpenSLES();
+            ^
+/Users/billy/Documents/git/oboe/src/opensles/AudioStreamOpenSLES.h:50:13: note: overridden virtual function is here
+    virtual ~AudioStreamOpenSLES() = default;
+            ^
+In file included from /Users/billy/Documents/git/oboe/src/common/AudioStreamBuilder.cpp:25:
+/Users/billy/Documents/git/oboe/src/opensles/AudioOutputStreamOpenSLES.h:37:13: warning: '~AudioOutputStreamOpenSLES' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~AudioOutputStreamOpenSLES() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/opensles/AudioStreamOpenSLES.h:50:13: note: overridden virtual function is here
+    virtual ~AudioStreamOpenSLES() = default;
+            ^
+17 warnings generated.
+[16/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/Utilities.cpp.o
+In file included from /Users/billy/Documents/git/oboe/src/common/FilterAudioStream.cpp:19:
+In file included from /Users/billy/Documents/git/oboe/src/common/FilterAudioStream.h:22:
+In file included from /Users/billy/Documents/git/oboe/src/common/DataConversionFlowGraph.h:24:
+In file included from /Users/billy/Documents/git/oboe/src/flowgraph/MonoToMultiConverter.h:23:
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:215:13: warning: '~FlowGraphPortFloatOutput' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphPortFloatOutput() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:185:13: note: overridden virtual function is here
+    virtual ~FlowGraphPortFloat() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:265:13: warning: '~FlowGraphPortFloatInput' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphPortFloatInput() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:185:13: note: overridden virtual function is here
+    virtual ~FlowGraphPortFloat() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:383:13: warning: '~FlowGraphSink' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphSink() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:62:13: note: overridden virtual function is here
+    virtual ~FlowGraphNode() = default;
+            ^
+In file included from /Users/billy/Documents/git/oboe/src/common/FilterAudioStream.cpp:19:
+In file included from /Users/billy/Documents/git/oboe/src/common/FilterAudioStream.h:22:
+In file included from /Users/billy/Documents/git/oboe/src/common/DataConversionFlowGraph.h:24:
+/Users/billy/Documents/git/oboe/src/flowgraph/MonoToMultiConverter.h:35:13: warning: '~MonoToMultiConverter' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~MonoToMultiConverter();
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:62:13: note: overridden virtual function is here
+    virtual ~FlowGraphNode() = default;
+            ^
+In file included from /Users/billy/Documents/git/oboe/src/common/FilterAudioStream.cpp:19:
+In file included from /Users/billy/Documents/git/oboe/src/common/FilterAudioStream.h:22:
+In file included from /Users/billy/Documents/git/oboe/src/common/DataConversionFlowGraph.h:25:
+/Users/billy/Documents/git/oboe/src/flowgraph/SampleRateConverter.h:32:13: warning: '~SampleRateConverter' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~SampleRateConverter() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:414:13: note: overridden virtual function is here
+    virtual ~FlowGraphFilter() = default;
+            ^
+In file included from /Users/billy/Documents/git/oboe/src/common/FilterAudioStream.cpp:19:
+In file included from /Users/billy/Documents/git/oboe/src/common/FilterAudioStream.h:22:
+In file included from /Users/billy/Documents/git/oboe/src/common/DataConversionFlowGraph.h:27:
+In file included from /Users/billy/Documents/git/oboe/src/common/AudioSourceCaller.h:24:
+/Users/billy/Documents/git/oboe/src/common/FixedBlockReader.h:35:13: warning: '~FixedBlockReader' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FixedBlockReader() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/common/FixedBlockAdapter.h:47:13: note: overridden virtual function is here
+    virtual ~FixedBlockAdapter();
+            ^
+In file included from /Users/billy/Documents/git/oboe/src/common/FilterAudioStream.cpp:19:
+/Users/billy/Documents/git/oboe/src/common/FilterAudioStream.h:57:13: warning: '~FilterAudioStream' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FilterAudioStream() = default;
+            ^
+/Users/billy/Documents/git/oboe/include/oboe/AudioStream.h:56:13: note: overridden virtual function is here
+    virtual ~AudioStream() = default;
+            ^
+In file included from /Users/billy/Documents/git/oboe/src/common/FilterAudioStream.cpp:19:
+/Users/billy/Documents/git/oboe/src/common/FilterAudioStream.h:49:59: warning: implicit conversion changes signedness: 'const int' to 'size_t' (aka 'unsigned int') [-Wsign-conversion]
+            mBlockingBuffer = std::make_unique<uint8_t[]>(size);
+                              ~~~                         ^~~~
+/Users/billy/Documents/git/oboe/src/common/FilterAudioStream.h:172:40: warning: implicit conversion turns floating-point number into integer: 'double' to 'int64_t' (aka 'long long') [-Wfloat-conversion]
+        *framePosition = childPosition * mRateScaler;
+                       ~ ~~~~~~~~~~~~~~^~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/common/FilterAudioStream.h:190:42: warning: unused parameter 'oboeStream' [-Wunused-parameter]
+    void onErrorBeforeClose(AudioStream *oboeStream, Result error) override {}
+                                         ^
+/Users/billy/Documents/git/oboe/src/common/FilterAudioStream.h:190:61: warning: unused parameter 'error' [-Wunused-parameter]
+    void onErrorBeforeClose(AudioStream *oboeStream, Result error) override {}
+                                                            ^
+/Users/billy/Documents/git/oboe/src/common/FilterAudioStream.h:192:41: warning: unused parameter 'oboeStream' [-Wunused-parameter]
+    void onErrorAfterClose(AudioStream *oboeStream, Result error) override {}
+                                        ^
+/Users/billy/Documents/git/oboe/src/common/FilterAudioStream.h:192:60: warning: unused parameter 'error' [-Wunused-parameter]
+    void onErrorAfterClose(AudioStream *oboeStream, Result error) override {}
+                                                           ^
+13 warnings generated.
+[17/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/QuirksManager.cpp.o
+In file included from /Users/billy/Documents/git/oboe/src/common/DataConversionFlowGraph.cpp:20:
+In file included from /Users/billy/Documents/git/oboe/src/common/DataConversionFlowGraph.h:24:
+In file included from /Users/billy/Documents/git/oboe/src/flowgraph/MonoToMultiConverter.h:23:
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:215:13: warning: '~FlowGraphPortFloatOutput' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphPortFloatOutput() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:185:13: note: overridden virtual function is here
+    virtual ~FlowGraphPortFloat() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:265:13: warning: '~FlowGraphPortFloatInput' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphPortFloatInput() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:185:13: note: overridden virtual function is here
+    virtual ~FlowGraphPortFloat() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:383:13: warning: '~FlowGraphSink' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphSink() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:62:13: note: overridden virtual function is here
+    virtual ~FlowGraphNode() = default;
+            ^
+In file included from /Users/billy/Documents/git/oboe/src/common/DataConversionFlowGraph.cpp:20:
+In file included from /Users/billy/Documents/git/oboe/src/common/DataConversionFlowGraph.h:24:
+/Users/billy/Documents/git/oboe/src/flowgraph/MonoToMultiConverter.h:35:13: warning: '~MonoToMultiConverter' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~MonoToMultiConverter();
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:62:13: note: overridden virtual function is here
+    virtual ~FlowGraphNode() = default;
+            ^
+In file included from /Users/billy/Documents/git/oboe/src/common/DataConversionFlowGraph.cpp:20:
+In file included from /Users/billy/Documents/git/oboe/src/common/DataConversionFlowGraph.h:25:
+/Users/billy/Documents/git/oboe/src/flowgraph/SampleRateConverter.h:32:13: warning: '~SampleRateConverter' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~SampleRateConverter() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:414:13: note: overridden virtual function is here
+    virtual ~FlowGraphFilter() = default;
+            ^
+In file included from /Users/billy/Documents/git/oboe/src/common/DataConversionFlowGraph.cpp:20:
+In file included from /Users/billy/Documents/git/oboe/src/common/DataConversionFlowGraph.h:27:
+In file included from /Users/billy/Documents/git/oboe/src/common/AudioSourceCaller.h:24:
+/Users/billy/Documents/git/oboe/src/common/FixedBlockReader.h:35:13: warning: '~FixedBlockReader' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FixedBlockReader() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/common/FixedBlockAdapter.h:47:13: note: overridden virtual function is here
+    virtual ~FixedBlockAdapter();
+            ^
+In file included from /Users/billy/Documents/git/oboe/src/common/DataConversionFlowGraph.cpp:22:
+/Users/billy/Documents/git/oboe/src/common/SourceI16Caller.h:35:70: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned int') [-Wsign-conversion]
+        mConversionBuffer = std::make_unique<int16_t[]>(channelCount * output.getFramesPerBuffer());
+                            ~~~                         ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /Users/billy/Documents/git/oboe/src/common/DataConversionFlowGraph.cpp:24:
+/Users/billy/Documents/git/oboe/src/flowgraph/ClipToRange.h:37:13: warning: '~ClipToRange' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~ClipToRange() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:414:13: note: overridden virtual function is here
+    virtual ~FlowGraphFilter() = default;
+            ^
+In file included from /Users/billy/Documents/git/oboe/src/common/DataConversionFlowGraph.cpp:26:
+/Users/billy/Documents/git/oboe/src/flowgraph/RampLinear.h:40:13: warning: '~RampLinear' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~RampLinear() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:414:13: note: overridden virtual function is here
+    virtual ~FlowGraphFilter() = default;
+            ^
+In file included from /Users/billy/Documents/git/oboe/src/common/DataConversionFlowGraph.cpp:26:
+/Users/billy/Documents/git/oboe/src/flowgraph/RampLinear.h:87:53: warning: implicit conversion turns floating-point number into integer: 'float' to 'int32_t' (aka 'int') [-Wfloat-conversion]
+    int32_t             mLengthInFrames  = 48000.0f / 100.0f ; // 10 msec at 48000 Hz;
+                                         ~ ~~~~~~~~~^~~~~~~~
+/Users/billy/Documents/git/oboe/src/common/DataConversionFlowGraph.cpp:132:40: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned int') [-Wsign-conversion]
+                    kDefaultBufferSize * sinkStream->getBytesPerFrame());
+                    ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+11 warnings generated.
+[18/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/fifo/FifoBuffer.cpp.o
+[19/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/fifo/FifoController.cpp.o
+In file included from /Users/billy/Documents/git/oboe/src/fifo/FifoBuffer.cpp:25:
+/Users/billy/Documents/git/oboe/src/fifo/FifoController.h:33:13: warning: '~FifoController' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FifoController() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/fifo/FifoControllerBase.h:43:13: note: overridden virtual function is here
+    virtual ~FifoControllerBase() = default;
+            ^
+In file included from /Users/billy/Documents/git/oboe/src/fifo/FifoBuffer.cpp:26:
+/Users/billy/Documents/git/oboe/src/fifo/FifoControllerIndirect.h:34:13: warning: '~FifoControllerIndirect' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FifoControllerIndirect() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/fifo/FifoControllerBase.h:43:13: note: overridden virtual function is here
+    virtual ~FifoControllerBase() = default;
+            ^
+In file included from /Users/billy/Documents/git/oboe/src/fifo/FifoBuffer.cpp:28:
+/Users/billy/Documents/git/oboe/src/common/AudioClock.h:50:67: warning: zero as null pointer constant [-Wzero-as-null-pointer-constant]
+        return 0 - clock_nanosleep(clockId, TIMER_ABSTIME, &time, NULL);
+                                                                  ^~~~
+                                                                  nullptr
+/Users/billy/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.7/include/stddef.h:100:18: note: expanded from macro 'NULL'
+#    define NULL __null
+                 ^
+In file included from /Users/billy/Documents/git/oboe/src/fifo/FifoBuffer.cpp:28:
+/Users/billy/Documents/git/oboe/src/common/AudioClock.h:48:32: warning: implicit conversion loses integer precision: 'long long' to '__kernel_time_t' (aka 'long') [-Wshorten-64-to-32]
+        time.tv_sec = nanoTime / kNanosPerSecond;
+                    ~ ~~~~~~~~~^~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/common/AudioClock.h:49:33: warning: implicit conversion loses integer precision: 'long long' to 'long' [-Wshorten-64-to-32]
+        time.tv_nsec = nanoTime - (time.tv_sec * kNanosPerSecond);
+                     ~ ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/common/AudioClock.h:67:59: warning: zero as null pointer constant [-Wzero-as-null-pointer-constant]
+            return 0 - clock_nanosleep(clockId, 0, &time, NULL);
+                                                          ^~~~
+                                                          nullptr
+/Users/billy/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.7/include/stddef.h:100:18: note: expanded from macro 'NULL'
+#    define NULL __null
+                 ^
+In file included from /Users/billy/Documents/git/oboe/src/fifo/FifoBuffer.cpp:28:
+/Users/billy/Documents/git/oboe/src/common/AudioClock.h:65:39: warning: implicit conversion loses integer precision: 'long long' to '__kernel_time_t' (aka 'long') [-Wshorten-64-to-32]
+            time.tv_sec = nanoseconds / kNanosPerSecond;
+                        ~ ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/common/AudioClock.h:66:40: warning: implicit conversion loses integer precision: 'long long' to 'long' [-Wshorten-64-to-32]
+            time.tv_nsec = nanoseconds - (time.tv_sec * kNanosPerSecond);
+                         ~ ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/fifo/FifoBuffer.cpp:40:44: warning: implicit conversion changes signedness: 'unsigned int' to 'int32_t' (aka 'int') [-Wsign-conversion]
+    int32_t bytesPerBuffer = bytesPerFrame * capacityInFrames;
+            ~~~~~~~~~~~~~~   ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/fifo/FifoBuffer.cpp:41:28: warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'unsigned int' [-Wsign-conversion]
+    mStorage = new uint8_t[bytesPerBuffer];
+               ~~~         ^~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/fifo/FifoBuffer.cpp:74:19: warning: implicit conversion changes signedness: 'unsigned int' to 'int32_t' (aka 'int') [-Wsign-conversion]
+    return frames * mBytesPerFrame;
+    ~~~~~~ ~~~~~~~^~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/fifo/FifoBuffer.cpp:74:12: warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'unsigned int' [-Wsign-conversion]
+    return frames * mBytesPerFrame;
+           ^~~~~~ ~
+/Users/billy/Documents/git/oboe/src/fifo/FifoBuffer.cpp:88:54: warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+    uint8_t *source = &mStorage[convertFramesToBytes(readIndex)];
+                                ~~~~~~~~~~~~~~~~~~~~ ^~~~~~~~~
+/Users/billy/Documents/git/oboe/src/fifo/FifoBuffer.cpp:100:27: warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+        int32_t frames2 = static_cast<uint32_t>(framesToRead - frames1);
+                ~~~~~~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/fifo/FifoBuffer.cpp:100:64: warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'unsigned int' [-Wsign-conversion]
+        int32_t frames2 = static_cast<uint32_t>(framesToRead - frames1);
+                                                             ~ ^~~~~~~
+/Users/billy/Documents/git/oboe/src/fifo/FifoBuffer.cpp:108:49: warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+        int32_t numBytes = convertFramesToBytes(framesToRead);
+                           ~~~~~~~~~~~~~~~~~~~~ ^~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/fifo/FifoBuffer.cpp:116:12: warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+    return framesToRead;
+    ~~~~~~ ^~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/fifo/FifoBuffer.cpp:129:42: warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+    int byteIndex = convertFramesToBytes(writeIndex);
+                    ~~~~~~~~~~~~~~~~~~~~ ^~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/fifo/FifoBuffer.cpp:134:27: warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+        int32_t frames1 = static_cast<uint32_t>(mFifo->getFrameCapacity() - writeIndex);
+                ~~~~~~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/fifo/FifoBuffer.cpp:143:23: warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+        int frames2 = static_cast<uint32_t>(framesToWrite - frames1);
+            ~~~~~~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/fifo/FifoBuffer.cpp:143:61: warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'unsigned int' [-Wsign-conversion]
+        int frames2 = static_cast<uint32_t>(framesToWrite - frames1);
+                                                          ~ ^~~~~~~
+/Users/billy/Documents/git/oboe/src/fifo/FifoBuffer.cpp:151:49: warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+        int32_t numBytes = convertFramesToBytes(framesToWrite);
+                           ~~~~~~~~~~~~~~~~~~~~ ^~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/fifo/FifoBuffer.cpp:159:12: warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+    return framesToWrite;
+    ~~~~~~ ^~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/fifo/FifoBuffer.cpp:168:25: warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'unsigned long long' [-Wsign-conversion]
+    mFramesReadCount += framesRead;
+                     ~~ ^~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/fifo/FifoBuffer.cpp:169:29: warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'unsigned long long' [-Wsign-conversion]
+    mFramesUnderrunCount += framesLeft;
+                         ~~ ^~~~~~~~~~
+25 warnings generated.
+[20/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/fifo/FifoControllerBase.cpp.o
+In file included from /Users/billy/Documents/git/oboe/src/fifo/FifoController.cpp:20:
+/Users/billy/Documents/git/oboe/src/fifo/FifoController.h:33:13: warning: '~FifoController' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FifoController() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/fifo/FifoControllerBase.h:43:13: note: overridden virtual function is here
+    virtual ~FifoControllerBase() = default;
+            ^
+1 warning generated.
+[21/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/fifo/FifoControllerIndirect.cpp.o
+In file included from /Users/billy/Documents/git/oboe/src/fifo/FifoControllerIndirect.cpp:18:
+/Users/billy/Documents/git/oboe/src/fifo/FifoControllerIndirect.h:34:13: warning: '~FifoControllerIndirect' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FifoControllerIndirect() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/fifo/FifoControllerBase.h:43:13: note: overridden virtual function is here
+    virtual ~FifoControllerBase() = default;
+            ^
+1 warning generated.
+[22/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/FlowGraphNode.cpp.o
+In file included from /Users/billy/Documents/git/oboe/src/common/SourceFloatCaller.cpp:19:
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:215:13: warning: '~FlowGraphPortFloatOutput' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphPortFloatOutput() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:185:13: note: overridden virtual function is here
+    virtual ~FlowGraphPortFloat() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:265:13: warning: '~FlowGraphPortFloatInput' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphPortFloatInput() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:185:13: note: overridden virtual function is here
+    virtual ~FlowGraphPortFloat() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:383:13: warning: '~FlowGraphSink' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphSink() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:62:13: note: overridden virtual function is here
+    virtual ~FlowGraphNode() = default;
+            ^
+In file included from /Users/billy/Documents/git/oboe/src/common/SourceFloatCaller.cpp:20:
+In file included from /Users/billy/Documents/git/oboe/src/common/SourceFloatCaller.h:24:
+In file included from /Users/billy/Documents/git/oboe/src/common/AudioSourceCaller.h:24:
+/Users/billy/Documents/git/oboe/src/common/FixedBlockReader.h:35:13: warning: '~FixedBlockReader' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FixedBlockReader() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/common/FixedBlockAdapter.h:47:13: note: overridden virtual function is here
+    virtual ~FixedBlockAdapter();
+            ^
+4 warnings generated.
+[23/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/ClipToRange.cpp.o
+[24/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/ManyToMultiConverter.cpp.o
+In file included from /Users/billy/Documents/git/oboe/src/common/SourceI16Caller.cpp:19:
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:215:13: warning: '~FlowGraphPortFloatOutput' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphPortFloatOutput() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:185:13: note: overridden virtual function is here
+    virtual ~FlowGraphPortFloat() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:265:13: warning: '~FlowGraphPortFloatInput' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphPortFloatInput() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:185:13: note: overridden virtual function is here
+    virtual ~FlowGraphPortFloat() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:383:13: warning: '~FlowGraphSink' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphSink() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:62:13: note: overridden virtual function is here
+    virtual ~FlowGraphNode() = default;
+            ^
+In file included from /Users/billy/Documents/git/oboe/src/common/SourceI16Caller.cpp:20:
+In file included from /Users/billy/Documents/git/oboe/src/common/SourceI16Caller.h:24:
+In file included from /Users/billy/Documents/git/oboe/src/common/AudioSourceCaller.h:24:
+/Users/billy/Documents/git/oboe/src/common/FixedBlockReader.h:35:13: warning: '~FixedBlockReader' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FixedBlockReader() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/common/FixedBlockAdapter.h:47:13: note: overridden virtual function is here
+    virtual ~FixedBlockAdapter();
+            ^
+In file included from /Users/billy/Documents/git/oboe/src/common/SourceI16Caller.cpp:20:
+/Users/billy/Documents/git/oboe/src/common/SourceI16Caller.h:35:70: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned int') [-Wsign-conversion]
+        mConversionBuffer = std::make_unique<int16_t[]>(channelCount * output.getFramesPerBuffer());
+                            ~~~                         ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+5 warnings generated.
+[25/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/MonoToMultiConverter.cpp.o
+[26/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/RampLinear.cpp.o
+In file included from /Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.cpp:20:
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:215:13: warning: '~FlowGraphPortFloatOutput' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphPortFloatOutput() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:185:13: note: overridden virtual function is here
+    virtual ~FlowGraphPortFloat() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:265:13: warning: '~FlowGraphPortFloatInput' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphPortFloatInput() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:185:13: note: overridden virtual function is here
+    virtual ~FlowGraphPortFloat() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:383:13: warning: '~FlowGraphSink' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphSink() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:62:13: note: overridden virtual function is here
+    virtual ~FlowGraphNode() = default;
+            ^
+3 warnings generated.
+[27/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/SampleRateConverter.cpp.o
+In file included from /Users/billy/Documents/git/oboe/src/flowgraph/ClipToRange.cpp:19:
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:215:13: warning: '~FlowGraphPortFloatOutput' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphPortFloatOutput() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:185:13: note: overridden virtual function is here
+    virtual ~FlowGraphPortFloat() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:265:13: warning: '~FlowGraphPortFloatInput' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphPortFloatInput() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:185:13: note: overridden virtual function is here
+    virtual ~FlowGraphPortFloat() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:383:13: warning: '~FlowGraphSink' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphSink() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:62:13: note: overridden virtual function is here
+    virtual ~FlowGraphNode() = default;
+            ^
+In file included from /Users/billy/Documents/git/oboe/src/flowgraph/ClipToRange.cpp:20:
+/Users/billy/Documents/git/oboe/src/flowgraph/ClipToRange.h:37:13: warning: '~ClipToRange' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~ClipToRange() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:414:13: note: overridden virtual function is here
+    virtual ~FlowGraphFilter() = default;
+            ^
+4 warnings generated.
+[28/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkFloat.cpp.o
+In file included from /Users/billy/Documents/git/oboe/src/flowgraph/MonoToMultiConverter.cpp:18:
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:215:13: warning: '~FlowGraphPortFloatOutput' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphPortFloatOutput() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:185:13: note: overridden virtual function is here
+    virtual ~FlowGraphPortFloat() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:265:13: warning: '~FlowGraphPortFloatInput' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphPortFloatInput() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:185:13: note: overridden virtual function is here
+    virtual ~FlowGraphPortFloat() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:383:13: warning: '~FlowGraphSink' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphSink() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:62:13: note: overridden virtual function is here
+    virtual ~FlowGraphNode() = default;
+            ^
+In file included from /Users/billy/Documents/git/oboe/src/flowgraph/MonoToMultiConverter.cpp:19:
+/Users/billy/Documents/git/oboe/src/flowgraph/MonoToMultiConverter.h:35:13: warning: '~MonoToMultiConverter' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~MonoToMultiConverter();
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:62:13: note: overridden virtual function is here
+    virtual ~FlowGraphNode() = default;
+            ^
+4 warnings generated.
+[29/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkI16.cpp.o
+In file included from /Users/billy/Documents/git/oboe/src/flowgraph/RampLinear.cpp:19:
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:215:13: warning: '~FlowGraphPortFloatOutput' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphPortFloatOutput() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:185:13: note: overridden virtual function is here
+    virtual ~FlowGraphPortFloat() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:265:13: warning: '~FlowGraphPortFloatInput' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphPortFloatInput() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:185:13: note: overridden virtual function is here
+    virtual ~FlowGraphPortFloat() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:383:13: warning: '~FlowGraphSink' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphSink() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:62:13: note: overridden virtual function is here
+    virtual ~FlowGraphNode() = default;
+            ^
+In file included from /Users/billy/Documents/git/oboe/src/flowgraph/RampLinear.cpp:20:
+/Users/billy/Documents/git/oboe/src/flowgraph/RampLinear.h:40:13: warning: '~RampLinear' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~RampLinear() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:414:13: note: overridden virtual function is here
+    virtual ~FlowGraphFilter() = default;
+            ^
+In file included from /Users/billy/Documents/git/oboe/src/flowgraph/RampLinear.cpp:20:
+/Users/billy/Documents/git/oboe/src/flowgraph/RampLinear.h:87:53: warning: implicit conversion turns floating-point number into integer: 'float' to 'int32_t' (aka 'int') [-Wfloat-conversion]
+    int32_t             mLengthInFrames  = 48000.0f / 100.0f ; // 10 msec at 48000 Hz;
+                                         ~ ~~~~~~~~~^~~~~~~~
+5 warnings generated.
+[30/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkI24.cpp.o
+In file included from /Users/billy/Documents/git/oboe/src/flowgraph/ManyToMultiConverter.cpp:19:
+In file included from /Users/billy/Documents/git/oboe/src/flowgraph/ManyToMultiConverter.h:24:
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:215:13: warning: '~FlowGraphPortFloatOutput' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphPortFloatOutput() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:185:13: note: overridden virtual function is here
+    virtual ~FlowGraphPortFloat() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:265:13: warning: '~FlowGraphPortFloatInput' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphPortFloatInput() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:185:13: note: overridden virtual function is here
+    virtual ~FlowGraphPortFloat() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:383:13: warning: '~FlowGraphSink' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphSink() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:62:13: note: overridden virtual function is here
+    virtual ~FlowGraphNode() = default;
+            ^
+In file included from /Users/billy/Documents/git/oboe/src/flowgraph/ManyToMultiConverter.cpp:19:
+/Users/billy/Documents/git/oboe/src/flowgraph/ManyToMultiConverter.h:33:13: warning: '~ManyToMultiConverter' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~ManyToMultiConverter() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:62:13: note: overridden virtual function is here
+    virtual ~FlowGraphNode() = default;
+            ^
+In file included from /Users/billy/Documents/git/oboe/src/flowgraph/ManyToMultiConverter.cpp:19:
+/Users/billy/Documents/git/oboe/src/flowgraph/ManyToMultiConverter.h:37:26: warning: unused parameter 'enabled' [-Wunused-parameter]
+    void setEnabled(bool enabled) {}
+                         ^
+/Users/billy/Documents/git/oboe/src/flowgraph/ManyToMultiConverter.cpp:24:18: warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'std::__ndk1::vector<std::__ndk1::unique_ptr<flowgraph::FlowGraphPortFloatInput, std::__ndk1::default_delete<flowgraph::FlowGraphPortFloatInput> >, std::__ndk1::allocator<std::__ndk1::unique_ptr<flowgraph::FlowGraphPortFloatInput, std::__ndk1::default_delete<flowgraph::FlowGraphPortFloatInput> > > >::size_type' (aka 'unsigned int') [-Wsign-conversion]
+        : inputs(channelCount)
+          ~~~~~~ ^~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/flowgraph/ManyToMultiConverter.cpp:27:16: warning: implicit conversion changes signedness: 'int' to 'std::__ndk1::vector<std::__ndk1::unique_ptr<flowgraph::FlowGraphPortFloatInput, std::__ndk1::default_delete<flowgraph::FlowGraphPortFloatInput> >, std::__ndk1::allocator<std::__ndk1::unique_ptr<flowgraph::FlowGraphPortFloatInput, std::__ndk1::default_delete<flowgraph::FlowGraphPortFloatInput> > > >::size_type' (aka 'unsigned int') [-Wsign-conversion]
+        inputs[i] = std::make_unique<FlowGraphPortFloatInput>(*this, 1);
+        ~~~~~~ ^
+/Users/billy/Documents/git/oboe/src/flowgraph/ManyToMultiConverter.cpp:35:43: warning: implicit conversion changes signedness: 'int' to 'std::__ndk1::vector<std::__ndk1::unique_ptr<flowgraph::FlowGraphPortFloatInput, std::__ndk1::default_delete<flowgraph::FlowGraphPortFloatInput> >, std::__ndk1::allocator<std::__ndk1::unique_ptr<flowgraph::FlowGraphPortFloatInput, std::__ndk1::default_delete<flowgraph::FlowGraphPortFloatInput> > > >::size_type' (aka 'unsigned int') [-Wsign-conversion]
+        const float *inputBuffer = inputs[ch]->getBuffer();
+                                   ~~~~~~ ^~
+8 warnings generated.
+[31/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceFloat.cpp.o
+/Users/billy/Documents/git/oboe/src/common/Utilities.cpp:37:17: warning: implicit conversion when assigning computation result loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+        fval += 1.0; // to avoid discontinuity at 0.0 caused by truncation
+             ~~ ^~~
+1 warning generated.
+[32/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceI16.cpp.o
+In file included from /Users/billy/Documents/git/oboe/src/flowgraph/SampleRateConverter.cpp:17:
+In file included from /Users/billy/Documents/git/oboe/src/flowgraph/SampleRateConverter.h:23:
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:215:13: warning: '~FlowGraphPortFloatOutput' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphPortFloatOutput() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:185:13: note: overridden virtual function is here
+    virtual ~FlowGraphPortFloat() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:265:13: warning: '~FlowGraphPortFloatInput' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphPortFloatInput() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:185:13: note: overridden virtual function is here
+    virtual ~FlowGraphPortFloat() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:383:13: warning: '~FlowGraphSink' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphSink() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:62:13: note: overridden virtual function is here
+    virtual ~FlowGraphNode() = default;
+            ^
+In file included from /Users/billy/Documents/git/oboe/src/flowgraph/SampleRateConverter.cpp:17:
+/Users/billy/Documents/git/oboe/src/flowgraph/SampleRateConverter.h:32:13: warning: '~SampleRateConverter' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~SampleRateConverter() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:414:13: note: overridden virtual function is here
+    virtual ~FlowGraphFilter() = default;
+            ^
+4 warnings generated.
+[33/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceI24.cpp.o
+In file included from /Users/billy/Documents/git/oboe/src/flowgraph/SinkFloat.cpp:19:
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:215:13: warning: '~FlowGraphPortFloatOutput' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphPortFloatOutput() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:185:13: note: overridden virtual function is here
+    virtual ~FlowGraphPortFloat() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:265:13: warning: '~FlowGraphPortFloatInput' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphPortFloatInput() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:185:13: note: overridden virtual function is here
+    virtual ~FlowGraphPortFloat() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:383:13: warning: '~FlowGraphSink' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphSink() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:62:13: note: overridden virtual function is here
+    virtual ~FlowGraphNode() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/SinkFloat.cpp:43:35: warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'unsigned int' [-Wsign-conversion]
+        memcpy(floatData, signal, numSamples * sizeof(float));
+                                  ^~~~~~~~~~ ~
+4 warnings generated.
+[34/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/IntegerRatio.cpp.o
+In file included from /Users/billy/Documents/git/oboe/src/flowgraph/SourceFloat.cpp:20:
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:215:13: warning: '~FlowGraphPortFloatOutput' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphPortFloatOutput() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:185:13: note: overridden virtual function is here
+    virtual ~FlowGraphPortFloat() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:265:13: warning: '~FlowGraphPortFloatInput' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphPortFloatInput() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:185:13: note: overridden virtual function is here
+    virtual ~FlowGraphPortFloat() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:383:13: warning: '~FlowGraphSink' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphSink() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:62:13: note: overridden virtual function is here
+    virtual ~FlowGraphNode() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/SourceFloat.cpp:39:37: warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'unsigned int' [-Wsign-conversion]
+    memcpy(outputBuffer, floatData, numSamples * sizeof(float));
+                                    ^~~~~~~~~~ ~
+4 warnings generated.
+[35/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/LinearResampler.cpp.o
+In file included from /Users/billy/Documents/git/oboe/src/flowgraph/SinkI16.cpp:20:
+In file included from /Users/billy/Documents/git/oboe/src/flowgraph/SinkI16.h:23:
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:215:13: warning: '~FlowGraphPortFloatOutput' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphPortFloatOutput() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:185:13: note: overridden virtual function is here
+    virtual ~FlowGraphPortFloat() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:265:13: warning: '~FlowGraphPortFloatInput' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphPortFloatInput() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:185:13: note: overridden virtual function is here
+    virtual ~FlowGraphPortFloat() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:383:13: warning: '~FlowGraphSink' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphSink() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:62:13: note: overridden virtual function is here
+    virtual ~FlowGraphNode() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/SinkI16.cpp:51:28: warning: implicit conversion loses integer precision: 'const int' to 'int16_t' (aka 'short') [-Wimplicit-int-conversion]
+            *shortData++ = std::min(INT16_MAX, std::max(INT16_MIN, n)); // clip
+                         ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4 warnings generated.
+[36/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/MultiChannelResampler.cpp.o
+In file included from /Users/billy/Documents/git/oboe/src/flowgraph/SourceI16.cpp:20:
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:215:13: warning: '~FlowGraphPortFloatOutput' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphPortFloatOutput() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:185:13: note: overridden virtual function is here
+    virtual ~FlowGraphPortFloat() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:265:13: warning: '~FlowGraphPortFloatInput' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphPortFloatInput() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:185:13: note: overridden virtual function is here
+    virtual ~FlowGraphPortFloat() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:383:13: warning: '~FlowGraphSink' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphSink() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:62:13: note: overridden virtual function is here
+    virtual ~FlowGraphNode() = default;
+            ^
+3 warnings generated.
+[37/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResampler.cpp.o
+In file included from /Users/billy/Documents/git/oboe/src/flowgraph/SinkI24.cpp:21:
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:215:13: warning: '~FlowGraphPortFloatOutput' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphPortFloatOutput() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:185:13: note: overridden virtual function is here
+    virtual ~FlowGraphPortFloat() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:265:13: warning: '~FlowGraphPortFloatInput' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphPortFloatInput() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:185:13: note: overridden virtual function is here
+    virtual ~FlowGraphPortFloat() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:383:13: warning: '~FlowGraphSink' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphSink() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:62:13: note: overridden virtual function is here
+    virtual ~FlowGraphNode() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/SinkI24.cpp:53:39: warning: implicit conversion changes signedness: 'unsigned int' to 'const int32_t' (aka 'const int') [-Wsign-conversion]
+        const int32_t kI24PackedMin = 0xFF800000;
+                      ~~~~~~~~~~~~~   ^~~~~~~~~~
+4 warnings generated.
+[38/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResamplerMono.cpp.o
+[39/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResamplerStereo.cpp.o
+In file included from /Users/billy/Documents/git/oboe/src/flowgraph/SourceI24.cpp:24:
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:215:13: warning: '~FlowGraphPortFloatOutput' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphPortFloatOutput() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:185:13: note: overridden virtual function is here
+    virtual ~FlowGraphPortFloat() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:265:13: warning: '~FlowGraphPortFloatInput' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphPortFloatInput() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:185:13: note: overridden virtual function is here
+    virtual ~FlowGraphPortFloat() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:383:13: warning: '~FlowGraphSink' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~FlowGraphSink() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/FlowGraphNode.h:62:13: note: overridden virtual function is here
+    virtual ~FlowGraphNode() = default;
+            ^
+3 warnings generated.
+[40/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/SincResampler.cpp.o
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/LinearResampler.cpp:23:48: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned int') [-Wsign-conversion]
+    mPreviousFrame = std::make_unique<float[]>(getChannelCount());
+                     ~~~                       ^~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/LinearResampler.cpp:24:47: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned int') [-Wsign-conversion]
+    mCurrentFrame = std::make_unique<float[]>(getChannelCount());
+                    ~~~                       ^~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/LinearResampler.cpp:28:71: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    memcpy(mPreviousFrame.get(), mCurrentFrame.get(), sizeof(float) * getChannelCount());
+                                                                    ~ ^~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/LinearResampler.cpp:29:56: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    memcpy(mCurrentFrame.get(), frame, sizeof(float) * getChannelCount());
+                                                     ~ ^~~~~~~~~~~~~~~~~
+4 warnings generated.
+[41/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/SincResamplerStereo.cpp.o
+In file included from /Users/billy/Documents/git/oboe/src/flowgraph/resampler/PolyphaseResampler.cpp:19:
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/PolyphaseResampler.h:39:13: warning: '~PolyphaseResampler' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~PolyphaseResampler() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/MultiChannelResampler.h:148:13: note: overridden virtual function is here
+    virtual ~MultiChannelResampler() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/PolyphaseResampler.cpp:44:42: warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'std::__ndk1::vector<float, std::__ndk1::allocator<float> >::size_type' (aka 'unsigned int') [-Wsign-conversion]
+    float *coefficients = &mCoefficients[mCoefficientCursor];
+                           ~~~~~~~~~~~~~ ^~~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/PolyphaseResampler.cpp:45:33: warning: implicit conversion changes signedness: 'int' to 'std::__ndk1::vector<float, std::__ndk1::allocator<float> >::size_type' (aka 'unsigned int') [-Wsign-conversion]
+    float *xFrame = &mX[mCursor * getChannelCount()];
+                     ~~ ~~~~~~~~^~~~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/PolyphaseResampler.cpp:50:26: warning: implicit conversion changes signedness: 'int' to 'std::__ndk1::vector<float, std::__ndk1::allocator<float> >::size_type' (aka 'unsigned int') [-Wsign-conversion]
+            mSingleFrame[channel] += *xFrame++ * coefficient;
+            ~~~~~~~~~~~~ ^~~~~~~
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/PolyphaseResampler.cpp:55:58: warning: implicit conversion changes signedness: 'unsigned int' to 'int32_t' (aka 'int') [-Wsign-conversion]
+    mCoefficientCursor = (mCoefficientCursor + mNumTaps) % mCoefficients.size();
+                       ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/PolyphaseResampler.cpp:55:46: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    mCoefficientCursor = (mCoefficientCursor + mNumTaps) % mCoefficients.size();
+                          ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~  ~
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/PolyphaseResampler.cpp:59:39: warning: implicit conversion changes signedness: 'int' to 'std::__ndk1::vector<float, std::__ndk1::allocator<float> >::size_type' (aka 'unsigned int') [-Wsign-conversion]
+        frame[channel] = mSingleFrame[channel];
+                         ~~~~~~~~~~~~ ^~~~~~~
+7 warnings generated.
+[42/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/opensles/AudioInputStreamOpenSLES.cpp.o
+In file included from /Users/billy/Documents/git/oboe/src/flowgraph/resampler/PolyphaseResamplerMono.cpp:17:
+In file included from /Users/billy/Documents/git/oboe/src/flowgraph/resampler/PolyphaseResamplerMono.h:22:
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/PolyphaseResampler.h:39:13: warning: '~PolyphaseResampler' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~PolyphaseResampler() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/MultiChannelResampler.h:148:13: note: overridden virtual function is here
+    virtual ~MultiChannelResampler() = default;
+            ^
+In file included from /Users/billy/Documents/git/oboe/src/flowgraph/resampler/PolyphaseResamplerMono.cpp:17:
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/PolyphaseResamplerMono.h:30:13: warning: '~PolyphaseResamplerMono' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~PolyphaseResamplerMono() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/PolyphaseResampler.h:39:13: note: overridden virtual function is here
+    virtual ~PolyphaseResampler() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/PolyphaseResamplerMono.cpp:33:31: warning: implicit conversion changes signedness: 'int' to 'std::__ndk1::vector<float, std::__ndk1::allocator<float> >::size_type' (aka 'unsigned int') [-Wsign-conversion]
+    float *dest = &mX[mCursor * MONO];
+                   ~~ ~~~~~~~~^~~~~~
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/PolyphaseResamplerMono.cpp:47:48: warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'std::__ndk1::vector<float, std::__ndk1::allocator<float> >::size_type' (aka 'unsigned int') [-Wsign-conversion]
+    const float *coefficients = &mCoefficients[mCoefficientCursor];
+                                 ~~~~~~~~~~~~~ ^~~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/PolyphaseResamplerMono.cpp:48:33: warning: implicit conversion changes signedness: 'int' to 'std::__ndk1::vector<float, std::__ndk1::allocator<float> >::size_type' (aka 'unsigned int') [-Wsign-conversion]
+    float *xFrame = &mX[mCursor * MONO];
+                     ~~ ~~~~~~~~^~~~~~
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/PolyphaseResamplerMono.cpp:58:58: warning: implicit conversion changes signedness: 'unsigned int' to 'int32_t' (aka 'int') [-Wsign-conversion]
+    mCoefficientCursor = (mCoefficientCursor + mNumTaps) % mCoefficients.size();
+                       ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/PolyphaseResamplerMono.cpp:58:46: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    mCoefficientCursor = (mCoefficientCursor + mNumTaps) % mCoefficients.size();
+                          ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~  ~
+7 warnings generated.
+[43/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/opensles/AudioOutputStreamOpenSLES.cpp.o
+In file included from /Users/billy/Documents/git/oboe/src/flowgraph/resampler/MultiChannelResampler.cpp:22:
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/PolyphaseResampler.h:39:13: warning: '~PolyphaseResampler' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~PolyphaseResampler() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/MultiChannelResampler.h:148:13: note: overridden virtual function is here
+    virtual ~MultiChannelResampler() = default;
+            ^
+In file included from /Users/billy/Documents/git/oboe/src/flowgraph/resampler/MultiChannelResampler.cpp:23:
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/PolyphaseResamplerMono.h:30:13: warning: '~PolyphaseResamplerMono' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~PolyphaseResamplerMono() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/PolyphaseResampler.h:39:13: note: overridden virtual function is here
+    virtual ~PolyphaseResampler() = default;
+            ^
+In file included from /Users/billy/Documents/git/oboe/src/flowgraph/resampler/MultiChannelResampler.cpp:24:
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/PolyphaseResamplerStereo.h:30:13: warning: '~PolyphaseResamplerStereo' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~PolyphaseResamplerStereo() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/PolyphaseResampler.h:39:13: note: overridden virtual function is here
+    virtual ~PolyphaseResampler() = default;
+            ^
+In file included from /Users/billy/Documents/git/oboe/src/flowgraph/resampler/MultiChannelResampler.cpp:25:
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/SincResampler.h:35:13: warning: '~SincResampler' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~SincResampler() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/MultiChannelResampler.h:148:13: note: overridden virtual function is here
+    virtual ~MultiChannelResampler() = default;
+            ^
+In file included from /Users/billy/Documents/git/oboe/src/flowgraph/resampler/MultiChannelResampler.cpp:26:
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/SincResamplerStereo.h:30:13: warning: '~SincResamplerStereo' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~SincResamplerStereo() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/SincResampler.h:35:13: note: overridden virtual function is here
+    virtual ~SincResampler() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/MultiChannelResampler.cpp:32:63: warning: implicit conversion changes signedness: 'int' to 'std::__ndk1::vector<float, std::__ndk1::allocator<float> >::size_type' (aka 'unsigned int') [-Wsign-conversion]
+        , mX(builder.getChannelCount() * builder.getNumTaps() * 2)
+          ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/MultiChannelResampler.cpp:33:32: warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'std::__ndk1::vector<float, std::__ndk1::allocator<float> >::size_type' (aka 'unsigned int') [-Wsign-conversion]
+        , mSingleFrame(builder.getChannelCount())
+          ~~~~~~~~~~~~ ~~~~~~~~^~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/MultiChannelResampler.cpp:113:31: warning: implicit conversion changes signedness: 'int' to 'std::__ndk1::vector<float, std::__ndk1::allocator<float> >::size_type' (aka 'unsigned int') [-Wsign-conversion]
+    float *dest = &mX[mCursor * getChannelCount()];
+                   ~~ ~~~~~~~~^~~~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/MultiChannelResampler.cpp:133:39: warning: implicit conversion changes signedness: 'int' to 'std::__ndk1::vector<float, std::__ndk1::allocator<float> >::size_type' (aka 'unsigned int') [-Wsign-conversion]
+    mCoefficients.resize(getNumTaps() * numRows);
+                  ~~~~~~ ~~~~~~~~~~~~~^~~~~~~~~
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/MultiChannelResampler.cpp:144:32: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+        float tapPhase = phase - numTapsHalf;
+              ~~~~~~~~   ~~~~~~^~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/MultiChannelResampler.cpp:148:38: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+            float radians = tapPhase * M_PI;
+                  ~~~~~~~   ~~~~~~~~~^~~~~~
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/MultiChannelResampler.cpp:153:28: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+            float window = mCoshWindow(tapPhase * numTapsHalfInverse);
+                  ~~~~~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/MultiChannelResampler.cpp:156:46: warning: implicit conversion changes signedness: 'int' to 'std::__ndk1::vector<float, std::__ndk1::allocator<float> >::size_type' (aka 'unsigned int') [-Wsign-conversion]
+            mCoefficients.at(coefficientIndex++) = coefficient;
+                          ~~ ~~~~~~~~~~~~~~~~^~
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/MultiChannelResampler.cpp:158:25: warning: implicit conversion when assigning computation result loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+            tapPhase += 1.0;
+                     ~~ ^~~
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/MultiChannelResampler.cpp:166:36: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+        float gainCorrection = 1.0 / gain; // normalize the gain
+              ~~~~~~~~~~~~~~   ~~~~^~~~~~
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/MultiChannelResampler.cpp:168:41: warning: implicit conversion changes signedness: 'int' to 'std::__ndk1::vector<float, std::__ndk1::allocator<float> >::size_type' (aka 'unsigned int') [-Wsign-conversion]
+            mCoefficients.at(gainCursor + tap) *= gainCorrection;
+                          ~~ ~~~~~~~~~~~^~~~~
+16 warnings generated.
+[44/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/opensles/AudioStreamBuffered.cpp.o
+In file included from /Users/billy/Documents/git/oboe/src/flowgraph/resampler/PolyphaseResamplerStereo.cpp:17:
+In file included from /Users/billy/Documents/git/oboe/src/flowgraph/resampler/PolyphaseResamplerStereo.h:22:
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/PolyphaseResampler.h:39:13: warning: '~PolyphaseResampler' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~PolyphaseResampler() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/MultiChannelResampler.h:148:13: note: overridden virtual function is here
+    virtual ~MultiChannelResampler() = default;
+            ^
+In file included from /Users/billy/Documents/git/oboe/src/flowgraph/resampler/PolyphaseResamplerStereo.cpp:17:
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/PolyphaseResamplerStereo.h:30:13: warning: '~PolyphaseResamplerStereo' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~PolyphaseResamplerStereo() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/PolyphaseResampler.h:39:13: note: overridden virtual function is here
+    virtual ~PolyphaseResampler() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/PolyphaseResamplerStereo.cpp:33:31: warning: implicit conversion changes signedness: 'int' to 'std::__ndk1::vector<float, std::__ndk1::allocator<float> >::size_type' (aka 'unsigned int') [-Wsign-conversion]
+    float *dest = &mX[mCursor * STEREO];
+                   ~~ ~~~~~~~~^~~~~~~~
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/PolyphaseResamplerStereo.cpp:51:48: warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'std::__ndk1::vector<float, std::__ndk1::allocator<float> >::size_type' (aka 'unsigned int') [-Wsign-conversion]
+    const float *coefficients = &mCoefficients[mCoefficientCursor];
+                                 ~~~~~~~~~~~~~ ^~~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/PolyphaseResamplerStereo.cpp:52:33: warning: implicit conversion changes signedness: 'int' to 'std::__ndk1::vector<float, std::__ndk1::allocator<float> >::size_type' (aka 'unsigned int') [-Wsign-conversion]
+    float *xFrame = &mX[mCursor * STEREO];
+                     ~~ ~~~~~~~~^~~~~~~~
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/PolyphaseResamplerStereo.cpp:73:58: warning: implicit conversion changes signedness: 'unsigned int' to 'int32_t' (aka 'int') [-Wsign-conversion]
+    mCoefficientCursor = (mCoefficientCursor + mNumTaps) % mCoefficients.size();
+                       ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/PolyphaseResamplerStereo.cpp:73:46: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    mCoefficientCursor = (mCoefficientCursor + mNumTaps) % mCoefficients.size();
+                          ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~  ~
+7 warnings generated.
+[45/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/opensles/AudioStreamOpenSLES.cpp.o
+In file included from /Users/billy/Documents/git/oboe/src/flowgraph/resampler/SincResampler.cpp:18:
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/SincResampler.h:35:13: warning: '~SincResampler' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~SincResampler() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/MultiChannelResampler.h:148:13: note: overridden virtual function is here
+    virtual ~MultiChannelResampler() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/SincResampler.cpp:24:33: warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'std::__ndk1::vector<float, std::__ndk1::allocator<float> >::size_type' (aka 'unsigned int') [-Wsign-conversion]
+        , mSingleFrame2(builder.getChannelCount()) {
+          ~~~~~~~~~~~~~ ~~~~~~~~^~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/SincResampler.cpp:55:50: warning: implicit conversion changes signedness: 'int' to 'std::__ndk1::vector<float, std::__ndk1::allocator<float> >::size_type' (aka 'unsigned int') [-Wsign-conversion]
+    float *coefficients1 = &mCoefficients[index1 * getNumTaps()];
+                            ~~~~~~~~~~~~~ ~~~~~~~^~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/SincResampler.cpp:56:50: warning: implicit conversion changes signedness: 'int' to 'std::__ndk1::vector<float, std::__ndk1::allocator<float> >::size_type' (aka 'unsigned int') [-Wsign-conversion]
+    float *coefficients2 = &mCoefficients[index2 * getNumTaps()];
+                            ~~~~~~~~~~~~~ ~~~~~~~^~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/SincResampler.cpp:58:33: warning: implicit conversion changes signedness: 'int' to 'std::__ndk1::vector<float, std::__ndk1::allocator<float> >::size_type' (aka 'unsigned int') [-Wsign-conversion]
+    float *xFrame = &mX[mCursor * getChannelCount()];
+                     ~~ ~~~~~~~~^~~~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/SincResampler.cpp:64:26: warning: implicit conversion changes signedness: 'int' to 'std::__ndk1::vector<float, std::__ndk1::allocator<float> >::size_type' (aka 'unsigned int') [-Wsign-conversion]
+            mSingleFrame[channel] +=  sample * coefficient1;
+            ~~~~~~~~~~~~ ^~~~~~~
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/SincResampler.cpp:65:27: warning: implicit conversion changes signedness: 'int' to 'std::__ndk1::vector<float, std::__ndk1::allocator<float> >::size_type' (aka 'unsigned int') [-Wsign-conversion]
+            mSingleFrame2[channel] += sample * coefficient2;
+            ~~~~~~~~~~~~~ ^~~~~~~
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/SincResampler.cpp:70:33: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+    float fraction = tablePhase - index1;
+          ~~~~~~~~   ~~~~~~~~~~~^~~~~~~~
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/SincResampler.cpp:72:34: warning: implicit conversion changes signedness: 'int' to 'std::__ndk1::vector<float, std::__ndk1::allocator<float> >::size_type' (aka 'unsigned int') [-Wsign-conversion]
+        float low = mSingleFrame[channel];
+                    ~~~~~~~~~~~~ ^~~~~~~
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/SincResampler.cpp:73:36: warning: implicit conversion changes signedness: 'int' to 'std::__ndk1::vector<float, std::__ndk1::allocator<float> >::size_type' (aka 'unsigned int') [-Wsign-conversion]
+        float high = mSingleFrame2[channel];
+                     ~~~~~~~~~~~~~ ^~~~~~~
+10 warnings generated.
+[46/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/opensles/EngineOpenSLES.cpp.o
+In file included from /Users/billy/Documents/git/oboe/src/flowgraph/resampler/SincResamplerStereo.cpp:19:
+In file included from /Users/billy/Documents/git/oboe/src/flowgraph/resampler/SincResamplerStereo.h:22:
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/SincResampler.h:35:13: warning: '~SincResampler' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~SincResampler() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/MultiChannelResampler.h:148:13: note: overridden virtual function is here
+    virtual ~MultiChannelResampler() = default;
+            ^
+In file included from /Users/billy/Documents/git/oboe/src/flowgraph/resampler/SincResamplerStereo.cpp:19:
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/SincResamplerStereo.h:30:13: warning: '~SincResamplerStereo' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~SincResamplerStereo() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/SincResampler.h:35:13: note: overridden virtual function is here
+    virtual ~SincResampler() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/SincResamplerStereo.cpp:35:31: warning: implicit conversion changes signedness: 'int' to 'std::__ndk1::vector<float, std::__ndk1::allocator<float> >::size_type' (aka 'unsigned int') [-Wsign-conversion]
+    float *dest = &mX[mCursor * STEREO];
+                   ~~ ~~~~~~~~^~~~~~~~
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/SincResamplerStereo.cpp:56:50: warning: implicit conversion changes signedness: 'int' to 'std::__ndk1::vector<float, std::__ndk1::allocator<float> >::size_type' (aka 'unsigned int') [-Wsign-conversion]
+    float *coefficients1 = &mCoefficients[index1 * getNumTaps()];
+                            ~~~~~~~~~~~~~ ~~~~~~~^~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/SincResamplerStereo.cpp:61:50: warning: implicit conversion changes signedness: 'int' to 'std::__ndk1::vector<float, std::__ndk1::allocator<float> >::size_type' (aka 'unsigned int') [-Wsign-conversion]
+    float *coefficients2 = &mCoefficients[index2 * getNumTaps()];
+                            ~~~~~~~~~~~~~ ~~~~~~~^~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/SincResamplerStereo.cpp:62:33: warning: implicit conversion changes signedness: 'int' to 'std::__ndk1::vector<float, std::__ndk1::allocator<float> >::size_type' (aka 'unsigned int') [-Wsign-conversion]
+    float *xFrame = &mX[mCursor * getChannelCount()];
+                     ~~ ~~~~~~~~^~~~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/SincResamplerStereo.cpp:68:26: warning: implicit conversion changes signedness: 'int' to 'std::__ndk1::vector<float, std::__ndk1::allocator<float> >::size_type' (aka 'unsigned int') [-Wsign-conversion]
+            mSingleFrame[channel] +=  sample * coefficient1;
+            ~~~~~~~~~~~~ ^~~~~~~
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/SincResamplerStereo.cpp:69:27: warning: implicit conversion changes signedness: 'int' to 'std::__ndk1::vector<float, std::__ndk1::allocator<float> >::size_type' (aka 'unsigned int') [-Wsign-conversion]
+            mSingleFrame2[channel] += sample * coefficient2;
+            ~~~~~~~~~~~~~ ^~~~~~~
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/SincResamplerStereo.cpp:74:33: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+    float fraction = tablePhase - index1;
+          ~~~~~~~~   ~~~~~~~~~~~^~~~~~~~
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/SincResamplerStereo.cpp:76:34: warning: implicit conversion changes signedness: 'int' to 'std::__ndk1::vector<float, std::__ndk1::allocator<float> >::size_type' (aka 'unsigned int') [-Wsign-conversion]
+        float low = mSingleFrame[channel];
+                    ~~~~~~~~~~~~ ^~~~~~~
+/Users/billy/Documents/git/oboe/src/flowgraph/resampler/SincResamplerStereo.cpp:77:36: warning: implicit conversion changes signedness: 'int' to 'std::__ndk1::vector<float, std::__ndk1::allocator<float> >::size_type' (aka 'unsigned int') [-Wsign-conversion]
+        float high = mSingleFrame2[channel];
+                     ~~~~~~~~~~~~~ ^~~~~~~
+11 warnings generated.
+[47/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/opensles/OpenSLESUtilities.cpp.o
+In file included from /Users/billy/Documents/git/oboe/src/opensles/AudioInputStreamOpenSLES.cpp:23:
+In file included from /Users/billy/Documents/git/oboe/src/opensles/AudioInputStreamOpenSLES.h:25:
+/Users/billy/Documents/git/oboe/src/opensles/AudioStreamOpenSLES.h:50:13: warning: '~AudioStreamOpenSLES' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~AudioStreamOpenSLES() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/opensles/AudioStreamBuffered.h:31:7: note: overridden virtual function is here
+class AudioStreamBuffered : public AudioStream {
+      ^
+In file included from /Users/billy/Documents/git/oboe/src/opensles/AudioInputStreamOpenSLES.cpp:23:
+/Users/billy/Documents/git/oboe/src/opensles/AudioInputStreamOpenSLES.h:38:13: warning: '~AudioInputStreamOpenSLES' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~AudioInputStreamOpenSLES();
+            ^
+/Users/billy/Documents/git/oboe/src/opensles/AudioStreamOpenSLES.h:50:13: note: overridden virtual function is here
+    virtual ~AudioStreamOpenSLES() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/opensles/AudioInputStreamOpenSLES.cpp:137:39: warning: zero as null pointer constant [-Wzero-as-null-pointer-constant]
+                                      NULL};
+                                      ^~~~
+                                      nullptr
+/Users/billy/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.7/include/stddef.h:100:18: note: expanded from macro 'NULL'
+#    define NULL __null
+                 ^
+/Users/billy/Documents/git/oboe/src/opensles/AudioInputStreamOpenSLES.cpp:138:40: warning: zero as null pointer constant [-Wzero-as-null-pointer-constant]
+    SLDataSource audioSrc = {&loc_dev, NULL};
+                                       ^~~~
+                                       nullptr
+/Users/billy/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.7/include/stddef.h:100:18: note: expanded from macro 'NULL'
+#    define NULL __null
+                 ^
+/Users/billy/Documents/git/oboe/src/opensles/AudioInputStreamOpenSLES.cpp:347:38: warning: implicit conversion changes signedness: 'SLmillisecond' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+            mPositionMillis.update32(msec);
+                            ~~~~~~~~ ^~~~
+5 warnings generated.
+[48/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/opensles/OutputMixerOpenSLES.cpp.o
+In file included from /Users/billy/Documents/git/oboe/src/opensles/AudioOutputStreamOpenSLES.cpp:21:
+/Users/billy/Documents/git/oboe/src/common/AudioClock.h:50:67: warning: zero as null pointer constant [-Wzero-as-null-pointer-constant]
+        return 0 - clock_nanosleep(clockId, TIMER_ABSTIME, &time, NULL);
+                                                                  ^~~~
+                                                                  nullptr
+/Users/billy/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.7/include/stddef.h:100:18: note: expanded from macro 'NULL'
+#    define NULL __null
+                 ^
+In file included from /Users/billy/Documents/git/oboe/src/opensles/AudioOutputStreamOpenSLES.cpp:21:
+/Users/billy/Documents/git/oboe/src/common/AudioClock.h:48:32: warning: implicit conversion loses integer precision: 'long long' to '__kernel_time_t' (aka 'long') [-Wshorten-64-to-32]
+        time.tv_sec = nanoTime / kNanosPerSecond;
+                    ~ ~~~~~~~~~^~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/common/AudioClock.h:49:33: warning: implicit conversion loses integer precision: 'long long' to 'long' [-Wshorten-64-to-32]
+        time.tv_nsec = nanoTime - (time.tv_sec * kNanosPerSecond);
+                     ~ ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/common/AudioClock.h:67:59: warning: zero as null pointer constant [-Wzero-as-null-pointer-constant]
+            return 0 - clock_nanosleep(clockId, 0, &time, NULL);
+                                                          ^~~~
+                                                          nullptr
+/Users/billy/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.7/include/stddef.h:100:18: note: expanded from macro 'NULL'
+#    define NULL __null
+                 ^
+In file included from /Users/billy/Documents/git/oboe/src/opensles/AudioOutputStreamOpenSLES.cpp:21:
+/Users/billy/Documents/git/oboe/src/common/AudioClock.h:65:39: warning: implicit conversion loses integer precision: 'long long' to '__kernel_time_t' (aka 'long') [-Wshorten-64-to-32]
+            time.tv_sec = nanoseconds / kNanosPerSecond;
+                        ~ ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/common/AudioClock.h:66:40: warning: implicit conversion loses integer precision: 'long long' to 'long' [-Wshorten-64-to-32]
+            time.tv_nsec = nanoseconds - (time.tv_sec * kNanosPerSecond);
+                         ~ ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /Users/billy/Documents/git/oboe/src/opensles/AudioOutputStreamOpenSLES.cpp:24:
+In file included from /Users/billy/Documents/git/oboe/src/opensles/AudioOutputStreamOpenSLES.h:25:
+/Users/billy/Documents/git/oboe/src/opensles/AudioStreamOpenSLES.h:50:13: warning: '~AudioStreamOpenSLES' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~AudioStreamOpenSLES() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/opensles/AudioStreamBuffered.h:31:7: note: overridden virtual function is here
+class AudioStreamBuffered : public AudioStream {
+      ^
+In file included from /Users/billy/Documents/git/oboe/src/opensles/AudioOutputStreamOpenSLES.cpp:24:
+/Users/billy/Documents/git/oboe/src/opensles/AudioOutputStreamOpenSLES.h:37:13: warning: '~AudioOutputStreamOpenSLES' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~AudioOutputStreamOpenSLES() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/opensles/AudioStreamOpenSLES.h:50:13: note: overridden virtual function is here
+    virtual ~AudioStreamOpenSLES() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/opensles/AudioOutputStreamOpenSLES.cpp:447:38: warning: implicit conversion changes signedness: 'SLmillisecond' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+            mPositionMillis.update32(msec);
+                            ~~~~~~~~ ^~~~
+9 warnings generated.
+[49/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/StabilizedCallback.cpp.o
+[50/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/Trace.cpp.o
+In file included from /Users/billy/Documents/git/oboe/src/opensles/AudioStreamBuffered.cpp:22:
+/Users/billy/Documents/git/oboe/src/common/AudioClock.h:50:67: warning: zero as null pointer constant [-Wzero-as-null-pointer-constant]
+        return 0 - clock_nanosleep(clockId, TIMER_ABSTIME, &time, NULL);
+                                                                  ^~~~
+                                                                  nullptr
+/Users/billy/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.7/include/stddef.h:100:18: note: expanded from macro 'NULL'
+#    define NULL __null
+                 ^
+In file included from /Users/billy/Documents/git/oboe/src/opensles/AudioStreamBuffered.cpp:22:
+/Users/billy/Documents/git/oboe/src/common/AudioClock.h:48:32: warning: implicit conversion loses integer precision: 'long long' to '__kernel_time_t' (aka 'long') [-Wshorten-64-to-32]
+        time.tv_sec = nanoTime / kNanosPerSecond;
+                    ~ ~~~~~~~~~^~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/common/AudioClock.h:49:33: warning: implicit conversion loses integer precision: 'long long' to 'long' [-Wshorten-64-to-32]
+        time.tv_nsec = nanoTime - (time.tv_sec * kNanosPerSecond);
+                     ~ ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/common/AudioClock.h:67:59: warning: zero as null pointer constant [-Wzero-as-null-pointer-constant]
+            return 0 - clock_nanosleep(clockId, 0, &time, NULL);
+                                                          ^~~~
+                                                          nullptr
+/Users/billy/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.7/include/stddef.h:100:18: note: expanded from macro 'NULL'
+#    define NULL __null
+                 ^
+In file included from /Users/billy/Documents/git/oboe/src/opensles/AudioStreamBuffered.cpp:22:
+/Users/billy/Documents/git/oboe/src/common/AudioClock.h:65:39: warning: implicit conversion loses integer precision: 'long long' to '__kernel_time_t' (aka 'long') [-Wshorten-64-to-32]
+            time.tv_sec = nanoseconds / kNanosPerSecond;
+                        ~ ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/common/AudioClock.h:66:40: warning: implicit conversion loses integer precision: 'long long' to 'long' [-Wshorten-64-to-32]
+            time.tv_nsec = nanoseconds - (time.tv_sec * kNanosPerSecond);
+                         ~ ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/opensles/AudioStreamBuffered.cpp:58:42: warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+        mFifoBuffer.reset(new FifoBuffer(getBytesPerFrame(), capacityFrames));
+                              ~~~~~~~~~~ ^~~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/opensles/AudioStreamBuffered.cpp:58:62: warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+        mFifoBuffer.reset(new FifoBuffer(getBytesPerFrame(), capacityFrames));
+                              ~~~~~~~~~~                     ^~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/opensles/AudioStreamBuffered.cpp:245:40: warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+        requestedFrames = mFifoBuffer->getBufferCapacityInFrames();
+                        ~ ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/opensles/AudioStreamBuffered.cpp:244:25: warning: comparison of integers of different signs: 'int32_t' (aka 'int') and 'uint32_t' (aka 'unsigned int') [-Wsign-compare]
+    if (requestedFrames > mFifoBuffer->getBufferCapacityInFrames()) {
+        ~~~~~~~~~~~~~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/opensles/AudioStreamBuffered.cpp:255:29: warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+        return mFifoBuffer->getBufferCapacityInFrames();
+        ~~~~~~ ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+11 warnings generated.
+[51/72] Building CXX object oboe/CMakeFiles/oboe.dir/src/common/Version.cpp.o
+/Users/billy/Documents/git/oboe/src/opensles/EngineOpenSLES.cpp:35:52: warning: zero as null pointer constant [-Wzero-as-null-pointer-constant]
+        result = slCreateEngine(&mEngineObject, 0, NULL, 0, NULL, NULL);
+                                                   ^~~~
+                                                   nullptr
+/Users/billy/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.7/include/stddef.h:100:18: note: expanded from macro 'NULL'
+#    define NULL __null
+                 ^
+/Users/billy/Documents/git/oboe/src/opensles/EngineOpenSLES.cpp:35:61: warning: zero as null pointer constant [-Wzero-as-null-pointer-constant]
+        result = slCreateEngine(&mEngineObject, 0, NULL, 0, NULL, NULL);
+                                                            ^~~~
+                                                            nullptr
+/Users/billy/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.7/include/stddef.h:100:18: note: expanded from macro 'NULL'
+#    define NULL __null
+                 ^
+/Users/billy/Documents/git/oboe/src/opensles/EngineOpenSLES.cpp:35:67: warning: zero as null pointer constant [-Wzero-as-null-pointer-constant]
+        result = slCreateEngine(&mEngineObject, 0, NULL, 0, NULL, NULL);
+                                                                  ^~~~
+                                                                  nullptr
+/Users/billy/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.7/include/stddef.h:100:18: note: expanded from macro 'NULL'
+#    define NULL __null
+                 ^
+/Users/billy/Documents/git/oboe/src/opensles/EngineOpenSLES.cpp:75:81: warning: zero as null pointer constant [-Wzero-as-null-pointer-constant]
+    return (*mEngineInterface)->CreateOutputMix(mEngineInterface, objectItf, 0, 0, 0);
+                                                                                ^
+                                                                                nullptr
+/Users/billy/Documents/git/oboe/src/opensles/EngineOpenSLES.cpp:75:84: warning: zero as null pointer constant [-Wzero-as-null-pointer-constant]
+    return (*mEngineInterface)->CreateOutputMix(mEngineInterface, objectItf, 0, 0, 0);
+                                                                                   ^
+                                                                                   nullptr
+5 warnings generated.
+In file included from /Users/billy/Documents/git/oboe/src/opensles/AudioStreamOpenSLES.cpp:23:
+/Users/billy/Documents/git/oboe/src/common/AudioClock.h:50:67: warning: zero as null pointer constant [-Wzero-as-null-pointer-constant]
+        return 0 - clock_nanosleep(clockId, TIMER_ABSTIME, &time, NULL);
+                                                                  ^~~~
+                                                                  nullptr
+/Users/billy/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.7/include/stddef.h:100:18: note: expanded from macro 'NULL'
+#    define NULL __null
+                 ^
+In file included from /Users/billy/Documents/git/oboe/src/opensles/AudioStreamOpenSLES.cpp:23:
+/Users/billy/Documents/git/oboe/src/common/AudioClock.h:48:32: warning: implicit conversion loses integer precision: 'long long' to '__kernel_time_t' (aka 'long') [-Wshorten-64-to-32]
+        time.tv_sec = nanoTime / kNanosPerSecond;
+                    ~ ~~~~~~~~~^~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/common/AudioClock.h:49:33: warning: implicit conversion loses integer precision: 'long long' to 'long' [-Wshorten-64-to-32]
+        time.tv_nsec = nanoTime - (time.tv_sec * kNanosPerSecond);
+                     ~ ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/common/AudioClock.h:67:59: warning: zero as null pointer constant [-Wzero-as-null-pointer-constant]
+            return 0 - clock_nanosleep(clockId, 0, &time, NULL);
+                                                          ^~~~
+                                                          nullptr
+/Users/billy/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.7/include/stddef.h:100:18: note: expanded from macro 'NULL'
+#    define NULL __null
+                 ^
+In file included from /Users/billy/Documents/git/oboe/src/opensles/AudioStreamOpenSLES.cpp:23:
+/Users/billy/Documents/git/oboe/src/common/AudioClock.h:65:39: warning: implicit conversion loses integer precision: 'long long' to '__kernel_time_t' (aka 'long') [-Wshorten-64-to-32]
+            time.tv_sec = nanoseconds / kNanosPerSecond;
+                        ~ ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/common/AudioClock.h:66:40: warning: implicit conversion loses integer precision: 'long long' to 'long' [-Wshorten-64-to-32]
+            time.tv_nsec = nanoseconds - (time.tv_sec * kNanosPerSecond);
+                         ~ ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /Users/billy/Documents/git/oboe/src/opensles/AudioStreamOpenSLES.cpp:27:
+/Users/billy/Documents/git/oboe/src/opensles/AudioStreamOpenSLES.h:50:13: warning: '~AudioStreamOpenSLES' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    virtual ~AudioStreamOpenSLES() = default;
+            ^
+/Users/billy/Documents/git/oboe/src/opensles/AudioStreamBuffered.h:31:7: note: overridden virtual function is here
+class AudioStreamBuffered : public AudioStream {
+      ^
+/Users/billy/Documents/git/oboe/src/opensles/AudioStreamOpenSLES.cpp:45:22: warning: comparison of integers of different signs: 'int' and 'const SLuint32' (aka 'const unsigned int') [-Wsign-compare]
+    if (channelCount > kAudioChannelCountMax) {
+        ~~~~~~~~~~~~ ^ ~~~~~~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/opensles/AudioStreamOpenSLES.cpp:123:51: warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'size_t' (aka 'unsigned int') [-Wsign-conversion]
+    mCallbackBuffer = std::make_unique<uint8_t[]>(mBytesPerCallback);
+                      ~~~                         ^~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/opensles/AudioStreamOpenSLES.cpp:283:54: warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'SLuint32' (aka 'unsigned int') [-Wsign-conversion]
+    return (*bq)->Enqueue(bq, mCallbackBuffer.get(), mBytesPerCallback);
+           ~                                         ^~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/opensles/AudioStreamOpenSLES.cpp:289:55: warning: operand of ? changes signedness: 'SLuint32' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+    return (result == SL_RESULT_SUCCESS) ? queueState.count : -1;
+    ~~~~~~                                 ~~~~~~~~~~~^~~~~
+11 warnings generated.
+/Users/billy/Documents/git/oboe/src/opensles/OutputMixerOpenSLES.cpp:72:42: warning: zero as null pointer constant [-Wzero-as-null-pointer-constant]
+    SLDataSink audioSink = {&loc_outmix, NULL};
+                                         ^~~~
+                                         nullptr
+/Users/billy/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.7/include/stddef.h:100:18: note: expanded from macro 'NULL'
+#    define NULL __null
+                 ^
+1 warning generated.
+In file included from /Users/billy/Documents/git/oboe/src/common/StabilizedCallback.cpp:18:
+/Users/billy/Documents/git/oboe/src/common/AudioClock.h:50:67: warning: zero as null pointer constant [-Wzero-as-null-pointer-constant]
+        return 0 - clock_nanosleep(clockId, TIMER_ABSTIME, &time, NULL);
+                                                                  ^~~~
+                                                                  nullptr
+/Users/billy/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.7/include/stddef.h:100:18: note: expanded from macro 'NULL'
+#    define NULL __null
+                 ^
+In file included from /Users/billy/Documents/git/oboe/src/common/StabilizedCallback.cpp:18:
+/Users/billy/Documents/git/oboe/src/common/AudioClock.h:48:32: warning: implicit conversion loses integer precision: 'long long' to '__kernel_time_t' (aka 'long') [-Wshorten-64-to-32]
+        time.tv_sec = nanoTime / kNanosPerSecond;
+                    ~ ~~~~~~~~~^~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/common/AudioClock.h:49:33: warning: implicit conversion loses integer precision: 'long long' to 'long' [-Wshorten-64-to-32]
+        time.tv_nsec = nanoTime - (time.tv_sec * kNanosPerSecond);
+                     ~ ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/common/AudioClock.h:67:59: warning: zero as null pointer constant [-Wzero-as-null-pointer-constant]
+            return 0 - clock_nanosleep(clockId, 0, &time, NULL);
+                                                          ^~~~
+                                                          nullptr
+/Users/billy/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.7/include/stddef.h:100:18: note: expanded from macro 'NULL'
+#    define NULL __null
+                 ^
+In file included from /Users/billy/Documents/git/oboe/src/common/StabilizedCallback.cpp:18:
+/Users/billy/Documents/git/oboe/src/common/AudioClock.h:65:39: warning: implicit conversion loses integer precision: 'long long' to '__kernel_time_t' (aka 'long') [-Wshorten-64-to-32]
+            time.tv_sec = nanoseconds / kNanosPerSecond;
+                        ~ ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/common/AudioClock.h:66:40: warning: implicit conversion loses integer precision: 'long long' to 'long' [-Wshorten-64-to-32]
+            time.tv_nsec = nanoseconds - (time.tv_sec * kNanosPerSecond);
+                         ~ ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/oboe/src/common/StabilizedCallback.cpp:22:46: warning: implicit conversion loses floating-point precision: 'double' to 'const float' [-Wimplicit-float-conversion]
+constexpr float kPercentageOfCallbackToUse = 0.8;
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~   ^~~
+/Users/billy/Documents/git/oboe/src/common/StabilizedCallback.cpp:107:49: warning: implicit conversion loses floating-point precision: 'double' to 'const float' [-Wimplicit-float-conversion]
+        static const float kFilterCoefficient = 0.1;
+                           ~~~~~~~~~~~~~~~~~~   ^~~
+8 warnings generated.
+[52/72] Linking CXX static library oboe/liboboe.a
+[53/72] Building CXX object CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp.o
+[54/72] Building CXX object CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/Source/Main.cpp.o
+[55/72] Building CXX object CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/BinaryData.cpp.o
+[56/72] Building CXX object CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/BinaryData2.cpp.o
+[57/72] Building CXX object CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/BinaryData3.cpp.o
+[58/72] Building CXX object CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_audio_basics.cpp.o
+clang++: warning: argument unused during compilation: '-Wa,--noexecstack' [-Wunused-command-line-argument]
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/Main.cpp:12:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:13:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/oscComp.h:14:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/waveTable.h:18:
+/Users/billy/Documents/git/Siren/DubSiren/Source/osc.h:99:43: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+            signal[i] = ((2.0 * abs(saw)) - 1.0);
+                      ~  ~~~~~~~~~~~~~~~~~^~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/osc.h:152:22: warning: implicit conversion turns floating-point number into integer: 'float' to 'int' [-Wfloat-conversion]
+        sampleRate = val;
+                   ~ ^~~
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/Main.cpp:12:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:13:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/oscComp.h:14:
+/Users/billy/Documents/git/Siren/DubSiren/Source/waveTable.h:59:42: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned int') [-Wsign-conversion]
+            tables[i] = (float**) calloc(num_tables, sizeof(float*));
+                                  ~~~~~~ ^~~~~~~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/waveTable.h:117:48: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned int') [-Wsign-conversion]
+                tables[i][j] = (float*) calloc(sampleRate, sizeof(float*));
+                                        ~~~~~~ ^~~~~~~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/waveTable.h:169:25: warning: implicit conversion turns floating-point number into integer: 'int' to 'float' [-Wfloat-conversion]
+            table_index += freq;
+            ~~~~~~~~~~~~^~~~~~~
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/Main.cpp:12:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:13:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/oscComp.h:15:
+/Users/billy/Documents/git/Siren/DubSiren/Source/knobmanSlider.h:32:5: warning: '~knobmanSlider' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    ~knobmanSlider()
+    ^
+/Users/billy/Documents/JUCE/modules/juce_gui_basics/widgets/juce_Slider.h:128:5: note: overridden virtual function is here
+    ~Slider() override;
+    ^
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/Main.cpp:12:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:13:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/oscComp.h:15:
+/Users/billy/Documents/git/Siren/DubSiren/Source/knobmanSlider.h:27:21: warning: implicit conversion changes signedness: 'int' to 'std::size_t' (aka 'unsigned int') [-Wsign-conversion]
+        numFrames = NumFrames;
+                  ~ ^~~~~~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/knobmanSlider.h:28:32: warning: implicit conversion changes signedness: 'int' to 'std::size_t' (aka 'unsigned int') [-Wsign-conversion]
+        sideLength = filmStrip.getWidth();
+                   ~ ~~~~~~~~~~^~~~~~~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/knobmanSlider.h:29:31: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        hieghtLen = filmStrip.getHeight() / numFrames;
+                    ~~~~~~~~~~^~~~~~~~~~~ ~
+/Users/billy/Documents/git/Siren/DubSiren/Source/knobmanSlider.h:39:78: warning: implicit conversion changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+        g.drawImage(filmStrip, 0, 0, getWidth(), getHeight(), 0, imageNumber * hieghtLen, sideLength, hieghtLen);
+          ~~~~~~~~~                                              ~~~~~~~~~~~~^~~~~~~~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/knobmanSlider.h:39:91: warning: implicit conversion changes signedness: 'std::size_t' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+        g.drawImage(filmStrip, 0, 0, getWidth(), getHeight(), 0, imageNumber * hieghtLen, sideLength, hieghtLen);
+          ~~~~~~~~~                                                                       ^~~~~~~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/knobmanSlider.h:39:103: warning: implicit conversion changes signedness: 'std::size_t' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+        g.drawImage(filmStrip, 0, 0, getWidth(), getHeight(), 0, imageNumber * hieghtLen, sideLength, hieghtLen);
+          ~~~~~~~~~                                                                                   ^~~~~~~~~
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/Main.cpp:12:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:13:
+/Users/billy/Documents/git/Siren/DubSiren/Source/oscComp.h:32:16: warning: non-static data member 'freq' of 'oscComp' shadows member inherited from type 'waveTable' [-Wshadow-field]
+        knobmanSlider freq;
+                      ^
+/Users/billy/Documents/git/Siren/DubSiren/Source/waveTable.h:33:11: note: declared here
+    float freq, desired_freq, vol, glideRate;
+          ^
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/Main.cpp:12:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:13:
+/Users/billy/Documents/git/Siren/DubSiren/Source/oscComp.h:72:5: warning: '~oscComp' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    ~oscComp()
+    ^
+/Users/billy/Documents/JUCE/modules/juce_gui_basics/components/juce_Component.h:66:5: note: overridden virtual function is here
+    ~Component() override;
+    ^
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/Main.cpp:12:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:13:
+/Users/billy/Documents/git/Siren/DubSiren/Source/oscComp.h:38:32: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+    oscComp() : waveTable(440, 0.3, 44100, 10), freq(freqKnobImage, 100), wavtype(wavtypeKnobImage, 4)
+                ~~~~~~~~~      ^~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/oscComp.h:123:29: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+            setFreq(slider->getValue());
+            ~~~~~~~ ~~~~~~~~^~~~~~~~~~
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/Main.cpp:12:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:14:
+/Users/billy/Documents/git/Siren/DubSiren/Source/lfoComp.h:85:5: warning: '~lfoComp' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    ~lfoComp()
+    ^
+/Users/billy/Documents/JUCE/modules/juce_gui_basics/components/juce_Component.h:66:5: note: overridden virtual function is here
+    ~Component() override;
+    ^
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/Main.cpp:12:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:14:
+/Users/billy/Documents/git/Siren/DubSiren/Source/lfoComp.h:141:26: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+            float freq = sinh(slider->getValue() / 2.5);
+                  ~~~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/lfoComp.h:145:28: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+            setVol(slider->getValue());
+            ~~~~~~ ~~~~~~~~^~~~~~~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/lfoComp.h:165:33: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+        return (lfoSig[0] + 1.0 + vol);
+        ~~~~~~  ~~~~~~~~~~~~~~~~^~~~~
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/Main.cpp:12:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:15:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/delayComp.h:14:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/delay.h:14:
+/Users/billy/Documents/git/Siren/DubSiren/Source/softClip.h:20:43: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+    softClippa(float Mix = 0.5, float E = 2.6)
+                                        ~ ^~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/softClip.h:37:69: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+            float val  = ((2.0 / (1.0 + pow(e, 0-(signal[i] * e)))) - 1);
+                  ~~~     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/Main.cpp:12:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:15:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/delayComp.h:14:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/delay.h:15:
+/Users/billy/Documents/git/Siren/DubSiren/Source/convolva.h:43:5: warning: '~convolva' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    ~convolva()
+    ^
+/Users/billy/Documents/JUCE/modules/juce_gui_basics/components/juce_Component.h:66:5: note: overridden virtual function is here
+    ~Component() override;
+    ^
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/Main.cpp:12:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:15:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/delayComp.h:14:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/delay.h:15:
+/Users/billy/Documents/git/Siren/DubSiren/Source/convolva.h:31:26: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+    convolva(float Mix = 0.9)
+                       ~ ^~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/convolva.h:40:29: warning: implicit conversion changes signedness: 'const int' to 'unsigned int' [-Wsign-conversion]
+        tempMix = new float[MAXBUFFERLEN];
+                  ~~~       ^~~~~~~~~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/convolva.h:48:27: warning: unused parameter 'g' [-Wunused-parameter]
+    void paint (Graphics& g) override
+                          ^
+/Users/billy/Documents/git/Siren/DubSiren/Source/convolva.h:62:29: warning: implicit conversion changes signedness: 'const int' to 'unsigned int' [-Wsign-conversion]
+        tempMix = new float[MAXBUFFERLEN];
+                  ~~~       ^~~~~~~~~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/convolva.h:74:49: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        memcpy(tempMix, signal, sizeof(float) * siglen);
+                                              ~ ^~~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/convolva.h:77:51: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned int') [-Wsign-conversion]
+        dsp::AudioBlock<float> block (&signal, 1, siglen);
+                               ~~~~~              ^~~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/convolva.h:111:48: warning: implicit conversion changes signedness: 'const int' to 'size_t' (aka 'unsigned int') [-Wsign-conversion]
+        convolution.loadImpulseResponse (file, fileSize, false, false, 88000, false);
+                    ~~~~~~~~~~~~~~~~~~~        ^~~~~~~~
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/Main.cpp:12:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:15:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/delayComp.h:14:
+/Users/billy/Documents/git/Siren/DubSiren/Source/delay.h:38:74: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+    tapeDelay( float DelayTime = 0.1f, float Decay = 0.3f) : tapeimpulse(0.85), SC(0.5)
+                                                             ~~~~~~~~~~~ ^~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/delay.h:45:32: warning: implicit conversion changes signedness: 'const int' to 'size_t' (aka 'unsigned int') [-Wsign-conversion]
+        tape = (float*) calloc(nativeSR, sizeof(float));
+                        ~~~~~~ ^~~~~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/delay.h:61:32: warning: implicit conversion changes signedness: 'const int' to 'size_t' (aka 'unsigned int') [-Wsign-conversion]
+        tape = (float*) calloc(nativeSR, sizeof(float));
+                        ~~~~~~ ^~~~~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/delay.h:94:26: warning: implicit conversion turns floating-point number into integer: 'float' to 'int' [-Wfloat-conversion]
+        int ny = (sigLen * r);  // expected output size // risk of rounding errors
+            ~~    ~~~~~~~^~~
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/Main.cpp:12:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:15:
+/Users/billy/Documents/git/Siren/DubSiren/Source/delayComp.h:73:5: warning: '~delayComp' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    ~delayComp()
+    ^
+/Users/billy/Documents/JUCE/modules/juce_gui_basics/components/juce_Component.h:66:5: note: overridden virtual function is here
+    ~Component() override;
+    ^
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/Main.cpp:12:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:15:
+/Users/billy/Documents/git/Siren/DubSiren/Source/delayComp.h:119:30: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+            setDecay(slider->getValue());
+            ~~~~~~~~ ~~~~~~~~^~~~~~~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/delayComp.h:122:34: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+            setDelayTime(slider->getValue());
+            ~~~~~~~~~~~~ ~~~~~~~~^~~~~~~~~~
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/Main.cpp:12:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:16:
+/Users/billy/Documents/git/Siren/DubSiren/Source/master.h:48:5: warning: '~master' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    ~master()
+    ^
+/Users/billy/Documents/JUCE/modules/juce_gui_basics/components/juce_Component.h:66:5: note: overridden virtual function is here
+    ~Component() override;
+    ^
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/Main.cpp:12:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:16:
+/Users/billy/Documents/git/Siren/DubSiren/Source/master.h:64:33: warning: unused parameter 'button' [-Wunused-parameter]
+    void buttonClicked (Button* button) override
+                                ^
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/Main.cpp:12:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:18:
+/Users/billy/Documents/git/Siren/DubSiren/Source/sendComp.h:94:5: warning: '~sendComp' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    ~sendComp()
+    ^
+/Users/billy/Documents/JUCE/modules/juce_gui_basics/components/juce_Component.h:66:5: note: overridden virtual function is here
+    ~Component() override;
+    ^
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/Main.cpp:12:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:18:
+/Users/billy/Documents/git/Siren/DubSiren/Source/sendComp.h:40:23: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+    float reverbVal = 0.2;
+                    ~ ^~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/sendComp.h:41:23: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+    float delayVal  = 0.2;
+                    ~ ^~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/sendComp.h:42:23: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+    float outputVal = 0.8;
+                    ~ ^~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/sendComp.h:116:33: warning: implicit conversion turns floating-point number into integer: 'double' to 'int' [-Wfloat-conversion]
+        int sliderWidth = width / 2.5;
+            ~~~~~~~~~~~   ~~~~~~^~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/sendComp.h:140:33: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+            outputVal = slider->getValue();
+                      ~ ~~~~~~~~^~~~~~~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/sendComp.h:143:33: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+            reverbVal = slider->getValue();
+                      ~ ~~~~~~~~^~~~~~~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/sendComp.h:146:32: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+            delayVal = slider->getValue();
+                     ~ ~~~~~~~~^~~~~~~~~~
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/Main.cpp:12:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:19:
+/Users/billy/Documents/git/Siren/DubSiren/Source/env.h:50:23: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+        att_inc = 1.0 / (a * samplerate);
+                ~ ~~~~^~~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/env.h:51:23: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+        dec_inc = 1.0 / (d * samplerate);
+                ~ ~~~~^~~~~~~~~~~~~~~~~~
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/Main.cpp:12:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:20:
+/Users/billy/Documents/git/Siren/DubSiren/Source/head.h:34:5: warning: '~head' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    ~head()
+    ^
+/Users/billy/Documents/JUCE/modules/juce_gui_basics/components/juce_Component.h:66:5: note: overridden virtual function is here
+    ~Component() override;
+    ^
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/Main.cpp:12:
+/Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:33:5: warning: '~MainComponent' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    ~MainComponent();
+    ^
+/Users/billy/Documents/JUCE/modules/juce_audio_utils/gui/juce_AudioAppComponent.h:55:5: note: overridden virtual function is here
+    ~AudioAppComponent() override;
+    ^
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/Main.cpp:12:
+/Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:55:24: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+    env envelope = env(0.05, 0.1);
+                   ~~~ ^~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:55:30: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+    env envelope = env(0.05, 0.1);
+                   ~~~       ^~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/Main.cpp:26:36: warning: unused parameter 'commandLine' [-Wunused-parameter]
+    void initialise (const String& commandLine) override
+                                   ^
+/Users/billy/Documents/git/Siren/DubSiren/Source/Main.cpp:48:48: warning: unused parameter 'commandLine' [-Wunused-parameter]
+    void anotherInstanceStarted (const String& commandLine) override
+                                               ^
+55 warnings generated.
+[59/72] Building CXX object CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_audio_devices.cpp.o
+clang++: warning: argument unused during compilation: '-Wa,--noexecstack' [-Wunused-command-line-argument]
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp:10:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:13:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/oscComp.h:14:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/waveTable.h:18:
+/Users/billy/Documents/git/Siren/DubSiren/Source/osc.h:99:43: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+            signal[i] = ((2.0 * abs(saw)) - 1.0);
+                      ~  ~~~~~~~~~~~~~~~~~^~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/osc.h:152:22: warning: implicit conversion turns floating-point number into integer: 'float' to 'int' [-Wfloat-conversion]
+        sampleRate = val;
+                   ~ ^~~
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp:10:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:13:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/oscComp.h:14:
+/Users/billy/Documents/git/Siren/DubSiren/Source/waveTable.h:59:42: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned int') [-Wsign-conversion]
+            tables[i] = (float**) calloc(num_tables, sizeof(float*));
+                                  ~~~~~~ ^~~~~~~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/waveTable.h:117:48: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned int') [-Wsign-conversion]
+                tables[i][j] = (float*) calloc(sampleRate, sizeof(float*));
+                                        ~~~~~~ ^~~~~~~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/waveTable.h:169:25: warning: implicit conversion turns floating-point number into integer: 'int' to 'float' [-Wfloat-conversion]
+            table_index += freq;
+            ~~~~~~~~~~~~^~~~~~~
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp:10:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:13:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/oscComp.h:15:
+/Users/billy/Documents/git/Siren/DubSiren/Source/knobmanSlider.h:32:5: warning: '~knobmanSlider' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    ~knobmanSlider()
+    ^
+/Users/billy/Documents/JUCE/modules/juce_gui_basics/widgets/juce_Slider.h:128:5: note: overridden virtual function is here
+    ~Slider() override;
+    ^
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp:10:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:13:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/oscComp.h:15:
+/Users/billy/Documents/git/Siren/DubSiren/Source/knobmanSlider.h:27:21: warning: implicit conversion changes signedness: 'int' to 'std::size_t' (aka 'unsigned int') [-Wsign-conversion]
+        numFrames = NumFrames;
+                  ~ ^~~~~~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/knobmanSlider.h:28:32: warning: implicit conversion changes signedness: 'int' to 'std::size_t' (aka 'unsigned int') [-Wsign-conversion]
+        sideLength = filmStrip.getWidth();
+                   ~ ~~~~~~~~~~^~~~~~~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/knobmanSlider.h:29:31: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        hieghtLen = filmStrip.getHeight() / numFrames;
+                    ~~~~~~~~~~^~~~~~~~~~~ ~
+/Users/billy/Documents/git/Siren/DubSiren/Source/knobmanSlider.h:39:78: warning: implicit conversion changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+        g.drawImage(filmStrip, 0, 0, getWidth(), getHeight(), 0, imageNumber * hieghtLen, sideLength, hieghtLen);
+          ~~~~~~~~~                                              ~~~~~~~~~~~~^~~~~~~~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/knobmanSlider.h:39:91: warning: implicit conversion changes signedness: 'std::size_t' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+        g.drawImage(filmStrip, 0, 0, getWidth(), getHeight(), 0, imageNumber * hieghtLen, sideLength, hieghtLen);
+          ~~~~~~~~~                                                                       ^~~~~~~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/knobmanSlider.h:39:103: warning: implicit conversion changes signedness: 'std::size_t' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+        g.drawImage(filmStrip, 0, 0, getWidth(), getHeight(), 0, imageNumber * hieghtLen, sideLength, hieghtLen);
+          ~~~~~~~~~                                                                                   ^~~~~~~~~
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp:10:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:13:
+/Users/billy/Documents/git/Siren/DubSiren/Source/oscComp.h:32:16: warning: non-static data member 'freq' of 'oscComp' shadows member inherited from type 'waveTable' [-Wshadow-field]
+        knobmanSlider freq;
+                      ^
+/Users/billy/Documents/git/Siren/DubSiren/Source/waveTable.h:33:11: note: declared here
+    float freq, desired_freq, vol, glideRate;
+          ^
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp:10:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:13:
+/Users/billy/Documents/git/Siren/DubSiren/Source/oscComp.h:72:5: warning: '~oscComp' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    ~oscComp()
+    ^
+/Users/billy/Documents/JUCE/modules/juce_gui_basics/components/juce_Component.h:66:5: note: overridden virtual function is here
+    ~Component() override;
+    ^
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp:10:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:13:
+/Users/billy/Documents/git/Siren/DubSiren/Source/oscComp.h:38:32: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+    oscComp() : waveTable(440, 0.3, 44100, 10), freq(freqKnobImage, 100), wavtype(wavtypeKnobImage, 4)
+                ~~~~~~~~~      ^~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/oscComp.h:123:29: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+            setFreq(slider->getValue());
+            ~~~~~~~ ~~~~~~~~^~~~~~~~~~
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp:10:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:14:
+/Users/billy/Documents/git/Siren/DubSiren/Source/lfoComp.h:85:5: warning: '~lfoComp' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    ~lfoComp()
+    ^
+/Users/billy/Documents/JUCE/modules/juce_gui_basics/components/juce_Component.h:66:5: note: overridden virtual function is here
+    ~Component() override;
+    ^
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp:10:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:14:
+/Users/billy/Documents/git/Siren/DubSiren/Source/lfoComp.h:141:26: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+            float freq = sinh(slider->getValue() / 2.5);
+                  ~~~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/lfoComp.h:145:28: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+            setVol(slider->getValue());
+            ~~~~~~ ~~~~~~~~^~~~~~~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/lfoComp.h:165:33: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+        return (lfoSig[0] + 1.0 + vol);
+        ~~~~~~  ~~~~~~~~~~~~~~~~^~~~~
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp:10:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:15:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/delayComp.h:14:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/delay.h:14:
+/Users/billy/Documents/git/Siren/DubSiren/Source/softClip.h:20:43: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+    softClippa(float Mix = 0.5, float E = 2.6)
+                                        ~ ^~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/softClip.h:37:69: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+            float val  = ((2.0 / (1.0 + pow(e, 0-(signal[i] * e)))) - 1);
+                  ~~~     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp:10:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:15:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/delayComp.h:14:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/delay.h:15:
+/Users/billy/Documents/git/Siren/DubSiren/Source/convolva.h:43:5: warning: '~convolva' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    ~convolva()
+    ^
+/Users/billy/Documents/JUCE/modules/juce_gui_basics/components/juce_Component.h:66:5: note: overridden virtual function is here
+    ~Component() override;
+    ^
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp:10:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:15:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/delayComp.h:14:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/delay.h:15:
+/Users/billy/Documents/git/Siren/DubSiren/Source/convolva.h:31:26: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+    convolva(float Mix = 0.9)
+                       ~ ^~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/convolva.h:40:29: warning: implicit conversion changes signedness: 'const int' to 'unsigned int' [-Wsign-conversion]
+        tempMix = new float[MAXBUFFERLEN];
+                  ~~~       ^~~~~~~~~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/convolva.h:48:27: warning: unused parameter 'g' [-Wunused-parameter]
+    void paint (Graphics& g) override
+                          ^
+/Users/billy/Documents/git/Siren/DubSiren/Source/convolva.h:62:29: warning: implicit conversion changes signedness: 'const int' to 'unsigned int' [-Wsign-conversion]
+        tempMix = new float[MAXBUFFERLEN];
+                  ~~~       ^~~~~~~~~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/convolva.h:74:49: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        memcpy(tempMix, signal, sizeof(float) * siglen);
+                                              ~ ^~~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/convolva.h:77:51: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned int') [-Wsign-conversion]
+        dsp::AudioBlock<float> block (&signal, 1, siglen);
+                               ~~~~~              ^~~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/convolva.h:111:48: warning: implicit conversion changes signedness: 'const int' to 'size_t' (aka 'unsigned int') [-Wsign-conversion]
+        convolution.loadImpulseResponse (file, fileSize, false, false, 88000, false);
+                    ~~~~~~~~~~~~~~~~~~~        ^~~~~~~~
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp:10:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:15:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/delayComp.h:14:
+/Users/billy/Documents/git/Siren/DubSiren/Source/delay.h:38:74: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+    tapeDelay( float DelayTime = 0.1f, float Decay = 0.3f) : tapeimpulse(0.85), SC(0.5)
+                                                             ~~~~~~~~~~~ ^~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/delay.h:45:32: warning: implicit conversion changes signedness: 'const int' to 'size_t' (aka 'unsigned int') [-Wsign-conversion]
+        tape = (float*) calloc(nativeSR, sizeof(float));
+                        ~~~~~~ ^~~~~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/delay.h:61:32: warning: implicit conversion changes signedness: 'const int' to 'size_t' (aka 'unsigned int') [-Wsign-conversion]
+        tape = (float*) calloc(nativeSR, sizeof(float));
+                        ~~~~~~ ^~~~~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/delay.h:94:26: warning: implicit conversion turns floating-point number into integer: 'float' to 'int' [-Wfloat-conversion]
+        int ny = (sigLen * r);  // expected output size // risk of rounding errors
+            ~~    ~~~~~~~^~~
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp:10:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:15:
+/Users/billy/Documents/git/Siren/DubSiren/Source/delayComp.h:73:5: warning: '~delayComp' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    ~delayComp()
+    ^
+/Users/billy/Documents/JUCE/modules/juce_gui_basics/components/juce_Component.h:66:5: note: overridden virtual function is here
+    ~Component() override;
+    ^
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp:10:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:15:
+/Users/billy/Documents/git/Siren/DubSiren/Source/delayComp.h:119:30: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+            setDecay(slider->getValue());
+            ~~~~~~~~ ~~~~~~~~^~~~~~~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/delayComp.h:122:34: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+            setDelayTime(slider->getValue());
+            ~~~~~~~~~~~~ ~~~~~~~~^~~~~~~~~~
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp:10:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:16:
+/Users/billy/Documents/git/Siren/DubSiren/Source/master.h:48:5: warning: '~master' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    ~master()
+    ^
+/Users/billy/Documents/JUCE/modules/juce_gui_basics/components/juce_Component.h:66:5: note: overridden virtual function is here
+    ~Component() override;
+    ^
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp:10:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:16:
+/Users/billy/Documents/git/Siren/DubSiren/Source/master.h:64:33: warning: unused parameter 'button' [-Wunused-parameter]
+    void buttonClicked (Button* button) override
+                                ^
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp:10:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:18:
+/Users/billy/Documents/git/Siren/DubSiren/Source/sendComp.h:94:5: warning: '~sendComp' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    ~sendComp()
+    ^
+/Users/billy/Documents/JUCE/modules/juce_gui_basics/components/juce_Component.h:66:5: note: overridden virtual function is here
+    ~Component() override;
+    ^
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp:10:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:18:
+/Users/billy/Documents/git/Siren/DubSiren/Source/sendComp.h:40:23: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+    float reverbVal = 0.2;
+                    ~ ^~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/sendComp.h:41:23: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+    float delayVal  = 0.2;
+                    ~ ^~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/sendComp.h:42:23: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+    float outputVal = 0.8;
+                    ~ ^~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/sendComp.h:116:33: warning: implicit conversion turns floating-point number into integer: 'double' to 'int' [-Wfloat-conversion]
+        int sliderWidth = width / 2.5;
+            ~~~~~~~~~~~   ~~~~~~^~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/sendComp.h:140:33: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+            outputVal = slider->getValue();
+                      ~ ~~~~~~~~^~~~~~~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/sendComp.h:143:33: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+            reverbVal = slider->getValue();
+                      ~ ~~~~~~~~^~~~~~~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/sendComp.h:146:32: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+            delayVal = slider->getValue();
+                     ~ ~~~~~~~~^~~~~~~~~~
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp:10:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:19:
+/Users/billy/Documents/git/Siren/DubSiren/Source/env.h:50:23: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+        att_inc = 1.0 / (a * samplerate);
+                ~ ~~~~^~~~~~~~~~~~~~~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/env.h:51:23: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+        dec_inc = 1.0 / (d * samplerate);
+                ~ ~~~~^~~~~~~~~~~~~~~~~~
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp:10:
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:20:
+/Users/billy/Documents/git/Siren/DubSiren/Source/head.h:34:5: warning: '~head' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    ~head()
+    ^
+/Users/billy/Documents/JUCE/modules/juce_gui_basics/components/juce_Component.h:66:5: note: overridden virtual function is here
+    ~Component() override;
+    ^
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp:10:
+/Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:33:5: warning: '~MainComponent' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    ~MainComponent();
+    ^
+/Users/billy/Documents/JUCE/modules/juce_audio_utils/gui/juce_AudioAppComponent.h:55:5: note: overridden virtual function is here
+    ~AudioAppComponent() override;
+    ^
+In file included from /Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp:10:
+/Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:55:24: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+    env envelope = env(0.05, 0.1);
+                   ~~~ ^~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.h:55:30: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+    env envelope = env(0.05, 0.1);
+                   ~~~       ^~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp:52:23: warning: implicit conversion turns floating-point number into integer: 'double' to 'int' [-Wfloat-conversion]
+    osc.setSampleRate(sampleRate);
+        ~~~~~~~~~~~~~ ^~~~~~~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp:53:22: warning: implicit conversion turns floating-point number into integer: 'double' to 'int' [-Wfloat-conversion]
+    envelope.prepare(sampleRate);
+             ~~~~~~~ ^~~~~~~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp:54:23: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+    lfo.setSampleRate(sampleRate);
+        ~~~~~~~~~~~~~ ^~~~~~~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp:55:30: warning: implicit conversion turns floating-point number into integer: 'double' to 'int' [-Wfloat-conversion]
+    delay.setInputSampleRate(sampleRate);
+          ~~~~~~~~~~~~~~~~~~ ^~~~~~~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp:58:26: warning: implicit conversion turns floating-point number into integer: 'double' to 'int' [-Wfloat-conversion]
+    reverb.setSamplerate(sampleRate);
+           ~~~~~~~~~~~~~ ^~~~~~~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp:62:23: warning: implicit conversion turns floating-point number into integer: 'double' to 'int' [-Wfloat-conversion]
+    amp.setSamplerate(sampleRate);
+        ~~~~~~~~~~~~~ ^~~~~~~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp:64:16: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+    amp.setMix(0.95); // try uping it?
+        ~~~~~~ ^~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp:49:40: warning: unused parameter 'samplesPerBlockExpected' [-Wunused-parameter]
+void MainComponent::prepareToPlay (int samplesPerBlockExpected, double sampleRate)
+                                       ^
+/Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp:103:37: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    memcpy(delaySend, bufferArr[0], bufferLen * sizeof(float));
+                                    ^~~~~~~~~ ~
+/Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp:130:60: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        memcpy(bufferArr[i], bufferArr[0], sizeof(float) * bufferLen);
+                                                         ~ ^~~~~~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp:171:58: warning: implicit conversion turns floating-point number into integer: 'double' to 'int' [-Wfloat-conversion]
+    sends.setBounds(area.removeFromRight(area.getWidth() / 2.5));
+                         ~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~^~~~~
+/Users/billy/Documents/git/Siren/DubSiren/Source/MainComponent.cpp:172:54: warning: implicit conversion turns floating-point number into integer: 'double' to 'int' [-Wfloat-conversion]
+        delay.setBounds(area.removeFromTop(area.getHeight() / 2.2));
+                             ~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~^~~~~
+65 warnings generated.
+[60/72] Building CXX object CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_audio_formats.cpp.o
+clang++: warning: argument unused during compilation: '-Wa,--noexecstack' [-Wunused-command-line-argument]
+[61/72] Building CXX object CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_audio_processors.cpp.o
+clang++: warning: argument unused during compilation: '-Wa,--noexecstack' [-Wunused-command-line-argument]
+[62/72] Building CXX object CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_audio_utils.cpp.o
+clang++: warning: argument unused during compilation: '-Wa,--noexecstack' [-Wunused-command-line-argument]
+[63/72] Building CXX object CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_core.cpp.o
+clang++: warning: argument unused during compilation: '-Wa,--noexecstack' [-Wunused-command-line-argument]
+[64/72] Building CXX object CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_cryptography.cpp.o
+clang++: warning: argument unused during compilation: '-Wa,--noexecstack' [-Wunused-command-line-argument]
+In file included from /Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_audio_devices.cpp:9:
+In file included from /Users/billy/Documents/JUCE/modules/juce_audio_devices/juce_audio_devices.cpp:239:
+/Users/billy/Documents/JUCE/modules/juce_audio_devices/native/juce_android_Oboe.cpp:709:30: warning: parameter 'inputDeviceId' shadows member inherited from type 'OboeSessionBase' [-Wshadow-field]
+                         int inputDeviceId, int outputDeviceId,
+                             ^
+/Users/billy/Documents/JUCE/modules/juce_audio_devices/native/juce_android_Oboe.cpp:693:13: note: declared here
+        int inputDeviceId, outputDeviceId;
+            ^
+/Users/billy/Documents/JUCE/modules/juce_audio_devices/native/juce_android_Oboe.cpp:709:49: warning: parameter 'outputDeviceId' shadows member inherited from type 'OboeSessionBase' [-Wshadow-field]
+                         int inputDeviceId, int outputDeviceId,
+                                                ^
+/Users/billy/Documents/JUCE/modules/juce_audio_devices/native/juce_android_Oboe.cpp:693:28: note: declared here
+        int inputDeviceId, outputDeviceId;
+                           ^
+/Users/billy/Documents/JUCE/modules/juce_audio_devices/native/juce_android_Oboe.cpp:158:5: warning: '~OboeAudioIODevice' overrides a destructor but is not marked 'override' [-Winconsistent-missing-destructor-override]
+    ~OboeAudioIODevice()
+    ^
+/Users/billy/Documents/JUCE/modules/juce_audio_devices/audio_io/juce_AudioIODevice.h:140:13: note: overridden virtual function is here
+    virtual ~AudioIODevice();
+            ^
+In file included from /Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_audio_devices.cpp:9:
+In file included from /Users/billy/Documents/JUCE/modules/juce_audio_devices/juce_audio_devices.cpp:239:
+/Users/billy/Documents/JUCE/modules/juce_audio_devices/native/juce_android_Oboe.cpp:438:27: warning: constructor parameter 'sampleRate' shadows the field 'sampleRate' of 'OboeAudioIODevice' [-Wshadow-field-in-constructor]
+                    int32 sampleRate, int32 bufferSize,
+                          ^
+/Users/billy/Documents/JUCE/modules/juce_audio_devices/native/juce_android_Oboe.cpp:966:31: note: previous declaration is here
+    int actualBufferSize = 0, sampleRate = 0;
+                              ^
+/Users/billy/Documents/JUCE/modules/juce_audio_devices/native/juce_android_Oboe.cpp:439:48: warning: constructor parameter 'callback' shadows the field 'callback' of 'OboeAudioIODevice' [-Wshadow-field-in-constructor]
+                    oboe::AudioStreamCallback* callback = nullptr)
+                                               ^
+/Users/billy/Documents/JUCE/modules/juce_audio_devices/native/juce_android_Oboe.cpp:970:36: note: previous declaration is here
+    Atomic<AudioIODeviceCallback*> callback { nullptr };
+                                   ^
+/Users/billy/Documents/JUCE/modules/juce_audio_devices/native/juce_android_Oboe.cpp:514:26: warning: declaration shadows a field of 'juce::OboeAudioIODevice' [-Wshadow]
+                   int32 sampleRate, int32 bufferSize,
+                         ^
+/Users/billy/Documents/JUCE/modules/juce_audio_devices/native/juce_android_Oboe.cpp:966:31: note: previous declaration is here
+    int actualBufferSize = 0, sampleRate = 0;
+                              ^
+/Users/billy/Documents/JUCE/modules/juce_audio_devices/native/juce_android_Oboe.cpp:515:47: warning: declaration shadows a field of 'juce::OboeAudioIODevice' [-Wshadow]
+                   oboe::AudioStreamCallback* callback = nullptr)
+                                              ^
+/Users/billy/Documents/JUCE/modules/juce_audio_devices/native/juce_android_Oboe.cpp:970:36: note: previous declaration is here
+    Atomic<AudioIODeviceCallback*> callback { nullptr };
+                                   ^
+/Users/billy/Documents/JUCE/modules/juce_audio_devices/native/juce_android_Oboe.cpp:575:30: warning: unused variable 'result' [-Wunused-variable]
+                oboe::Result result = stream->close();
+                             ^
+/Users/billy/Documents/JUCE/modules/juce_audio_devices/native/juce_android_Oboe.cpp:668:87: warning: declaration shadows a field of 'juce::OboeAudioIODevice::OboeSessionBase' [-Wshadow]
+        void checkStreamSetup (OboeStream* stream, int deviceId, int numChannels, int sampleRate,
+                                                                                      ^
+/Users/billy/Documents/JUCE/modules/juce_audio_devices/native/juce_android_Oboe.cpp:695:13: note: previous declaration is here
+        int sampleRate;
+            ^
+/Users/billy/Documents/JUCE/modules/juce_audio_devices/native/juce_android_Oboe.cpp:669:36: warning: declaration shadows a field of 'juce::OboeAudioIODevice::OboeSessionBase' [-Wshadow]
+                               int bufferSize, oboe::AudioFormat format)
+                                   ^
+/Users/billy/Documents/JUCE/modules/juce_audio_devices/native/juce_android_Oboe.cpp:696:13: note: previous declaration is here
+        int bufferSize;
+            ^
+/Users/billy/Documents/JUCE/modules/juce_audio_devices/native/juce_android_Oboe.cpp:709:30: warning: constructor parameter 'inputDeviceId' shadows the field 'inputDeviceId' of 'OboeAudioIODevice' [-Wshadow-field-in-constructor]
+                         int inputDeviceId, int outputDeviceId,
+                             ^
+/Users/billy/Documents/JUCE/modules/juce_audio_devices/native/juce_android_Oboe.cpp:972:9: note: previous declaration is here
+    int inputDeviceId;
+        ^
+/Users/billy/Documents/JUCE/modules/juce_audio_devices/native/juce_android_Oboe.cpp:709:49: warning: constructor parameter 'outputDeviceId' shadows the field 'outputDeviceId' of 'OboeAudioIODevice' [-Wshadow-field-in-constructor]
+                         int inputDeviceId, int outputDeviceId,
+                                                ^
+/Users/billy/Documents/JUCE/modules/juce_audio_devices/native/juce_android_Oboe.cpp:975:9: note: previous declaration is here
+    int outputDeviceId;
+        ^
+/Users/billy/Documents/JUCE/modules/juce_audio_devices/native/juce_android_Oboe.cpp:757:85: warning: zero as null pointer constant [-Wzero-as-null-pointer-constant]
+            auto result = stream->getNativeStream()->getTimestamp (CLOCK_MONOTONIC, 0, 0);
+                                                                                    ^
+                                                                                    nullptr
+/Users/billy/Documents/JUCE/modules/juce_audio_devices/native/juce_android_Oboe.cpp:757:88: warning: zero as null pointer constant [-Wzero-as-null-pointer-constant]
+            auto result = stream->getNativeStream()->getTimestamp (CLOCK_MONOTONIC, 0, 0);
+                                                                                       ^
+                                                                                       nullptr
+/Users/billy/Documents/JUCE/modules/juce_audio_devices/native/juce_android_Oboe.cpp:879:21: warning: unused variable 'appFrameAppTime2' [-Wunused-variable]
+            int64_t appFrameAppTime2 = duration_cast<nanoseconds> (steady_clock::now().time_since_epoch()).count();
+                    ^
+/Users/billy/Documents/JUCE/modules/juce_audio_devices/native/juce_android_Oboe.cpp:904:74: warning: unused parameter 'error' [-Wunused-parameter]
+        void onErrorBeforeClose (oboe::AudioStream* stream, oboe::Result error) override
+                                                                         ^
+/Users/billy/Documents/JUCE/modules/juce_audio_devices/native/juce_android_Oboe.cpp:1005:40: warning: zero as null pointer constant [-Wzero-as-null-pointer-constant]
+        return framesPerBurstString != 0 ? getEnv()->CallStaticIntMethod (JavaInteger, JavaInteger.parseInt, framesPerBurstString.get(), 10) : 192;
+                                       ^
+                                       nullptr
+/Users/billy/Documents/JUCE/modules/juce_audio_devices/native/juce_android_Oboe.cpp:1176:39: warning: zero as null pointer constant [-Wzero-as-null-pointer-constant]
+        jassert (audioManagerClass != 0);
+                                      ^
+                                      nullptr
+/Users/billy/Documents/JUCE/modules/juce_core/system/juce_PlatformDefs.h:148:78: note: expanded from macro 'jassert'
+   #define jassert(expression)      JUCE_BLOCK_WITH_FORCED_SEMICOLON (if (! (expression)) jassertfalse;)
+                                                                             ^
+/Users/billy/Documents/JUCE/modules/juce_core/system/juce_PlatformDefs.h:106:51: note: expanded from macro 'JUCE_BLOCK_WITH_FORCED_SEMICOLON'
+ #define JUCE_BLOCK_WITH_FORCED_SEMICOLON(x) do { x } while (false)
+                                                  ^
+In file included from /Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_audio_devices.cpp:9:
+In file included from /Users/billy/Documents/JUCE/modules/juce_audio_devices/juce_audio_devices.cpp:239:
+/Users/billy/Documents/JUCE/modules/juce_audio_devices/native/juce_android_Oboe.cpp:1178:34: warning: zero as null pointer constant [-Wzero-as-null-pointer-constant]
+        if (audioManagerClass == 0)
+                                 ^
+                                 nullptr
+/Users/billy/Documents/JUCE/modules/juce_audio_devices/native/juce_android_Oboe.cpp:1203:20: warning: unused variable 'device' [-Wunused-variable]
+        for (auto& device : inputDevices)
+                   ^
+/Users/billy/Documents/JUCE/modules/juce_audio_devices/native/juce_android_Oboe.cpp:1213:20: warning: unused variable 'device' [-Wunused-variable]
+        for (auto& device : outputDevices)
+                   ^
+/Users/billy/Documents/JUCE/modules/juce_audio_devices/native/juce_android_Oboe.cpp:1293:63: warning: zero as null pointer constant [-Wzero-as-null-pointer-constant]
+        jint* jArrayElems = env->GetIntArrayElements (jArray, 0);
+                                                              ^
+                                                              nullptr
+/Users/billy/Documents/JUCE/modules/juce_audio_devices/native/juce_android_Oboe.cpp:757:85: warning: zero as null pointer constant [-Wzero-as-null-pointer-constant]
+            auto result = stream->getNativeStream()->getTimestamp (CLOCK_MONOTONIC, 0, 0);
+                                                                                    ^
+                                                                                    nullptr
+/Users/billy/Documents/JUCE/modules/juce_audio_devices/native/juce_android_Oboe.cpp:733:49: note: in instantiation of member function 'juce::OboeAudioIODevice::OboeSessionImpl<float>::isLatencyDetectionSupported' requested here
+            isInputLatencyDetectionSupported  = isLatencyDetectionSupported (inputStream.get());
+                                                ^
+/Users/billy/Documents/JUCE/modules/juce_audio_devices/native/juce_android_Oboe.cpp:708:9: note: in instantiation of member function 'juce::OboeAudioIODevice::OboeSessionImpl<float>::start' requested here
+        OboeSessionImpl (OboeAudioIODevice& ownerToUse,
+        ^
+/Users/billy/Documents/JUCE/modules/juce_audio_devices/native/juce_android_Oboe.cpp:1027:28: note: in instantiation of member function 'juce::OboeAudioIODevice::OboeSessionImpl<float>::OboeSessionImpl' requested here
+        session.reset (new OboeSessionImpl<float> (owner, inputDeviceId, outputDeviceId,
+                           ^
+/Users/billy/Documents/JUCE/modules/juce_audio_devices/native/juce_android_Oboe.cpp:757:88: warning: zero as null pointer constant [-Wzero-as-null-pointer-constant]
+            auto result = stream->getNativeStream()->getTimestamp (CLOCK_MONOTONIC, 0, 0);
+                                                                                       ^
+                                                                                       nullptr
+/Users/billy/Documents/JUCE/modules/juce_audio_devices/native/juce_android_Oboe.cpp:757:85: warning: zero as null pointer constant [-Wzero-as-null-pointer-constant]
+            auto result = stream->getNativeStream()->getTimestamp (CLOCK_MONOTONIC, 0, 0);
+                                                                                    ^
+                                                                                    nullptr
+/Users/billy/Documents/JUCE/modules/juce_audio_devices/native/juce_android_Oboe.cpp:733:49: note: in instantiation of member function 'juce::OboeAudioIODevice::OboeSessionImpl<short>::isLatencyDetectionSupported' requested here
+            isInputLatencyDetectionSupported  = isLatencyDetectionSupported (inputStream.get());
+                                                ^
+/Users/billy/Documents/JUCE/modules/juce_audio_devices/native/juce_android_Oboe.cpp:708:9: note: in instantiation of member function 'juce::OboeAudioIODevice::OboeSessionImpl<short>::start' requested here
+        OboeSessionImpl (OboeAudioIODevice& ownerToUse,
+        ^
+/Users/billy/Documents/JUCE/modules/juce_audio_devices/native/juce_android_Oboe.cpp:1037:28: note: in instantiation of member function 'juce::OboeAudioIODevice::OboeSessionImpl<short>::OboeSessionImpl' requested here
+        session.reset (new OboeSessionImpl<int16> (owner, inputDeviceId, outputDeviceId,
+                           ^
+/Users/billy/Documents/JUCE/modules/juce_audio_devices/native/juce_android_Oboe.cpp:757:88: warning: zero as null pointer constant [-Wzero-as-null-pointer-constant]
+            auto result = stream->getNativeStream()->getTimestamp (CLOCK_MONOTONIC, 0, 0);
+                                                                                       ^
+                                                                                       nullptr
+26 warnings generated.
+[65/72] Building CXX object CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_data_structures.cpp.o
+clang++: warning: argument unused during compilation: '-Wa,--noexecstack' [-Wunused-command-line-argument]
+[66/72] Building CXX object CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_dsp.cpp.o
+clang++: warning: argument unused during compilation: '-Wa,--noexecstack' [-Wunused-command-line-argument]
+[67/72] Building CXX object CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_events.cpp.o
+clang++: warning: argument unused during compilation: '-Wa,--noexecstack' [-Wunused-command-line-argument]
+[68/72] Building CXX object CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_graphics.cpp.o
+clang++: warning: argument unused during compilation: '-Wa,--noexecstack' [-Wunused-command-line-argument]
+[69/72] Building CXX object CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_gui_basics.cpp.o
+clang++: warning: argument unused during compilation: '-Wa,--noexecstack' [-Wunused-command-line-argument]
+[70/72] Building CXX object CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_gui_extra.cpp.o
+clang++: warning: argument unused during compilation: '-Wa,--noexecstack' [-Wunused-command-line-argument]
+[71/72] Building CXX object CMakeFiles/juce_jni.dir/Users/billy/Documents/git/Siren/DubSiren/JuceLibraryCode/include_juce_opengl.cpp.o
+clang++: warning: argument unused during compilation: '-Wa,--noexecstack' [-Wunused-command-line-argument]
+clang++: warning: argument unused during compilation: '-Wa,--noexecstack' [-Wunused-command-line-argument]
+clang++: warning: argument unused during compilation: '-Wa,--noexecstack' [-Wunused-command-line-argument]
+clang++: warning: argument unused during compilation: '-Wa,--noexecstack' [-Wunused-command-line-argument]
+clang++: warning: argument unused during compilation: '-Wa,--noexecstack' [-Wunused-command-line-argument]
+clang++: warning: argument unused during compilation: '-Wa,--noexecstack' [-Wunused-command-line-argument]
+[72/72] Linking CXX shared library ../../../../build/intermediates/cmake/release_Release/obj/x86/libjuce_jni.so

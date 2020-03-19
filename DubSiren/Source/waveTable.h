@@ -36,8 +36,12 @@ public:
     int table_index = 0;
     waveGen* osc;
     
+    enum waveTypes {
+        sine = 0, triangle, saw , square
+    };
+    
     //type
-    waveGen::waveType type;
+    waveTypes type;
 
     waveTable(float Freq, float Vol, int SampleRate, int Num_tables)
     {
@@ -46,7 +50,7 @@ public:
         sampleRate = SampleRate;
         num_tables = Num_tables;
         glideRate = 1;
-        type = waveGen::sine;
+        type = sine;
         
         osc = new waveGen(freq, vol, sampleRate);
         
@@ -60,19 +64,21 @@ public:
         harmonicVals[2][0] = 1.0;
         harmonicVals[3][0] = 1.0;
         
+        //this needs to be sorted out, but in general, order of tables follows the
+        
         for (int i = 1; i < harm_vals_num; i++) {
             
-            harmonicVals[0][i] = 0; //the sine
-            harmonicVals[2][i] = (1.0f / float(i+1)) / 4; //the saw
+            harmonicVals[(int)waveTypes::sine][i] = 0; //the sine
+            harmonicVals[(int)waveTypes::saw][i] = (1.0f / float(i+1)) / 4; //the saw
             
             //if i is odd
             if (i % 2 == 0) {
-                harmonicVals[1][i] = (1.0f / float(i+1)) / 4; //the square
-                harmonicVals[3][i] = (1.0f / float(pow(i+1, 2))); //the tri
+                harmonicVals[(int)waveTypes::square][i] = (1.0f / float(i+1)) / 4; //the square
+                harmonicVals[(int)waveTypes::triangle][i] = (1.0f / float(pow(i+1, 2))); //the tri
             }
             else {
-                harmonicVals[1][i] = 0; //the square
-                harmonicVals[3][i] = 0; //the tri
+                harmonicVals[(int)waveTypes::square][i] = 0; //the square
+                harmonicVals[(int)waveTypes::triangle][i] = 0; //the tri
             }
             
         }
@@ -246,6 +252,6 @@ public:
     
     void setType(int t)
     {
-        type = static_cast<waveGen::waveType>(t);
+        type = static_cast<waveTypes>(t);
     }
 };
